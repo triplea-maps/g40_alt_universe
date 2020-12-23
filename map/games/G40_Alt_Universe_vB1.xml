@@ -6913,7 +6913,7 @@
     <property name="Neutral Flyover Allowed" value="false" editable="false">
       <boolean/>
     </property>
-    <property name="mapName" value="G40_Alt_Universe" editable="false"/>
+    <property name="mapName" value="g40_alt_universe" editable="false"/>
     <property name="notes">
       <value><![CDATA[  
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><u><span style='font-size:19px;font-family:"Arial Black",sans-serif;'>G40 Alt-Universe Rules (Version Beta-1.1)</span></u></strong></p>
