@@ -3740,8 +3740,12 @@
     <attachment name="conditionAttachment_Russians_At_War" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="atWarPlayers" value="Germans:Italians:Japanese" count="1"/>
     </attachment>
+    <attachment name="conditionAttachment_Russians_Protectorates_Attacked" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+       <option name="battle" value="any:any:any:1-999:PA4:PA10:PA11:PA12:NL3:NL4:NL5:NL6:NL7:NL8"/>   
+    </attachment>
+	
     <attachment name="conditionAttachment_Russians_May_Declare_War_On_Axis" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="conditions" value="conditionAttachmentTurn3OrHigher:conditionAttachment_Russians_At_War"/>
+      <option name="conditions" value="conditionAttachmentTurn3OrHigher:conditionAttachment_Russians_At_War:conditionAttachment_Russians_Protectorates_Attacked"/>
       <option name="conditionType" value="OR"/>
     </attachment>
 	<attachment name="conditionAttachment_Russians_Not_At_War_With_Germans" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -6950,7 +6954,7 @@
     <property name="Neutral Flyover Allowed" value="false" editable="false">
       <boolean/>
     </property>
-    <property name="mapName" value="g40_alt_universe" editable="false"/>
+    <property name="mapName" value="g40_alt_universe_12.26.2020" editable="false"/>
     <property name="notes">
       <value><![CDATA[  
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><u><span style='font-size:19px;font-family:"Arial Black",sans-serif;'>G40 Alt-Universe Rules (Version Beta-1.1)</span></u></strong></p>
