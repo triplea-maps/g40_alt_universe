@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-  <info name="G40 Alt Universe" version="2.0.0"/>
+  <info name="G40 Alt Universe" version="2.0.1"/>
   <loader javaClass="games.strategy.triplea.TripleA"/>
   <triplea minimumVersion="1.8"/>
   <diceSides value="6"/>
@@ -4333,6 +4333,22 @@
 	  <option name="notification" value="French_Escalation_4"/>	  
     </attachment>		
 
+	<attachment name="conditionAttachment_French_UK19_Switch" attachTo="French" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="switch" value="false"/>      	
+    </attachment>
+	<attachment name="conditionAttachment_French_UK19_Attacked" attachTo="French" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="battle" value="any:any:any:currentRound:UK19"/>	  
+    </attachment>	
+	<attachment name="triggerAttachment_French_UK19" attachTo="French" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_French_UK19_Attacked"/>
+      <option name="when" value="after:germansBattle"/>
+      <option name="when" value="after:japaneseBattle"/>
+      <option name="when" value="after:italiansBatle"/>	  
+      <option name="players" value="French"/>
+      <option name="playerAttachmentName" value="RulesAttachment" count="conditionAttachment_French_UK19_Switch"/>
+      <option name="playerProperty" value="switch" count="true"/>
+    </attachment>	
+
     <attachment name="triggerAttachment_French_Unrestricted_Movement" attachTo="French" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_French_Escalation_3_Switch:conditionAttachment_French_At_War_With_At_Least_One_Axis"/>
 	  <option name="conditionType" value="OR"/>
@@ -5693,6 +5709,13 @@
       <option name="relationshipChange" value="French:Pro_Allies:Friendly_Neutral"/>
       <option name="relationshipChange" value="French:Pro_Axis:Unfriendly_Neutral"/>
       <option name="text" value="French_War_Germans"/>
+    </attachment>
+    <attachment name="politicalActionAttachment_French_To_War_With_Germans3" attachTo="French" javaClass="games.strategy.triplea.attachments.PoliticalActionAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_French_UK19_Switch:conditionAttachment_French_Not_At_War_With_Germans"/>
+      <option name="relationshipChange" value="Germans:French:War"/>
+      <option name="relationshipChange" value="French:Pro_Allies:Friendly_Neutral"/>
+      <option name="relationshipChange" value="French:Pro_Axis:Unfriendly_Neutral"/>
+      <option name="text" value="French_War_Germans"/>
     </attachment>	
 	<attachment name="politicalActionAttachment_French_To_War_With_Italians" attachTo="French" javaClass="games.strategy.triplea.attachments.PoliticalActionAttachment" type="player">
       <option name="conditions" value="conditionAttachment_French_At_War_With_At_Least_One_Axis:conditionAttachment_French_Not_At_War_With_Italians"/>
@@ -5703,6 +5726,13 @@
     </attachment>
 	<attachment name="politicalActionAttachment_French_To_War_With_Italians2" attachTo="French" javaClass="games.strategy.triplea.attachments.PoliticalActionAttachment" type="player">
       <option name="conditions" value="conditionAttachment_French_Escalation_4_Switch:conditionAttachment_French_Not_At_War_With_Italians"/>
+      <option name="relationshipChange" value="Italians:French:War"/>
+      <option name="relationshipChange" value="French:Pro_Allies:Friendly_Neutral"/>
+      <option name="relationshipChange" value="French:Pro_Axis:Unfriendly_Neutral"/>
+      <option name="text" value="French_War_Italians"/>
+    </attachment>
+	<attachment name="politicalActionAttachment_French_To_War_With_Italians3" attachTo="French" javaClass="games.strategy.triplea.attachments.PoliticalActionAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_French_UK19_Switch:conditionAttachment_French_Not_At_War_With_Italians"/>
       <option name="relationshipChange" value="Italians:French:War"/>
       <option name="relationshipChange" value="French:Pro_Allies:Friendly_Neutral"/>
       <option name="relationshipChange" value="French:Pro_Axis:Unfriendly_Neutral"/>
@@ -5721,7 +5751,14 @@
       <option name="relationshipChange" value="French:Pro_Allies:Friendly_Neutral"/>
       <option name="relationshipChange" value="French:Pro_Axis:Unfriendly_Neutral"/>
       <option name="text" value="French_War_Japanese"/>
-    </attachment>		
+    </attachment>
+	<attachment name="politicalActionAttachment_French_To_War_With_Japanese3" attachTo="French" javaClass="games.strategy.triplea.attachments.PoliticalActionAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_French_UK19_Switch:conditionAttachment_French_Not_At_War_With_Japanese"/>
+      <option name="relationshipChange" value="Japanese:French:War"/>
+      <option name="relationshipChange" value="French:Pro_Allies:Friendly_Neutral"/>
+      <option name="relationshipChange" value="French:Pro_Axis:Unfriendly_Neutral"/>
+      <option name="text" value="French_War_Japanese"/>
+    </attachment>	
 
 
 	<!-- Political Action Triggers -->
@@ -6913,7 +6950,7 @@
     <property name="Neutral Flyover Allowed" value="false" editable="false">
       <boolean/>
     </property>
-    <property name="mapName" value="g40_alt_universe" editable="false"/>
+    <property name="mapName" value="g40_alt_universe_12.26.2020" editable="false"/>
     <property name="notes">
       <value><![CDATA[  
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><u><span style='font-size:19px;font-family:"Arial Black",sans-serif;'>G40 Alt-Universe Rules (Version Beta-1.1)</span></u></strong></p>
