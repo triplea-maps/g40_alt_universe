@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-  <info name="G40 Alt Universe" version="2.0.1"/>
+  <info name="G40 Alt Universe 1.3.2021" version="2.0.1"/>
   <loader javaClass="games.strategy.triplea.TripleA"/>
   <triplea minimumVersion="1.8"/>
   <diceSides value="6"/>
@@ -3562,7 +3562,7 @@
     <!-- British Objectives -->
     <attachment name="objectiveAttachment_British_1_Continental_Influence" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 	  <option name="objectiveValue" value="5"/>
-      <option name="directOwnershipTerritories" value="UK7:UK11:UK12:UK13:UK14:G20" count="6"/>
+      <option name="alliedOwnershipTerritories" value="UK7:UK11:UK12:UK13:UK14:G20" count="6"/>
     </attachment>
     <attachment name="objectiveAttachment_British_2_Expanding_Democracy" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 	  <option name="objectiveValue" value="5"/>
@@ -3570,7 +3570,7 @@
     </attachment>
     <attachment name="objectiveAttachment_British_3_Southern_Shipping_Lanes" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
-      <option name="enemySurfaceExclusionTerritories" value="58 Sea Zone:68 Sea Zone:69 Sea Zone:83 Sea Zone:84 Sea Zone" count="5"/>
+      <option name="enemyExclusionTerritories" value="58 Sea Zone:68 Sea Zone:69 Sea Zone:83 Sea Zone:84 Sea Zone" count="5"/>
       <option name="unitPresence" value="battleship:carrier:submarine:destroyer:cruiser" count="0"/>	  
     </attachment>
     <!-- Italians Objectives -->
@@ -3635,14 +3635,14 @@
     <!-- Victory Conditions -->
     <!-- Axis Victory -->
     <attachment name="conditionAttachmentAxisVictory1" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="alliedOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US11:US13:US5:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="14"/>
+      <option name="alliedOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US11:US13:US5:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="14"/>
     </attachment>   
     <!-- Allied Victory -->
     <attachment name="conditionAttachmentAlliedVictory1" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="alliedOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US11:US13:US5:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="16"/>
+      <option name="alliedOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US11:US13:US5:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="18"/>
     </attachment>
     <attachment name="conditionAttachmentAlliedVictory2A" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="alliedOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US11:US13:US5:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13" count="14"/>
+      <option name="alliedOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US11:US13:US5:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="15"/>
     </attachment>	
     <attachment name="conditionAttachmentAlliedVictory2B" attachTo="Neutral_League" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="directOwnershipTerritories" value="NL11" count="1"/>
@@ -3651,7 +3651,7 @@
       <option name="rounds" value="8-+"/>
     </attachment>
     <attachment name="conditionAttachmentAlliedVictory3A" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="alliedOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US11:US13:US5:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13" count="16"/>
+      <option name="alliedOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US11:US13:US5:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="17"/>
     </attachment>
 	<attachment name="conditionAttachmentAlliedVictory3B" attachTo="Neutral_League" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="directOwnershipTerritories" value="NL11" count="1"/>
@@ -5402,7 +5402,7 @@
 	</attachment>
 	
     <attachment name="rulesAttachment" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="movementRestrictionTerritories" value="77 Sea Zone:93 Sea Zone:94 Sea Zone:81 Sea Zone:66 Sea Zone:67 Sea Zone:56 Sea Zone:44 Sea Zone:36 Sea Zone:30 Sea Zone:19 Sea Zone:3 Sea Zone:13 Sea Zone"/>	
+      <option name="movementRestrictionTerritories" value="77 Sea Zone:93 Sea Zone:94 Sea Zone:81 Sea Zone:67 Sea Zone:56 Sea Zone:44 Sea Zone:36 Sea Zone:30 Sea Zone:19 Sea Zone:3 Sea Zone:13 Sea Zone"/>	
       <option name="movementRestrictionType" value="disallowed"/>
     </attachment>	
 
@@ -6954,7 +6954,7 @@
     <property name="Neutral Flyover Allowed" value="false" editable="false">
       <boolean/>
     </property>
-    <property name="mapName" value="g40_alt_universe" editable="false"/>
+    <property name="mapName" value="g40_alt_universe_1.3.2021" editable="false"/>
     <property name="notes">
       <value><![CDATA[  
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><u><span style='font-size:19px;font-family:"Arial Black",sans-serif;'>G40 Alt-Universe Rules (Version Beta-1.1)</span></u></strong></p>
