@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-  <info name="G40 Alt Universe 1.3.2021" version="2.0.1"/>
+  <info name="G40 Alt Universe" version="2.0.2"/>
   <loader javaClass="games.strategy.triplea.TripleA"/>
   <triplea minimumVersion="1.8"/>
   <diceSides value="6"/>
@@ -6954,7 +6954,7 @@
     <property name="Neutral Flyover Allowed" value="false" editable="false">
       <boolean/>
     </property>
-    <property name="mapName" value="g40_alt_universe_1.3.2021" editable="false"/>
+    <property name="mapName" value="g40_alt_universe" editable="false"/>
     <property name="notes">
       <value><![CDATA[  
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><u><span style='font-size:19px;font-family:"Arial Black",sans-serif;'>G40 Alt-Universe Rules (Version Beta-1.1)</span></u></strong></p>
@@ -7113,7 +7113,7 @@
 </ul>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>United Kingdom</strong></p>
 <ul style="list-style-type: undefined;margin-left:26px;">
-    <li><strong><span style="font-size: 15px; font-family: Calibri, sans-serif;">5 IPCs if the UK controls all of UK7, UK11, UK12, UK13, UK14 and G20 &ndash; Continental Influence</span></strong></li>
+    <li><strong><span style="font-size: 15px; font-family: Calibri, sans-serif;">5 IPCs if the Allies control UK7, UK11, UK12, UK13, UK14 and G20 &ndash; Continental Influence</span></strong></li>
     <li><span style="font-family: Calibri, sans-serif;"><span style="font-size: 15px;"><strong>5 IPCs if the UK control 5 or more Pro-Allied territories &ndash; Expanding Democracy</strong></span></span></li>
     <li><strong><span style="font-size: 15px; font-family: Calibri, sans-serif;">5 IPCs if there are no Axis warships in Sea Zones 58, 68, 69, 83 or 84 &ndash; Southern Shipping Lanes</span></strong></li>
 </ul>
