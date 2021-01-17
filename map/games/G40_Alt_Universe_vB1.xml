@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-  <info name="G40 Alt Universe" version="2.0.2"/>
+  <info name="G40 Alt Universe Work" version="2.0.3"/>
   <loader javaClass="games.strategy.triplea.TripleA"/>
   <triplea minimumVersion="1.8"/>
   <diceSides value="6"/>
@@ -1971,7 +1971,7 @@
       <option name="isAAforBombingThisUnitOnly" value="true"/>
       <option name="canProduceXUnits" value="3"/>
       <option name="maxDamage" value="6"/>
-      <option name="whenCapturedChangesInto" value="any:any:true:factory_minor:1:minor_ic_captured:1"/>
+      <option name="whenCapturedChangesInto" value="any:any:true:factory_minor_plundered:1:minor_ic_captured:1"/>
     </attachment>
     <!-- Factory Minor Plundered -->
     <attachment name="unitAttachment" attachTo="factory_minor_plundered" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4716,6 +4716,19 @@
       <option name="when" value="after:italiansEndTurn"/>
       <option name="uses" value="1"/>	
     </attachment>
+    <attachment name="conditionAmericans_Lose_US22" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="directOwnershipTerritories" value="US22" count="0"/>
+      <option name="invert" value="true"/>
+    </attachment>
+    <attachment name="triggerAttachment_Americans_Lose_US22" attachTo="Americans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAmericans_Lose_US22"/>	
+	  <option name="resource" value="PUs"/>
+	  <option name="resourceCount" value="-5"/>
+	  <option name="when" value="after:germansEndTurn"/>
+      <option name="when" value="after:japaneseEndTurn"/>
+      <option name="when" value="after:italiansEndTurn"/>
+      <option name="uses" value="1"/>	
+    </attachment>	
     <attachment name="conditionChinese_Lose_C2" attachTo="Chinese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="directOwnershipTerritories" value="C2" count="0"/>
       <option name="invert" value="true"/>
@@ -4916,157 +4929,713 @@
 
     <!-- Cities Captured Conditions & Triggers   This triggers the loss of the fake capitals when a power loses all of their cities.  This will cause them to be unable to make purchases or collect income.-->
     <attachment name="conditionAttachment_Germans_Zero_Cities" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
+      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
       <option name="invert" value="true"/>
     </attachment>
     <attachment name="conditionAttachment_Germans_Have_A_City" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
+      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
     </attachment>
     <attachment name="triggerAttachment_Germans_Zero_Cities" attachTo="Germans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_Germans_Zero_Cities"/>
       <option name="changeOwnership" value="GCap:Germans:Independent_Neutral:false"/>
-	  <option name="when" value="after:germansPolitics"/>
-	  <option name="when" value="after:germansBattle"/>	  
+	  <option name="when" value="after:germansPurchase"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
     </attachment>
     <attachment name="triggerAttachment_Germans_Have_A_City" attachTo="Germans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_Germans_Have_A_City"/>
       <option name="changeOwnership" value="GCap:Independent_Neutral:Germans:false"/>
-	  <option name="when" value="after:germansPolitics"/>  
+	  <option name="when" value="after:germansPurchase"/>  
 	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
     </attachment>	
     <attachment name="conditionAttachment_Russians_Zero_Cities" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
+      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
       <option name="invert" value="true"/>
     </attachment>
     <attachment name="conditionAttachment_Russians_Have_A_City" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
+      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
     </attachment>
     <attachment name="triggerAttachment_Russians_Zero_Cities" attachTo="Russians" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_Russians_Zero_Cities"/>
       <option name="changeOwnership" value="RCap:Russians:Independent_Neutral:false"/>
-	  <option name="when" value="after:russiansPolitics"/> 
-	  <option name="when" value="after:russiansBattle"/> 	  
+	  <option name="when" value="after:russiansPurchase"/> 
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/> 	  
     </attachment>
     <attachment name="triggerAttachment_Russians_Have_A_City" attachTo="Russians" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_Russians_Have_A_City"/>
       <option name="changeOwnership" value="RCap:Independent_Neutral:Russians:false"/>
-	  <option name="when" value="after:russiansPolitics"/>
-	  <option name="when" value="after:russiansBattle"/>	  
+	  <option name="when" value="after:russiansPurchase"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>	  
     </attachment>
     <attachment name="conditionAttachment_Japanese_Zero_Cities" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
+      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
       <option name="invert" value="true"/>
     </attachment>
     <attachment name="conditionAttachment_Japanese_Have_A_City" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
+      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
     </attachment>
     <attachment name="triggerAttachment_Japanese_Zero_Cities" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_Japanese_Zero_Cities"/>
       <option name="changeOwnership" value="JCap:Japanese:Independent_Neutral:false"/>
-	  <option name="when" value="after:japanesePolitics"/>	
-	  <option name="when" value="after:japaneseBattle"/>	  
+	  <option name="when" value="after:japanesePurchase"/>	
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>	  
     </attachment>
     <attachment name="triggerAttachment_Japanese_Have_A_City" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_Japanese_Have_A_City"/>
       <option name="changeOwnership" value="JCap:Independent_Neutral:Japanese:false"/>
-	  <option name="when" value="after:japanesePolitics"/>
-	  <option name="when" value="after:japaneseBattle"/>	  
+	  <option name="when" value="after:japanesePurchase"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>	  
     </attachment>	
     <attachment name="conditionAttachment_Americans_Zero_Cities" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
+      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
       <option name="invert" value="true"/>
     </attachment>
     <attachment name="conditionAttachment_Americans_Have_A_City" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
+      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
     </attachment>
     <attachment name="triggerAttachment_Americans_Zero_Cities" attachTo="Americans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_Americans_Zero_Cities"/>
       <option name="changeOwnership" value="USCap:Americans:Independent_Neutral:false"/>
-	  <option name="when" value="after:americansPolitics"/>	
-	  <option name="when" value="after:americansBattle"/>  	  
+	  <option name="when" value="after:americansPurchase"/>	
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>  	  
     </attachment>
     <attachment name="triggerAttachment_Americans_Have_A_City" attachTo="Americans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_Americans_Have_A_City"/>
       <option name="changeOwnership" value="USCap:Independent_Neutral:Americans:false"/>
-	  <option name="when" value="after:americansPolitics"/>
-	  <option name="when" value="after:americansBattle"/>	  
+	  <option name="when" value="after:americansPurchase"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>	  
     </attachment>
     <attachment name="conditionAttachment_British_Zero_Cities" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
+      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
       <option name="invert" value="true"/>
     </attachment>
     <attachment name="conditionAttachment_British_Have_A_City" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
+      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
     </attachment>
     <attachment name="triggerAttachment_British_Zero_Cities" attachTo="British" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_British_Zero_Cities"/>
       <option name="changeOwnership" value="UKCap:British:Independent_Neutral:false"/>
-	  <option name="when" value="after:britishPolitics"/>
+	  <option name="when" value="after:britishPurchase"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
 	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
     </attachment>
     <attachment name="triggerAttachment_British_Have_A_City" attachTo="British" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_British_Have_A_City"/>
       <option name="changeOwnership" value="UKCap:Independent_Neutral:British:false"/>
-	  <option name="when" value="after:britishPolitics"/>
+	  <option name="when" value="after:britishPurchase"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
 	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
     </attachment>
 	    <attachment name="conditionAttachment_Italians_Zero_Cities" attachTo="Italians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
+      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
       <option name="invert" value="true"/>
     </attachment>
     <attachment name="conditionAttachment_Italians_Have_A_City" attachTo="Italians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
+      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
     </attachment>
     <attachment name="triggerAttachment_Italians_Zero_Cities" attachTo="Italians" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_Italians_Zero_Cities"/>
       <option name="changeOwnership" value="ICap:Italians:Independent_Neutral:false"/>
-	  <option name="when" value="after:italiansPolitics"/>
+	  <option name="when" value="after:italiansPurchase"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
 	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
     </attachment>
     <attachment name="triggerAttachment_Italians_Have_A_City" attachTo="Italians" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_Italians_Have_A_City"/>
       <option name="changeOwnership" value="ICap:Independent_Neutral:Italians:false"/>
-	  <option name="when" value="after:italiansPolitics"/>
+	  <option name="when" value="after:italiansPurchase"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
 	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
     </attachment>
 	<attachment name="conditionAttachment_ANZAC_Zero_Cities" attachTo="ANZAC" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
+      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
       <option name="invert" value="true"/>
     </attachment>
     <attachment name="conditionAttachment_ANZAC_Have_A_City" attachTo="ANZAC" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
+      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
     </attachment>
     <attachment name="triggerAttachment_ANZAC_Zero_Cities" attachTo="ANZAC" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_ANZAC_Zero_Cities"/>
       <option name="changeOwnership" value="ACap:ANZAC:Independent_Neutral:false"/>
-	  <option name="when" value="after:anzacPolitics"/>	 
+	  <option name="when" value="after:anzacPurchase"/>	 
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
 	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
     </attachment>
     <attachment name="triggerAttachment_ANZAC_Have_A_City" attachTo="ANZAC" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_ANZAC_Have_A_City"/>
       <option name="changeOwnership" value="ACap:Independent_Neutral:ANZAC:false"/>
-	  <option name="when" value="after:anzacPolitics"/>
+	  <option name="when" value="after:anzacPurchase"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
 	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
     </attachment>
     <attachment name="conditionAttachment_French_Zero_Cities" attachTo="French" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
+      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
       <option name="invert" value="true"/>
     </attachment>
     <attachment name="conditionAttachment_French_Have_A_City" attachTo="French" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
+      <option name="directOwnershipTerritories" value="G5:G15:R4:R16:R21:R26:J6:J9:J14:US5:US11:US13:US22:C2:UK4:UK10:UK19:UK27:I1:A4:F3:F13:NL11" count="1"/>
     </attachment>
     <attachment name="triggerAttachment_French_Zero_Cities" attachTo="French" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_French_Zero_Cities"/>
       <option name="changeOwnership" value="FCap:French:Independent_Neutral:false"/>
-	  <option name="when" value="after:frenchPolitics"/>
+	  <option name="when" value="before:frenchPurchase"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
 	  <option name="when" value="after:frenchBattle"/>
     </attachment>
     <attachment name="triggerAttachment_French_Have_A_City" attachTo="French" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-      <option name="conditions" value="conditionAttachment_French_Have_A_City"/>
+      <option name="conditions" value="conditionAttachment_French_Have_A_City"/> 
       <option name="changeOwnership" value="FCap:Independent_Neutral:French:false"/>
-	  <option name="when" value="after:frenchPolitics"/>
+	  <option name="when" value="before:frenchPurchase"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+
+<!-- Trigers to revert control of cities to original owner, necessary if a power has lost all cities and an ally liberates the city -->
+    <attachment name="conditionAttachment_G5_Allied_Owned1" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="G5" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_G5_Allied_Owned2" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="directOwnershipTerritories" value="G5" count="1"/>
+      <option name="invert" value="true"/>
+    </attachment>
+	<attachment name="triggerAttachment_G5_Revert" attachTo="Germans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_G5_Allied_Owned1:conditionAttachment_G5_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>
+      <option name="changeOwnership" value="G5:any:Germans:false"/>
+	  <option name="when" value="after:germansPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_G15_Allied_Owned1" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="G15" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_G15_Allied_Owned2" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="G15" count="1"/>
+      <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_G15_Revert" attachTo="Germans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_G15_Allied_Owned1:conditionAttachment_G15_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>	  
+      <option name="changeOwnership" value="G15:any:Germans:false"/>
+	  <option name="when" value="after:germansPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_R4_Allied_Owned1" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="R4" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_R4_Allied_Owned2" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="R4" count="1"/>
+      <option name="invert" value="true"/>	  
+    </attachment>	
+	<attachment name="triggerAttachment_R4_Revert" attachTo="Russians" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_R4_Allied_Owned1:conditionAttachment_R4_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>	  
+      <option name="changeOwnership" value="R4:any:Russians:false"/>
+	  <option name="when" value="after:russiansPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_R16_Allied_Owned1" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="R16" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_R16_Allied_Owned2" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="directOwnershipTerritories" value="R16" count="1"/>	
+      <option name="invert" value="true"/>	  
+    </attachment>	
+	<attachment name="triggerAttachment_R16_Revert" attachTo="Russians" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_R16_Allied_Owned1:conditionAttachment_R16_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>
+      <option name="changeOwnership" value="R16:any:Russians:false"/>
+	  <option name="when" value="after:russiansPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_R21_Allied_Owned1" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="R21" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_R21_Allied_Owned2" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="R21" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_R21_Revert" attachTo="Russians" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_R21_Allied_Owned1:conditionAttachment_R21_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>
+      <option name="changeOwnership" value="R21:any:Russians:false"/>
+	  <option name="when" value="after:russiansPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_R26_Allied_Owned1" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="R26" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_R26_Allied_Owned2" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="R26" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_R26_Revert" attachTo="Russians" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_R26_Allied_Owned1:conditionAttachment_R26_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/> 
+      <option name="changeOwnership" value="R26:any:Russians:false"/>
+	  <option name="when" value="after:russiansPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:chineseBattle"/>	  
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_J6_Allied_Owned1" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="J6" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_J6_Allied_Owned2" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="J6" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_J6_Revert" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_J6_Allied_Owned1:conditionAttachment_J6_Allied_Owned2"/>
+      <option name="conditionType" value="AND"/>		  
+      <option name="changeOwnership" value="J6:any:Japanese:false"/>
+	  <option name="when" value="after:japanesePolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_J9_Allied_Owned1" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="J9" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_J9_Allied_Owned2" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="J9" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_J9_Revert" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_J9_Allied_Owned1:conditionAttachment_J9_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>	  
+      <option name="changeOwnership" value="J9:any:Japanese:false"/>
+	  <option name="when" value="after:japanesePolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_J14_Allied_Owned1" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="J14" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_J14_Allied_Owned2" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="J14" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_J14_Revert" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_J14_Allied_Owned1:conditionAttachment_J14_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>
+      <option name="changeOwnership" value="J14:any:Japanese:false"/>
+	  <option name="when" value="after:japanesePolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_US5_Allied_Owned1" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="US5" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_US5_Allied_Owned2" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="US5" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_US5_Revert" attachTo="Americans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_US5_Allied_Owned1:conditionAttachment_US5_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>	  
+      <option name="changeOwnership" value="US5:any:Americans:false"/>
+	  <option name="when" value="after:americansPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_US11_Allied_Owned1" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="US11" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_US11_Allied_Owned2" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="US11" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_US11_Revert" attachTo="Americans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_US11_Allied_Owned1:conditionAttachment_US11_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>
+      <option name="changeOwnership" value="US11:any:Americans:false"/>
+	  <option name="when" value="after:americansPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_US13_Allied_Owned1" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="US13" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_US13_Allied_Owned2" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="US13" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_US13_Revert" attachTo="Americans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_US13_Allied_Owned1:conditionAttachment_US13_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>	  
+      <option name="changeOwnership" value="US13:any:Americans:false"/>
+	  <option name="when" value="after:americansPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
 	  <option name="when" value="after:frenchBattle"/>
     </attachment>	
+    <attachment name="conditionAttachment_US22_Allied_Owned1" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="US22" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_US22_Allied_Owned2" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="US22" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_US22_Revert" attachTo="Americans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_US22_Allied_Owned1:conditionAttachment_US22_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>
+      <option name="changeOwnership" value="US22:any:Americans:false"/>
+	  <option name="when" value="after:americansPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>	
+    <attachment name="conditionAttachment_UK4_Allied_Owned1" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="UK4" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_UK4_Allied_Owned2" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="UK4" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_UK4_Revert" attachTo="British" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_UK4_Allied_Owned1:conditionAttachment_UK4_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>	  
+      <option name="changeOwnership" value="UK4:any:British:false"/>
+	  <option name="when" value="after:britishPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_UK10_Allied_Owned1" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="UK10" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_UK10_Allied_Owned2" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="UK10" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_UK10_Revert" attachTo="British" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_UK10_Allied_Owned1:conditionAttachment_UK10_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>
+      <option name="changeOwnership" value="UK10:any:British:false"/>
+	  <option name="when" value="after:britishPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_UK19_Allied_Owned1" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="UK19" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_UK19_Allied_Owned2" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="UK19" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_UK19_Revert" attachTo="British" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_UK19_Allied_Owned1:conditionAttachment_UK19_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>
+      <option name="changeOwnership" value="UK19:any:British:false"/>
+	  <option name="when" value="after:britishPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_UK27_Allied_Owned1" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="UK27" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_UK27_Allied_Owned2" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="UK27" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_UK27_Revert" attachTo="British" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_UK27_Allied_Owned1:conditionAttachment_UK27_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>
+      <option name="changeOwnership" value="UK27:any:British:false"/>
+	  <option name="when" value="after:britishPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_I1_Allied_Owned1" attachTo="Italians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="I1" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_I1_Allied_Owned2" attachTo="Italians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="I1" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_I1_Revert" attachTo="Italians" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_I1_Allied_Owned1:conditionAttachment_I1_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>
+      <option name="changeOwnership" value="I1:any:Italians:false"/>
+	  <option name="when" value="after:italiansPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_A4_Allied_Owned1" attachTo="ANZAC" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="A4" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_A4_Allied_Owned2" attachTo="ANZAC" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="A4" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_A4_Revert" attachTo="ANZAC" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_A4_Allied_Owned1:conditionAttachment_A4_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>	  
+      <option name="changeOwnership" value="A4:any:ANZAC:false"/>
+	  <option name="when" value="after:anzacPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
+    <attachment name="conditionAttachment_F3_Allied_Owned1" attachTo="French" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="F3" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_F3_Allied_Owned2" attachTo="French" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="F3" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_F3_Revert" attachTo="French" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_F3_Allied_Owned1:conditionAttachment_F3_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>
+      <option name="changeOwnership" value="F3:any:French:false"/>
+	  <option name="when" value="after:frenchPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>	
+    <attachment name="conditionAttachment_F13_Allied_Owned1" attachTo="French" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="F13" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachment_F13_Allied_Owned2" attachTo="French" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+	  <option name="directOwnershipTerritories" value="F13" count="1"/>
+	  <option name="invert" value="true"/>
+    </attachment>	
+	<attachment name="triggerAttachment_F13_Revert" attachTo="French" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_F13_Allied_Owned1:conditionAttachment_F13_Allied_Owned2"/>
+	  <option name="conditionType" value="AND"/>	  
+      <option name="changeOwnership" value="F13:any:French:false"/>
+	  <option name="when" value="after:frenchPolitics"/>
+	  <option name="when" value="after:germansBattle"/>
+	  <option name="when" value="after:russiansBattle"/>
+	  <option name="when" value="after:japaneseBattle"/>
+	  <option name="when" value="after:americansBattle"/>
+	  <option name="when" value="after:britishBattle"/>
+	  <option name="when" value="after:italiansBattle"/>
+	  <option name="when" value="after:anzacBattle"/>
+	  <option name="when" value="after:frenchBattle"/>
+    </attachment>
 
     <!-- Chinese Triggers -->
     <attachment name="triggerAttachment_Chinese_Artillery_AAGun_Supplies" attachTo="Chinese" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
@@ -6397,6 +6966,7 @@
   	  <unitPlacement unitType="city" territory="US5" quantity="1" owner="Americans"/>
   	  <unitPlacement unitType="city" territory="US11" quantity="1" owner="Americans"/>
   	  <unitPlacement unitType="city" territory="US13" quantity="1" owner="Americans"/>
+	  <unitPlacement unitType="city" territory="US22" quantity="1" owner="Americans"/>
   	  <unitPlacement unitType="city" territory="C2" quantity="1" owner="Chinese"/>
   	  <unitPlacement unitType="city" territory="UK4" quantity="1" owner="British"/>
   	  <unitPlacement unitType="city" territory="UK10" quantity="1" owner="British"/>
@@ -6954,7 +7524,7 @@
     <property name="Neutral Flyover Allowed" value="false" editable="false">
       <boolean/>
     </property>
-    <property name="mapName" value="g40_alt_universe" editable="false"/>
+    <property name="mapName" value="g40_alt_universe_work" editable="false"/>
     <property name="notes">
       <value><![CDATA[  
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><u><span style='font-size:19px;font-family:"Arial Black",sans-serif;'>G40 Alt-Universe Rules (Version Beta-1.1)</span></u></strong></p>
