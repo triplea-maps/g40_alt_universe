@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-  <info name="G40 Alt Universe" version="2.0.3"/>
+  <info name="G40 Alt Universe Work" version="2.0.4"/>
+
   <loader javaClass="games.strategy.triplea.TripleA"/>
   <triplea minimumVersion="1.8"/>
   <diceSides value="6"/>
   <map>
 
+    <!-- Latest Update Jan 24, 2021 v2.0.4 - Updated units for balance, increased US Wartime Production NO to 10IPCs, other minor fixes --> 
 
     <!-- Territory Definitions -->
     <territory name="1 Sea Zone" water="true"/>
@@ -1634,6 +1636,10 @@
       <cost resource="PUs" quantity="1"/>
       <result resourceOrUnit="factory_upgrade" quantity="1"/>
     </repairRule>
+    <repairRule name="repairFactory_Minor_Plundered">
+      <cost resource="PUs" quantity="1"/>
+      <result resourceOrUnit="factory_minor_plundered" quantity="1"/>
+    </repairRule>	
     <repairRule name="repairAirfield">
       <cost resource="PUs" quantity="1"/>
       <result resourceOrUnit="airfield" quantity="1"/>
@@ -1646,6 +1652,7 @@
       <repairRules name="repairFactory_Minor"/>
       <repairRules name="repairFactory_Major"/>
       <repairRules name="repairFactory_Upgrade"/>
+      <repairRules name="repairFactory_Minor_Plundered"/>	  
       <repairRules name="repairAirfield"/>
       <repairRules name="repairHarbour"/>
     </repairFrontier>
@@ -3508,7 +3515,7 @@
       <option name="atWarPlayers" value="Germans:Italians:Japanese" count="1"/> 
     </attachment>
 	<attachment name="objectiveAttachment_Americans_3_War_Time_Production" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-	  <option name="objectiveValue" value="5"/>
+	  <option name="objectiveValue" value="10"/>
       <option name="atWarPlayers" value="Germans:Italians:Japanese" count="1"/> 
     </attachment>
 	<attachment name="objectiveAttachment_Americans_4_Boots_On_The_Ground" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -3598,7 +3605,7 @@
     </attachment>
     <attachment name="objectiveAttachment_ANZAC_2_Shipping_Lanes" attachTo="ANZAC" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="3"/>
-      <option name="enemySurfaceExclusionTerritories" value="33 Sea Zone:34 Sea Zone:41 Sea Zone:42 Sea Zone:43 Sea Zone:48 Sea Zone:49 Sea Zone:50 Sea Zone:51 Sea Zone:52 Sea Zone:53 Sea Zone:62 Sea Zone:63 Sea Zone:64 Sea Zone:65 Sea Zone" count="15"/>
+      <option name="enemyExclusionTerritories" value="33 Sea Zone:34 Sea Zone:41 Sea Zone:42 Sea Zone:43 Sea Zone:48 Sea Zone:49 Sea Zone:50 Sea Zone:51 Sea Zone:52 Sea Zone:53 Sea Zone:62 Sea Zone:63 Sea Zone:64 Sea Zone:65 Sea Zone" count="15"/>
       <option name="unitPresence" value="battleship:carrier:submarine:destroyer:cruiser" count="0"/>
       <option name="atWarPlayers" value="Germans:Italians:Japanese" count="3"/>	  
     </attachment>
@@ -6650,13 +6657,14 @@
       <unitPlacement unitType="fighter" territory="R4" quantity="2" owner="Russians"/>
       <unitPlacement unitType="tactical_bomber" territory="R4" quantity="1" owner="Russians"/>
       <unitPlacement unitType="infantry" territory="R6" quantity="2" owner="Russians"/>
-      <unitPlacement unitType="infantry" territory="R7" quantity="1" owner="Russians"/>
+      <unitPlacement unitType="infantry" territory="R7" quantity="2" owner="Russians"/>
       <unitPlacement unitType="infantry" territory="R8" quantity="1" owner="Russians"/>
       <unitPlacement unitType="infantry" territory="R9" quantity="1" owner="Russians"/>
       <unitPlacement unitType="infantry" territory="R10" quantity="6" owner="Russians"/>
       <unitPlacement unitType="artillery" territory="R10" quantity="1" owner="Russians"/>
       <unitPlacement unitType="mech_infantry" territory="R10" quantity="1" owner="Russians"/>
       <unitPlacement unitType="armour" territory="R10" quantity="1" owner="Russians"/>
+	  <unitPlacement unitType="infantry" territory="R11" quantity="1" owner="Russians"/>
       <unitPlacement unitType="mech_infantry" territory="R12" quantity="2" owner="Russians"/>
       <unitPlacement unitType="infantry" territory="R13" quantity="1" owner="Russians"/>
       <unitPlacement unitType="aaGun" territory="R16" quantity="1" owner="Russians"/>
@@ -6668,7 +6676,7 @@
       <unitPlacement unitType="infantry" territory="R21" quantity="2" owner="Russians"/>
       <unitPlacement unitType="artillery" territory="R21" quantity="1" owner="Russians"/>
       <unitPlacement unitType="mech_infantry" territory="R21" quantity="1" owner="Russians"/>
-      <unitPlacement unitType="infantry" territory="R22" quantity="1" owner="Russians"/>
+      <unitPlacement unitType="infantry" territory="R22" quantity="2" owner="Russians"/>
       <unitPlacement unitType="infantry" territory="R23" quantity="2" owner="Russians"/>
       <unitPlacement unitType="infantry" territory="R24" quantity="2" owner="Russians"/>
       <unitPlacement unitType="aaGun" territory="R26" quantity="1" owner="Russians"/>
@@ -6677,6 +6685,7 @@
       <unitPlacement unitType="mech_infantry" territory="R26" quantity="1" owner="Russians"/>
       <unitPlacement unitType="fighter" territory="R26" quantity="1" owner="Russians"/>
       <unitPlacement unitType="tactical_bomber" territory="R26" quantity="1" owner="Russians"/>
+      <unitPlacement unitType="infantry" territory="R27" quantity="1" owner="Russians"/>	  
       <unitPlacement unitType="infantry" territory="R28" quantity="2" owner="Russians"/>
       <unitPlacement unitType="aaGun" territory="R29" quantity="1" owner="Russians"/>
       <unitPlacement unitType="infantry" territory="R29" quantity="4" owner="Russians"/>
@@ -6728,6 +6737,8 @@
       <unitPlacement unitType="fighter" territory="J14" quantity="1" owner="Japanese"/>
       <unitPlacement unitType="tactical_bomber" territory="J14" quantity="1" owner="Japanese"/>
       <unitPlacement unitType="infantry" territory="J15" quantity="1" owner="Japanese"/>
+      <unitPlacement unitType="mech_infantry" territory="US1" quantity="1" owner="Americans"/>
+      <unitPlacement unitType="infantry" territory="US3" quantity="1" owner="Americans"/>	  
       <unitPlacement unitType="aaGun" territory="US5" quantity="1" owner="Americans"/>
       <unitPlacement unitType="infantry" territory="US5" quantity="1" owner="Americans"/>
       <unitPlacement unitType="artillery" territory="US5" quantity="1" owner="Americans"/>
@@ -6737,6 +6748,7 @@
 	  <unitPlacement unitType="bomber_payload" territory="US5" quantity="1" owner="Americans"/>
       <unitPlacement unitType="infantry" territory="US6" quantity="1" owner="Americans"/>
       <unitPlacement unitType="infantry" territory="US7" quantity="1" owner="Americans"/>
+      <unitPlacement unitType="mech_infantry" territory="US7" quantity="1" owner="Americans"/>	  
       <unitPlacement unitType="aaGun" territory="US11" quantity="1" owner="Americans"/>
       <unitPlacement unitType="infantry" territory="US11" quantity="1" owner="Americans"/>
       <unitPlacement unitType="artillery" territory="US11" quantity="1" owner="Americans"/>
@@ -6760,6 +6772,7 @@
       <unitPlacement unitType="armour" territory="US22" quantity="1" owner="Americans"/>
       <unitPlacement unitType="fighter" territory="US22" quantity="2" owner="Americans"/>
       <unitPlacement unitType="tactical_bomber" territory="US22" quantity="1" owner="Americans"/>
+      <unitPlacement unitType="infantryC" territory="C1" quantity="2" owner="Chinese"/>	  
       <unitPlacement unitType="infantryC" territory="C2" quantity="2" owner="Chinese"/>
       <unitPlacement unitType="infantryC" territory="C3" quantity="2" owner="Chinese"/>
       <unitPlacement unitType="infantryC" territory="C4" quantity="6" owner="Chinese"/>
@@ -6782,6 +6795,7 @@
       <unitPlacement unitType="fighter" territory="UK2" quantity="1" owner="British"/>
       <unitPlacement unitType="infantry" territory="UK3" quantity="1" owner="British"/>
       <unitPlacement unitType="mech_infantry" territory="UK3" quantity="1" owner="British"/>
+      <unitPlacement unitType="aaGun" territory="UK3" quantity="1" owner="British"/>	  	  
       <unitPlacement unitType="aaGun" territory="UK4" quantity="2" owner="British"/>
       <unitPlacement unitType="infantry" territory="UK4" quantity="3" owner="British"/>
       <unitPlacement unitType="fighter" territory="UK4" quantity="2" owner="British"/>
@@ -6809,6 +6823,7 @@
       <unitPlacement unitType="infantry" territory="UK17" quantity="2" owner="British"/>
       <unitPlacement unitType="infantry" territory="UK19" quantity="2" owner="British"/>
       <unitPlacement unitType="artillery" territory="UK19" quantity="1" owner="British"/>
+      <unitPlacement unitType="aaGun" territory="UK19" quantity="1" owner="British"/>	  
       <unitPlacement unitType="fighter" territory="UK20" quantity="1" owner="British"/>
       <unitPlacement unitType="infantry" territory="UK21" quantity="4" owner="Italians"/>
       <unitPlacement unitType="artillery" territory="UK21" quantity="1" owner="Italians"/>
@@ -6884,7 +6899,7 @@
       <unitPlacement unitType="infantry" territory="F9" quantity="1" owner="French"/>
       <unitPlacement unitType="infantry" territory="F10" quantity="1" owner="French"/>
       <unitPlacement unitType="aaGun" territory="F13" quantity="1" owner="French"/>
-      <unitPlacement unitType="infantry" territory="F13" quantity="1" owner="French"/>
+      <unitPlacement unitType="infantry" territory="F13" quantity="2" owner="French"/>
       <unitPlacement unitType="artillery" territory="F13" quantity="1" owner="French"/>
       <unitPlacement unitType="fighter" territory="F13" quantity="1" owner="French"/>
       <unitPlacement unitType="mech_infantry" territory="F16" quantity="1" owner="French"/>
@@ -7052,6 +7067,7 @@
       <unitPlacement unitType="airfield" territory="F13" quantity="1" owner="French"/>
 
       <unitPlacement unitType="cruiser" territory="1 Sea Zone" quantity="1" owner="Americans"/>
+      <unitPlacement unitType="transport" territory="1 Sea Zone" quantity="1" owner="Americans"/>	  
       <unitPlacement unitType="submarine" territory="6 Sea Zone" quantity="1" owner="Germans"/>
       <unitPlacement unitType="carrier" territory="15 Sea Zone" quantity="1" owner="Americans"/>
       <unitPlacement unitType="battleship" territory="15 Sea Zone" quantity="1" owner="Americans"/>
@@ -7059,6 +7075,7 @@
       <unitPlacement unitType="tactical_bomber" territory="15 Sea Zone" quantity="1" owner="Americans"/>
       <unitPlacement unitType="transport" territory="16 Sea Zone" quantity="1" owner="Americans"/>
       <unitPlacement unitType="destroyer" territory="16 Sea Zone" quantity="1" owner="Americans"/>
+      <unitPlacement unitType="submarine" territory="16 Sea Zone" quantity="1" owner="Americans"/>	  
       <unitPlacement unitType="destroyer" territory="22 Sea Zone" quantity="1" owner="British"/>
       <unitPlacement unitType="cruiser" territory="22 Sea Zone" quantity="1" owner="British"/>
       <unitPlacement unitType="battleship" territory="22 Sea Zone" quantity="1" owner="British"/>
@@ -7524,7 +7541,7 @@
     <property name="Neutral Flyover Allowed" value="false" editable="false">
       <boolean/>
     </property>
-    <property name="mapName" value="g40_alt_universe" editable="false"/>
+    <property name="mapName" value="g40_alt_universe_work" editable="false"/>
     <property name="notes">
       <value><![CDATA[  
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><u><span style='font-size:19px;font-family:"Arial Black",sans-serif;'>G40 Alt-Universe Rules (Version Beta-1.1)</span></u></strong></p>
@@ -7609,6 +7626,8 @@
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong>Allied nations must be at war with Japan for their units to enter Chinese territories.</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
+<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong>As in the base game, China is not eligible for convoy disruptions.</strong></p>
+<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong><u>United Kingdom - 45</u></strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>The UK begins the game at war with Italy. &nbsp;The UK has no political restrictions and may declare war on any of the Axis powers at any time. &nbsp;Note that Italy owns UK 21 at the beginning of the game.</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
@@ -7673,7 +7692,7 @@
 <ul style="list-style-type: undefined;margin-left:26px;">
     <li><strong><span style="font-size: 15px; font-family: Calibri, sans-serif;">5 IPCs if the US controls US2, US3 and US22 while at war &ndash; Island Influence</span></strong></li>
     <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>10 IPCS if the US controls all of its original mainland territories while at war &ndash; National Pride</strong></span></span></li>
-    <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>5 IPCs if the US is at war &ndash; War Time Production</strong></span></span></li>
+    <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>10 IPCs if the US is at war &ndash; War Time Production</strong></span></span></li>
     <li><strong><span style="font-size: 15px; font-family: Calibri, sans-serif;">5 IPCs if the US controls at least one original German, Italian or Japanese non-island territory (see Industrial Complex Placement section for what constitutes a non-island territory) &ndash; Boots on the Ground</span></strong></li>
 </ul>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>China</strong></p>
@@ -7829,7 +7848,7 @@
 </div>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color: rgb(44, 130, 201);"><strong>In order to make Bombers a single round attack unit, it was necessary to add a companion unit called a Bomber Payload which will re-spawn at the end of each Power&rsquo;s turn. The Payload unit allows the Bomber to fire in the first round only.</strong></span></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color: rgb(44, 130, 201);"><br></span></p>
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color: rgb(44, 130, 201);"><strong>&nbsp;</strong><strong>When using bombers it is best practice to always keep the Payload with the bomber. &nbsp;The Payload is necessary for the Bomber to roll its attack during combat. &nbsp;It&rsquo;s not necessary to bring Payloads on strategic bombing raids, but shouldn&rsquo;t have any effect if they are present. &nbsp;Payloads also have no effect when defending.</strong></span></p>
+<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color: rgb(44, 130, 201);"><strong>&nbsp;</strong><strong>When using bombers it is best practice to keep the Payload with the bomber for regular battles, but to ignore the Payload for bombing raids. &nbsp;The Payload is necessary for the Bomber to roll its attack during regular combat. &nbsp;The Payload will disallow the user to select the battle as a stretegic bombing raid if it is present. &nbsp;Payloads have no effect when defending.</strong></span></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color: rgb(44, 130, 201);"><br></span></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color: rgb(44, 130, 201);"><strong>&nbsp;</strong><strong>Bomber Operation:</strong></span></p>
 <ul style="list-style-type: undefined;margin-left:26px;">
@@ -7849,7 +7868,8 @@
     <li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">Sea Zone 76 movement rules will not be enforced by the game engine.</span></span></li>
     <li><span style="color: rgb(226, 80, 65);"><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;">Win condition will display even though it may not have been held for a full round, however users can elect to continue playing after the notification.</span></span></span></li>
     <li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">Bomber casualties&hellip; see above in blue.</span></span></li>
-	<li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">If France reaches its 3rd level of escalation, the Allies should be able to move into/through French territories on non-combat move only, but the engine will not enforce this.</span></span></li>
+	<li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">If France is in its 1st level of escalation, it is permitted to move no more than 3 units during the non-combat move phase, but the engine will not enforce this.</span></span></li>
+	<li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">If France reaches its 3rd level of escalation, the Allies should be able to move into/through French territories on non-combat move only, but the engine will not enforce this.</span></span></li>	
 </ul>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color: rgb(226, 80, 65);"> <strong>Workaround with Edit Mode:</strong></span></p>
 <ul style="list-style-type: undefined;margin-left:26px;">
