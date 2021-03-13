@@ -1,14 +1,15 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-  <info name="G40 Alt Universe" version="2.0.4"/>
+  <info name="G40 Alt Universe Work" version="2.0.5"/>
 
   <loader javaClass="games.strategy.triplea.TripleA"/>
   <triplea minimumVersion="1.8"/>
   <diceSides value="6"/>
   <map>
 
-    <!-- Latest Update Jan 24, 2021 v2.0.4 - Updated units for balance, increased US Wartime Production NO to 10IPCs, other minor fixes --> 
+    <!-- Update March 13, 2021 v2.0.5 - Reverting Bombers to normal except for defense values, Changing Italy NO's as too strong, removing some Axis units and relocating others --> 
+    <!-- Update Jan 24, 2021 v2.0.4 - Updated units for balance, increased US Wartime Production NO to 10IPCs, other minor fixes --> 
 
     <!-- Territory Definitions -->
     <territory name="1 Sea Zone" water="true"/>
@@ -1374,7 +1375,7 @@
     <unit name="fighter"/>
     <unit name="tactical_bomber"/>
     <unit name="bomber"/>
-	<unit name="bomber_payload"/>
+	<!-- <unit name="bomber_payload"/> -->
 	<unit name="fake_unit"/>	
     <unit name="transport"/>
     <unit name="submarine"/>
@@ -1850,18 +1851,18 @@
     <attachment name="unitAttachment" attachTo="bomber" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="movement" value="6"/>
       <option name="isAir" value="true"/>
-      <option name="attack" value="0"/>
+      <option name="attack" value="4"/>
       <option name="defense" value="0"/>
       <option name="isStrategicBomber" value="true"/>
       <option name="transportCapacity" value="2"/>
       <option name="bombingMaxDieSides" value="6"/>
       <option name="bombingBonus" value="2"/>
       <option name="airAttack" value="1"/>
-	  <option name="offensiveAttackAA" value="1"/>  <!-- disables notification that units can't fight during bombing -->
-	  <option name="targetsAA" value="fake_unit"/> <!--disables notification that units can't fight during bombing, may need a differnt non-existent unit if payloads sit on the map -->
-	  <option name="createsUnitsList" value="1:bomber_payload"/> <!-- spawns bomber_payload unit which allows bombers to fire for 1 round, but enemies to fire back -->
+	  <!-- <option name="offensiveAttackAA" value="1"/>  disables notification that units can't fight during bombing -->
+	  <!-- <option name="targetsAA" value="fake_unit"/>  disables notification that units can't fight during bombing, may need a differnt non-existent unit if payloads sit on the map -->
+	  <!-- <option name="createsUnitsList" value="1:bomber_payload"/> spawns bomber_payload unit which allows bombers to fire for 1 round, but enemies to fire back -->
     </attachment>
-	<attachment name="unitAttachment" attachTo="bomber_payload" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+	<!-- <attachment name="unitAttachment" attachTo="bomber_payload" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="isAir" value="true"/>	
       <option name="movement" value="6"/>  
       <option name="attack" value="0"/>
@@ -1869,7 +1870,7 @@
 	  <option name="isSuicideOnAttack" value="true"/>
 	  <option name="isSuicideOnDefense" value="true"/>
       <option name="canEscort" value="true"/>
-    </attachment>
+    </attachment> -->
 	<attachment name="unitAttachment" attachTo="fake_unit" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType"> <!-- fake unit to disable units can't fight notification for bombers -->
       <option name="movement" value="0"/>
       <option name="attack" value="0"/>
@@ -2059,7 +2060,7 @@
       <option name="movement" value="0"/>
       <option name="givesMovement" value="1:fighter"/>
       <option name="givesMovement" value="1:bomber"/>
-	  <option name="givesMovement" value="1:bomber_payload"/>  <!-- this doesn't seem to do anything, seems like movement bonuses don't stack -->
+	  <!-- <option name="givesMovement" value="1:bomber_payload"/>  this doesn't seem to do anything, seems like movement bonuses don't stack -->
       <option name="givesMovement" value="1:tactical_bomber"/>
       <option name="isAAforBombingThisUnitOnly" value="true"/>
       <!--<option name="canBeGivenByTerritoryTo" value="British"/>-->
@@ -3360,7 +3361,7 @@
 
     <!-- Support Attachments -->
 
-    <attachment name="supportAttachmentBomber" attachTo="bomber_payload" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+    <!-- <attachment name="supportAttachmentBomber" attachTo="bomber_payload" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
       <option name="unitType" value="bomber"/>
       <option name="faction" value="allied"/>
       <option name="side" value="offence"/>
@@ -3369,7 +3370,7 @@
       <option name="number" value="1"/>
       <option name="bonusType" value="combined_arms"/>	  
       <option name="players" value="Germans:Russians:Japanese:Americans:Chinese:British:Italians:ANZAC:French:Independent_Neutral:Pro_Axis:Pro_Allies:Neutral_League"/>
-    </attachment>
+    </attachment> -->
 	
     <attachment name="supportAttachmentInfantryAndMechInf" attachTo="artillery" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
       <option name="unitType" value="infantry:mech_infantry"/>
@@ -3586,7 +3587,7 @@
       <option name="directOwnershipTerritories" value="R26:UK27:F13" count="each"/>
     </attachment>
 	<attachment name="objectiveAttachment_Italians_2_Southern_Wall" attachTo="Italians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="objectiveValue" value="5"/>
+      <option name="objectiveValue" value="3"/>
       <option name="alliedOwnershipTerritories" value="UK21:UK22:UK23:UK24:UK25:UK26" count="6"/>
     </attachment>
 	<attachment name="objectiveAttachment_Italians_3_Southern_Resources" attachTo="Italians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -3594,8 +3595,8 @@
       <option name="alliedOwnershipTerritories" value="UK30:NL10:NL11:NL12:NL13" count="5"/>
     </attachment>
 	<attachment name="objectiveAttachment_Italians_4_Amphibious_Ambitions" attachTo="Italians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="I7:PA14:UK30:UK31:PA15" count="3"/>
+      <option name="objectiveValue" value="3"/>
+      <option name="alliedOwnershipTerritories" value="UK20:PA14:UK30:UK31:PA15" count="3"/>
     </attachment>	
     <!-- ANZAC Objectives -->
 	<attachment name="objectiveAttachment_ANZAC_1_Island_Resources" attachTo="ANZAC" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -4413,6 +4414,7 @@
     </attachment>	
 
     <!-- Bomber Payload Triggers -->
+	<!-- 
 	<attachment name="conditionAttachmentRemoveBomberPayloadsGermans" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="rounds" value="1-+"/>
     </attachment>
@@ -4485,7 +4487,8 @@
       <option name="removeUnits" value="all:bomber_payload" count="1000"/>
       <option name="when" value="after:frenchBattle"/>
     </attachment>
-	    
+	-->	
+    
 	<!-- Triggers for removing city_captured -->
     <attachment name="conditionRemove_City_Captured" attachTo="Neutral_League" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="directPresenceTerritories" value="map" count="1"/>
@@ -6603,14 +6606,15 @@
       <unitPlacement unitType="artillery" territory="G5" quantity="2" owner="Germans"/>
       <unitPlacement unitType="mech_infantry" territory="G5" quantity="1" owner="Germans"/>
       <unitPlacement unitType="fighter" territory="G5" quantity="2" owner="Germans"/>
-      <unitPlacement unitType="tactical_bomber" territory="G5" quantity="1" owner="Germans"/>
-      <unitPlacement unitType="bomber" territory="G5" quantity="2" owner="Germans"/>
-      <unitPlacement unitType="bomber_payload" territory="G5" quantity="2" owner="Germans"/>	  
+      <unitPlacement unitType="tactical_bomber" territory="G5" quantity="2" owner="Germans"/>
+      <unitPlacement unitType="bomber" territory="G5" quantity="1" owner="Germans"/>
+      <!-- <unitPlacement unitType="bomber_payload" territory="G5" quantity="2" owner="Germans"/>	  -->
       <unitPlacement unitType="aaGun" territory="G6" quantity="1" owner="Germans"/>
       <unitPlacement unitType="infantry" territory="G6" quantity="6" owner="Germans"/>
       <unitPlacement unitType="artillery" territory="G6" quantity="2" owner="Germans"/>
       <unitPlacement unitType="mech_infantry" territory="G6" quantity="2" owner="Germans"/>
       <unitPlacement unitType="armour" territory="G6" quantity="3" owner="Germans"/>
+      <unitPlacement unitType="fighter" territory="G6" quantity="1" owner="Germans"/>	  
       <unitPlacement unitType="infantry" territory="G7" quantity="3" owner="Germans"/>
       <unitPlacement unitType="armour" territory="G7" quantity="1" owner="Germans"/>
       <unitPlacement unitType="infantry" territory="G8" quantity="6" owner="Germans"/>
@@ -6623,19 +6627,20 @@
       <unitPlacement unitType="infantry" territory="G13" quantity="3" owner="Germans"/>
       <unitPlacement unitType="artillery" territory="G13" quantity="1" owner="Germans"/>
       <unitPlacement unitType="mech_infantry" territory="G13" quantity="1" owner="Germans"/>
-      <unitPlacement unitType="fighter" territory="G13" quantity="3" owner="Germans"/>
-      <unitPlacement unitType="tactical_bomber" territory="G13" quantity="2" owner="Germans"/>
+      <unitPlacement unitType="fighter" territory="G13" quantity="1" owner="Germans"/>
+      <unitPlacement unitType="tactical_bomber" territory="G13" quantity="1" owner="Germans"/>
       <unitPlacement unitType="aaGun" territory="G15" quantity="2" owner="Germans"/>
-      <unitPlacement unitType="infantry" territory="G15" quantity="3" owner="Germans"/>
+      <unitPlacement unitType="infantry" territory="G15" quantity="2" owner="Germans"/>
       <unitPlacement unitType="artillery" territory="G15" quantity="2" owner="Germans"/>
       <unitPlacement unitType="fighter" territory="G15" quantity="1" owner="Germans"/>
       <unitPlacement unitType="tactical_bomber" territory="G15" quantity="1" owner="Germans"/>
       <unitPlacement unitType="bomber" territory="G15" quantity="1" owner="Germans"/>	  
-	  <unitPlacement unitType="bomber_payload" territory="G15" quantity="1" owner="Germans"/>
+	  <!-- <unitPlacement unitType="bomber_payload" territory="G15" quantity="1" owner="Germans"/> -->
       <unitPlacement unitType="infantry" territory="G16" quantity="4" owner="Germans"/>
       <unitPlacement unitType="infantry" territory="G17" quantity="3" owner="Germans"/>
       <unitPlacement unitType="artillery" territory="G17" quantity="1" owner="Germans"/>
       <unitPlacement unitType="armour" territory="G17" quantity="1" owner="Germans"/>
+      <unitPlacement unitType="fighter" territory="G17" quantity="1" owner="Germans"/>	  
       <unitPlacement unitType="infantry" territory="G18" quantity="1" owner="Germans"/>
       <unitPlacement unitType="mech_infantry" territory="G18" quantity="2" owner="Germans"/>
       <unitPlacement unitType="armour" territory="G18" quantity="1" owner="Germans"/>
@@ -6695,7 +6700,7 @@
       <unitPlacement unitType="infantry" territory="R32" quantity="4" owner="Russians"/>
       <unitPlacement unitType="infantry" territory="J1" quantity="3" owner="Japanese"/>
       <unitPlacement unitType="artillery" territory="J1" quantity="1" owner="Japanese"/>
-      <unitPlacement unitType="infantry" territory="J2" quantity="3" owner="Japanese"/>
+      <unitPlacement unitType="infantry" territory="J2" quantity="2" owner="Japanese"/>
       <unitPlacement unitType="artillery" territory="J2" quantity="1" owner="Japanese"/>
       <unitPlacement unitType="armour" territory="J3" quantity="1" owner="Japanese"/>
       <unitPlacement unitType="infantry" territory="J4" quantity="6" owner="Japanese"/>
@@ -6710,18 +6715,18 @@
       <unitPlacement unitType="fighter" territory="J6" quantity="2" owner="Japanese"/>
       <unitPlacement unitType="tactical_bomber" territory="J6" quantity="2" owner="Japanese"/>
       <unitPlacement unitType="bomber" territory="J6" quantity="1" owner="Japanese"/>
-	  <unitPlacement unitType="bomber_payload" territory="J6" quantity="1" owner="Japanese"/>
+	  <!-- <unitPlacement unitType="bomber_payload" territory="J6" quantity="1" owner="Japanese"/> -->
       <unitPlacement unitType="infantry" territory="J7" quantity="3" owner="Japanese"/>
       <unitPlacement unitType="artillery" territory="J7" quantity="1" owner="Japanese"/>
-      <unitPlacement unitType="infantry" territory="J8" quantity="3" owner="Japanese"/>
+      <unitPlacement unitType="infantry" territory="J8" quantity="1" owner="Japanese"/>
       <unitPlacement unitType="aaGun" territory="J9" quantity="1" owner="Japanese"/>
       <unitPlacement unitType="infantry" territory="J9" quantity="3" owner="Japanese"/>
-      <unitPlacement unitType="mech_infantry" territory="J9" quantity="2" owner="Japanese"/>
+      <unitPlacement unitType="mech_infantry" territory="J9" quantity="1" owner="Japanese"/>
       <unitPlacement unitType="armour" territory="J9" quantity="1" owner="Japanese"/>
       <unitPlacement unitType="fighter" territory="J9" quantity="2" owner="Japanese"/>
       <unitPlacement unitType="tactical_bomber" territory="J9" quantity="2" owner="Japanese"/>
       <unitPlacement unitType="bomber" territory="J9" quantity="1" owner="Japanese"/>  
-	  <unitPlacement unitType="bomber_payload" territory="J9" quantity="1" owner="Japanese"/>
+	  <!-- <unitPlacement unitType="bomber_payload" territory="J9" quantity="1" owner="Japanese"/> -->
       <unitPlacement unitType="aaGun" territory="J10" quantity="1" owner="Japanese"/>
       <unitPlacement unitType="infantry" territory="J10" quantity="1" owner="Japanese"/>
       <unitPlacement unitType="aaGun" territory="J11" quantity="1" owner="Japanese"/>
@@ -6737,6 +6742,7 @@
       <unitPlacement unitType="fighter" territory="J14" quantity="1" owner="Japanese"/>
       <unitPlacement unitType="tactical_bomber" territory="J14" quantity="1" owner="Japanese"/>
       <unitPlacement unitType="infantry" territory="J15" quantity="1" owner="Japanese"/>
+	  <unitPlacement unitType="mech_infantry" territory="J15" quantity="1" owner="Japanese"/>
       <unitPlacement unitType="mech_infantry" territory="US1" quantity="1" owner="Americans"/>
       <unitPlacement unitType="infantry" territory="US3" quantity="1" owner="Americans"/>	  
       <unitPlacement unitType="aaGun" territory="US5" quantity="1" owner="Americans"/>
@@ -6745,7 +6751,7 @@
       <unitPlacement unitType="mech_infantry" territory="US5" quantity="1" owner="Americans"/>
       <unitPlacement unitType="fighter" territory="US5" quantity="1" owner="Americans"/>
       <unitPlacement unitType="bomber" territory="US5" quantity="1" owner="Americans"/>
-	  <unitPlacement unitType="bomber_payload" territory="US5" quantity="1" owner="Americans"/>
+	  <!-- <unitPlacement unitType="bomber_payload" territory="US5" quantity="1" owner="Americans"/> -->
       <unitPlacement unitType="infantry" territory="US6" quantity="1" owner="Americans"/>
       <unitPlacement unitType="infantry" territory="US7" quantity="1" owner="Americans"/>
       <unitPlacement unitType="mech_infantry" territory="US7" quantity="1" owner="Americans"/>	  
@@ -6756,7 +6762,7 @@
       <unitPlacement unitType="armour" territory="US11" quantity="1" owner="Americans"/>
       <unitPlacement unitType="fighter" territory="US11" quantity="1" owner="Americans"/>
       <unitPlacement unitType="bomber" territory="US11" quantity="1" owner="Americans"/>	  
-	  <unitPlacement unitType="bomber_payload" territory="US11" quantity="1" owner="Americans"/>
+	  <!-- <unitPlacement unitType="bomber_payload" territory="US11" quantity="1" owner="Americans"/> -->
       <unitPlacement unitType="infantry" territory="US12" quantity="1" owner="Americans"/>
       <unitPlacement unitType="aaGun" territory="US13" quantity="1" owner="Americans"/>
       <unitPlacement unitType="infantry" territory="US13" quantity="1" owner="Americans"/>
@@ -6800,7 +6806,7 @@
       <unitPlacement unitType="infantry" territory="UK4" quantity="3" owner="British"/>
       <unitPlacement unitType="fighter" territory="UK4" quantity="2" owner="British"/>
       <unitPlacement unitType="bomber" territory="UK4" quantity="1" owner="British"/>	  
-	  <unitPlacement unitType="bomber_payload" territory="UK4" quantity="1" owner="British"/>
+	  <!-- <unitPlacement unitType="bomber_payload" territory="UK4" quantity="1" owner="British"/> -->
       <unitPlacement unitType="infantry" territory="UK5" quantity="1" owner="British"/>
       <unitPlacement unitType="artillery" territory="UK5" quantity="1" owner="British"/>
       <unitPlacement unitType="infantry" territory="UK8" quantity="1" owner="British"/>
@@ -6851,7 +6857,7 @@
       <unitPlacement unitType="mech_infantry" territory="I1" quantity="1" owner="Italians"/>
       <unitPlacement unitType="fighter" territory="I1" quantity="1" owner="Italians"/>
       <unitPlacement unitType="bomber" territory="I1" quantity="1" owner="Italians"/>  
-	  <unitPlacement unitType="bomber_payload" territory="I1" quantity="1" owner="Italians"/>
+	  <!-- <unitPlacement unitType="bomber_payload" territory="I1" quantity="1" owner="Italians"/> -->
       <unitPlacement unitType="infantry" territory="I2" quantity="2" owner="Italians"/>
       <unitPlacement unitType="mech_infantry" territory="I2" quantity="1" owner="Italians"/>
       <unitPlacement unitType="armour" territory="I2" quantity="1" owner="Italians"/>
@@ -7541,11 +7547,10 @@
     <property name="Neutral Flyover Allowed" value="false" editable="false">
       <boolean/>
     </property>
-    <property name="mapName" value="g40_alt_universe" editable="false"/>
+    <property name="mapName" value="g40_alt_universe_work" editable="false"/>
     <property name="notes">
       <value><![CDATA[  
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><u><span style='font-size:19px;font-family:"Arial Black",sans-serif;'>G40 Alt-Universe Rules (Version Beta-1.1)</span></u></strong></p>
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style="font-size: 12px; color: rgb(44, 130, 201);">*Note: See Section in blue at the bottom for how to operate bombers</span></strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style="font-size: 12px; color: rgb(226, 80, 65);">*Note: See section in red at the bottom for rules that are unenforced by TripleA</span></strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style="color: rgb(226, 80, 65);">&nbsp;</span></strong></p>
 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;'>
@@ -7709,9 +7714,9 @@
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>Italy</strong></p>
 <ul style="list-style-type: undefined;margin-left:26px;">
     <li><strong><span style="font-family: Calibri, sans-serif; font-size: 15px;">5 IPCs per Territory if Italy controls R26, UK27 or F13 &ndash; Roman Resurgence</span></strong></li>
-    <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>5 IPCs if the Axis control UK21, UK22, UK23, UK24, UK25, UK26 &ndash; Southern Wall</strong></span></span></li>
+    <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>3 IPCs if the Axis control UK21, UK22, UK23, UK24, UK25, UK26 &ndash; Southern Wall</strong></span></span></li>
     <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>5 IPCs if the Axis control UK30, NL10, NL11, NL12 and NL13 &ndash; Southern Resources</strong></span></span></li>
-    <li><strong><span style="font-family: Calibri, sans-serif; font-size: 15px;">5 IPCs if the Axis control 3 out of I7, PA14, UK30, UK31, PA15 &ndash; Amphibious Ambitions</span></strong></li>
+    <li><strong><span style="font-family: Calibri, sans-serif; font-size: 15px;">3 IPCs if the Axis control 3 out of UK20, PA14, UK30, UK31, PA15 &ndash; Amphibious Ambitions</span></strong></li>
 </ul>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>ANZAC</strong></p>
 <ul style="list-style-type: undefined;margin-left:26px;">
@@ -7725,14 +7730,11 @@
 </ul>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong></p>
 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;'>
-    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;border:none;padding:0cm;'><strong><span style='font-family:"Arial Black",sans-serif;'>Bomber Rules &ndash; Single Combat Round Attack, No Defense, Bombing Bonus</span></strong></p>
+    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;border:none;padding:0cm;'><strong><span style='font-family:"Arial Black",sans-serif;'>Bomber Rules &ndash; Defend Like Transports</span></strong></p>
 </div>
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>For both Naval and Land based battles, attacking Bombers are now a single combat round unit. &nbsp; Bombers may participate in attacks as they did in the base game, however, after the first round of combat, any attacking bombers that were not taken as casualties are considered to have retreated and will not participate in any subsequent rounds of battle and not be eligible to be selected as casualties. &nbsp;Note that this includes battles where bombers would previously have had an automatic kill scenario (i.e., versus unescorted transports or unescorted antiaircraft guns) such that bombers will no longer automatically kill all of the undefended units, but only those they score hits for.</strong></p>
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
+
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong>Defending bombers function like transports in that they do not have a defense value and may only be taken as casualties after all other defending units are exhausted.</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong>For strategic bombing raids where there is no intercepting fighters, or the attacker has at least twice as many escort fighters as the defending intercepting fighters, surviving bombers will receive an additional damage bonus. &nbsp;4 points of damage will be added to each bomber&rsquo;s die roll rather than the typical 2 points. &nbsp;For strategic bombing raids that don&rsquo;t meet these criteria, the die roll will still have the typical 2 points of damage added.</strong></p>
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong></p>
 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;'>
     <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;border:none;padding:0cm;'><strong><span style='font-family:"Arial Black",sans-serif;'>Straits</span></strong></p>
 </div>
@@ -7843,18 +7845,7 @@
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>axisandallies.org/forums handle: Contango</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>Map Artwork: Created in GIMP</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong>&nbsp;</strong></p>
-<div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;'>
-    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;border:none;padding:0cm;'><strong><span style='font-family: "Arial Black", sans-serif; color: rgb(44, 130, 201);'>Operating Bombers and Payloads</span></strong></p>
-</div>
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color: rgb(44, 130, 201);"><strong>In order to make Bombers a single round attack unit, it was necessary to add a companion unit called a Bomber Payload which will re-spawn at the end of each Power&rsquo;s turn. The Payload unit allows the Bomber to fire in the first round only.</strong></span></p>
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color: rgb(44, 130, 201);"><br></span></p>
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color: rgb(44, 130, 201);"><strong>&nbsp;</strong><strong>When using bombers it is best practice to keep the Payload with the bomber for regular battles, but to ignore the Payload for bombing raids. &nbsp;The Payload is necessary for the Bomber to roll its attack during regular combat. &nbsp;The Payload will disallow the user to select the battle as a stretegic bombing raid if it is present. &nbsp;Payloads have no effect when defending.</strong></span></p>
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color: rgb(44, 130, 201);"><br></span></p>
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color: rgb(44, 130, 201);"><strong>&nbsp;</strong><strong>Bomber Operation:</strong></span></p>
-<ul style="list-style-type: undefined;margin-left:26px;">
-    <li><span style="color: rgb(44, 130, 201);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">Attacking Bombers should retreat after the first round per the rules, but do not. &nbsp;Users will have to disallow Bombers being taken as casualties in attacking battles after the first round. &nbsp;In the rare event that a failed attack is made where a bomber would have retreated but ended up being taken as a final casualty in the failed attempt, users will have to use edit mode to restore it.</span></span></li>
-    <li><span style="color: rgb(44, 130, 201); font-family: Calibri, sans-serif; font-size: 15px;">Defending Bombers are intended to function like transports and taken as casualties last, but Triple A does not enforce this. &nbsp;Users will have to enforce that defending bombers be taken as final casualties.</span></li>
-</ul>
+
 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;'>
     <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;border:none;padding:0cm;'><strong><span style='font-family:"Arial Black",sans-serif;color:red;'>&nbsp;</span></strong></p>
     <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;border:none;padding:0cm;'><strong><span style='font-family: "Arial Black", sans-serif; color: rgb(226, 80, 65);'>Unenforced Rules and Known TripleA Issues</span></strong></p>
@@ -7867,7 +7858,7 @@
 <ul style="list-style-type: undefined;margin-left:26px;">
     <li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">Sea Zone 76 movement rules will not be enforced by the game engine.</span></span></li>
     <li><span style="color: rgb(226, 80, 65);"><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;">Win condition will display even though it may not have been held for a full round, however users can elect to continue playing after the notification.</span></span></span></li>
-    <li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">Bomber casualties&hellip; see above in blue.</span></span></li>
+    <li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">Defending bombers are intended to function like transports and be taken as casualties last, but the engine will not enforce this.</span></span></li>
 	<li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">If France is in its 1st level of escalation, it is permitted to move no more than 3 units during the non-combat move phase, but the engine will not enforce this.</span></span></li>
 	<li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">If France reaches its 3rd level of escalation, the Allies should be able to move into/through French territories on non-combat move only, but the engine will not enforce this.</span></span></li>	
 </ul>
@@ -7875,7 +7866,6 @@
 <ul style="list-style-type: undefined;margin-left:26px;">
     <li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">Players with no Cities left will correctly not receive an income, however they will incorrectly not be able to spend any remaining IPCs on hand.</span></span></li>
     <li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">IPC transfer for capturing Industrial Complexes and Cities works on the side gaining the IPCs, and on side losing IPCs for Industrial Complexes existing at the beginning of the game. &nbsp;Lost IPCs will not work correctly for Industrial Complexes created or upgraded after the beginning of the game.</span></span></li>
-    <li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">For overwhelming strategic bombing runs where the attacker has more than double the fighter escorts or there is no resistance, an additional +2 damage should be added to each damage roll.</span></span></li>	
 </ul>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color: rgb(226, 80, 65);"><strong>&nbsp;</strong><strong>No Workaround Currently:</strong></span></p>
 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>
