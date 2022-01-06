@@ -1,13 +1,14 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-  <info name="G40 Alt Universe" version="2.0.7"/>
+  <info name="G40 Alt Universe Work" version="2.0.8"/>
 
   <loader javaClass="games.strategy.triplea.TripleA"/>
   <triplea minimumVersion="1.8"/>
   <diceSides value="6"/>
   <map>
 
+	<!-- Update Jan 1, 2022 v2.0.8 - Russia DOW changed to turn 4, plundering changed to per city/complex, France able to move naval units next to own territories, Escalation 3 notes, note about US Wartime Production 5 IPC option, Updated errata, fixed Chinese political situation, fixed France factory plunder, Fixed Russian north sea NO, some unit updates for balance -->
 	<!-- Update Aug 4, 2021 v2.0.7 - US War Time Production NO was mislabeled as +5, updated to show +10.  Added to errata notes regarding multiple artillery/AA Guns being purchased for China.  Updated opening unit placement for balance. -->	
 	<!-- Update March 25, 2021 v2.0.6 - Fixed issue where mechanized infantry attacked at 2 when paired with a tank -->
     <!-- Update March 13, 2021 v2.0.5 - Reverting Bombers to normal except for defense values, Changing Italy NO's as too strong, removing some Axis units and relocating others --> 
@@ -3453,11 +3454,11 @@
     </attachment>
     <attachment name="objectiveAttachment_Germans_5_Sea_Lion" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
-      <option name="directOwnershipTerritories" value="UK4:F13" count="each"/>
+      <option name="directOwnershipTerritories" value="UK4:F13:A4" count="each"/>
     </attachment>
     <attachment name="objectiveAttachment_Germans_6_North_Sea_Resources" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
-      <option name="directOwnershipTerritories" value="G2:G5:PX2:R1" count="4"/>
+      <option name="alliedOwnershipTerritories" value="G2:G5:PX2:R1" count="4"/>
     </attachment>
 	
     <!-- Russian Objectives -->
@@ -3476,7 +3477,7 @@
     </attachment>	
 	    <attachment name="objectiveAttachment_Russians_4_North_Sea_Resources" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
-      <option name="directOwnershipTerritories" value="G2:PX2:R1:R5" count="4"/>
+      <option name="alliedOwnershipTerritories" value="G2:PX2:R1:R5" count="4"/>
     </attachment>
 	
     <!-- Japanese Objectives -->
@@ -3713,6 +3714,9 @@
     <attachment name="conditionAttachmentTurn3OrHigher" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="rounds" value="3-+"/>
     </attachment>
+	<attachment name="conditionAttachmentTurn4OrHigher" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="rounds" value="4-+"/>
+    </attachment>
 	
     <attachment name="conditionAttachment_Americans_At_War_With_At_Least_One_Axis" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="atWarPlayers" value="Germans:Italians:Japanese" count="1"/>
@@ -3758,7 +3762,7 @@
     </attachment>
 	
     <attachment name="conditionAttachment_Russians_May_Declare_War_On_Axis" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="conditions" value="conditionAttachmentTurn3OrHigher:conditionAttachment_Russians_At_War:conditionAttachment_Russians_Protectorates_Attacked"/>
+      <option name="conditions" value="conditionAttachmentTurn4OrHigher:conditionAttachment_Russians_At_War:conditionAttachment_Russians_Protectorates_Attacked"/>
       <option name="conditionType" value="OR"/>
     </attachment>
 	<attachment name="conditionAttachment_Russians_Not_At_War_With_Germans" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -4846,6 +4850,19 @@
       <option name="conditions" value="conditionFrench_Lose_F3"/>	
 	  <option name="resource" value="PUs"/>
 	  <option name="resourceCount" value="-8"/>
+	  <option name="when" value="after:germansEndTurn"/>
+      <option name="when" value="after:japaneseEndTurn"/>
+      <option name="when" value="after:italiansEndTurn"/>
+      <option name="uses" value="1"/>	
+    </attachment>
+	<attachment name="conditionFrench_Lose_F5" attachTo="French" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="directOwnershipTerritories" value="F5" count="0"/>
+      <option name="invert" value="true"/>
+    </attachment>
+    <attachment name="triggerAttachment_French_Lose_F5" attachTo="French" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionFrench_Lose_F5"/>	
+	  <option name="resource" value="PUs"/>
+	  <option name="resourceCount" value="-3"/>
 	  <option name="when" value="after:germansEndTurn"/>
       <option name="when" value="after:japaneseEndTurn"/>
       <option name="when" value="after:italiansEndTurn"/>
@@ -6806,7 +6823,7 @@
       <unitPlacement unitType="fighter" territory="UK2" quantity="1" owner="British"/>
       <unitPlacement unitType="infantry" territory="UK3" quantity="1" owner="British"/>
       <unitPlacement unitType="mech_infantry" territory="UK3" quantity="1" owner="British"/>
-      <unitPlacement unitType="aaGun" territory="UK3" quantity="1" owner="British"/>	  	  
+      <!-- <unitPlacement unitType="aaGun" territory="UK3" quantity="1" owner="British"/> -->  	  
       <unitPlacement unitType="aaGun" territory="UK4" quantity="2" owner="British"/>
       <unitPlacement unitType="infantry" territory="UK4" quantity="3" owner="British"/>
       <unitPlacement unitType="fighter" territory="UK4" quantity="2" owner="British"/>
@@ -6897,11 +6914,12 @@
       <unitPlacement unitType="infantry" territory="F2" quantity="2" owner="French"/>
       <unitPlacement unitType="artillery" territory="F2" quantity="1" owner="French"/>
       <unitPlacement unitType="aaGun" territory="F3" quantity="2" owner="French"/>
-      <unitPlacement unitType="infantry" territory="F3" quantity="6" owner="French"/>
+	  <!-- <unitPlacement unitType="infantry" territory="F3" quantity="6" owner="French"/> -->
+      <unitPlacement unitType="infantry" territory="F3" quantity="5" owner="French"/>
       <unitPlacement unitType="mech_infantry" territory="F3" quantity="1" owner="French"/>
       <unitPlacement unitType="armour" territory="F3" quantity="1" owner="French"/>
       <unitPlacement unitType="fighter" territory="F3" quantity="1" owner="French"/>
-      <unitPlacement unitType="infantry" territory="F4" quantity="2" owner="French"/>
+      <!-- <unitPlacement unitType="infantry" territory="F4" quantity="2" owner="French"/> -->
       <unitPlacement unitType="infantry" territory="F5" quantity="4" owner="French"/>
       <unitPlacement unitType="artillery" territory="F5" quantity="1" owner="French"/>
       <unitPlacement unitType="infantry" territory="F6" quantity="1" owner="French"/>
@@ -7556,10 +7574,10 @@
     <property name="Neutral Flyover Allowed" value="false" editable="false">
       <boolean/>
     </property>
-    <property name="mapName" value="g40_alt_universe" editable="false"/>
+    <property name="mapName" value="g40_alt_universe_work" editable="false"/>
     <property name="notes">
       <value><![CDATA[  
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><u><span style='font-size:19px;font-family:"Arial Black",sans-serif;'>G40 Alt-Universe Rules (Version Beta-1.2)</span></u></strong></p>
+<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><u><span style='font-size:19px;font-family:"Arial Black",sans-serif;'>G40 Alt-Universe Rules (Version Beta-1.3)</span></u></strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style="font-size: 12px; color: rgb(226, 80, 65);">*Note: See section in red at the bottom for rules that are unenforced by TripleA</span></strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style="color: rgb(226, 80, 65);">&nbsp;</span></strong></p>
 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;'>
@@ -7602,7 +7620,7 @@
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong><u>Soviet Union - 42</u></strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>The Soviet Union begins the game at war with no one. &nbsp;</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>The Soviet Union does not consider itself prepared for war and may not declare war on any Axis power before turn 3 unless one of the following conditions are met:</strong><strong>&nbsp;</strong></p>
+<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>The Soviet Union does not consider itself prepared for war and may not declare war on any Axis power before turn 4 unless one of the following conditions are met:</strong><strong>&nbsp;</strong></p>
 <ol style="list-style-type: decimal;margin-left:26px;">
     <li><strong><span style="font-family: Calibri, sans-serif; font-size: 15px;">An Axis power has declared war on the Soviet Union</span></strong></li>
     <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>The Axis attack currently Pro-Allied territories it considers itself to have a pseudo protectorate interest in, namely PA4, PA10, PA11, PA12</strong></span></span></li>
@@ -7667,13 +7685,13 @@
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>France Escalation Levels</strong></p>
 <ol style="list-style-type: decimal;margin-left:26px;">
-    <li><strong><span style="font-family: Calibri, sans-serif; font-size: 15px;">&nbsp;France is neutral and its income is reduced to 16 IPCs, regardless of its status on the income tracker, representing a focus on non-military spending. &nbsp;France is permitted to move no more than 3 units during the non-combat move phase as France wishes to avoid the perception of heightened military activity. &nbsp;French naval units may not end movement in sea zones adjacent to Axis controlled territories, but are not obligated to move if they begin the turn in that state.</span></strong></li>
-    <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>&nbsp;France may move units freely under normal rules for a neutral power. &nbsp;French naval units may not end movement in sea zones adjacent to Axis controlled territories, but are not obligated to move if they begin the turn in that state.</strong></span></span></li>
+    <li><strong><span style="font-family: Calibri, sans-serif; font-size: 15px;">&nbsp;France is neutral and its income is reduced to 16 IPCs, regardless of its status on the income tracker, representing a focus on non-military spending. &nbsp;France is permitted to move no more than 3 units during the non-combat move phase as France wishes to avoid the perception of heightened military activity. &nbsp;French naval units may not end movement in sea zones adjacent to Axis controlled territories if they are not also adjacent to a French territory.  France is not obligated to move such units if they begin the turn in that state.</span></strong></li>
+    <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>&nbsp;France may move units freely under normal rules for a neutral power. &nbsp;French naval units may not end movement in sea zones adjacent to Axis controlled territories if they are not also adjacent to a French territory.  France is not obligated to move such units if they begin the turn in that state.</strong></span></span></li>
     <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>France is in a pre-war footing with preliminary Allied integration. &nbsp;France will now receive its full income based on the income tracker and there is no restriction on where its naval units may end their movement. &nbsp;Allied powers may now move units that did not participate in combat into and out of French territories during the <u>non-combat</u> move phase. &nbsp;French ground and air units will still be restricted to French territories.</strong></span></span></li>
     <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>France may declare war.</strong></span></span></li>
 </ol>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style="font-family: Calibri, sans-serif; font-size: 15px;">&nbsp;</span></strong><strong>If the Allied powers are the first to attack a Neutral League territory, France will immediately discontinue their diplomatic escalation for the remainder of the game and will never join the war in this way.</strong></p>
+<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style="font-family: Calibri, sans-serif; font-size: 15px;">&nbsp;</span></strong><strong>If the Allied powers are the first to attack a Neutral League territory, France will immediately discontinue their diplomatic escalation and will never join the war in this way.  If France is in escalation level 3, it will discontinue allowing additional Allied units to enter French territories.</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong></p>
 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;'>
     <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;border:none;padding:0cm;'><strong><span style='font-family:"Arial Black",sans-serif;'>National Objectives</span></strong></p>
@@ -7684,7 +7702,7 @@
     <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>5 IPCS if Germany controls two or more Soviet Union cities &ndash; Natural Enemies</strong></span></span></li>
     <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>5 IPCs if the Axis control all of UK12, UK13, UK14, PA5, PA8, PX4 &ndash; Western Wall</strong></span></span></li>
     <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>5 IPCS if the Axis control all of PA7, UK7, UK11, G20 &ndash; Outer Defense</strong></span></span></li>
-    <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>5 IPCs per territory if Germany controls UK4 or F13 &ndash; Sea Lion</strong></span></span></li>
+    <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>5 IPCs per territory if Germany controls UK4, F13 or A4 &ndash; Sea Lion</strong></span></span></li>
     <li><strong><span style="font-family: Calibri, sans-serif; font-size: 15px;">5 IPCs if the Axis control G2, G5, PX2 and R1 &ndash; North Sea Resources</span></strong></li>
 </ul>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>Soviet Union</strong></p>
@@ -7706,7 +7724,7 @@
 <ul style="list-style-type: undefined;margin-left:26px;">
     <li><strong><span style="font-size: 15px; font-family: Calibri, sans-serif;">5 IPCs if the US controls US2, US3 and US22 while at war &ndash; Island Influence</span></strong></li>
     <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>10 IPCS if the US controls all of its original mainland territories while at war &ndash; National Pride</strong></span></span></li>
-    <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>10 IPCs if the US is at war &ndash; War Time Production</strong></span></span></li>
+    <li><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;"><strong>10 IPCs if the US is at war &ndash; War Time Production  *Optionally 5 IPCs, see below</strong></span></span></li>
     <li><strong><span style="font-size: 15px; font-family: Calibri, sans-serif;">5 IPCs if the US controls at least one original German, Italian or Japanese non-island territory (see Industrial Complex Placement section for what constitutes a non-island territory) &ndash; Boots on the Ground</span></strong></li>
 </ul>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>China</strong></p>
@@ -7737,11 +7755,12 @@
     <li><strong><span style="font-family: Calibri, sans-serif; font-size: 15px;">5 IPCs if France owns all of its original territories while at war &ndash; Fatherland</span></strong></li>
     <li><strong><span style="font-family: Calibri, sans-serif; font-size: 15px;">2 IPCs (6IPC maximum) per territory if France controls original German, Italian or Japanese territories &ndash; Diplomacy Abandoned</span></strong></li>
 </ul>
+<br>
+<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong>* For gaming groups finding the Allies significantly stronger than the Axis, it is suggested as an optional rule to change the United States War Time Production objective from 10 to 5 IPCs, if agreed at the beginning of the game.</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong></p>
 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;'>
     <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;border:none;padding:0cm;'><strong><span style='font-family:"Arial Black",sans-serif;'>Bomber Rules &ndash; Defend Like Transports</span></strong></p>
 </div>
-
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong>Defending bombers function like transports in that they do not have a defense value and may only be taken as casualties after all other defending units are exhausted.</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;'>
@@ -7763,7 +7782,7 @@
 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;'>
     <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;border:none;padding:0cm;'><strong><span style='font-family:"Arial Black",sans-serif;'>Sea Zone 76</span></strong></p>
 </div>
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>The Chinese-Japanese straight is a special situation, in that, it extends for an entire Sea Zone (Sea Zone 76) rather than creating a boarder between two sea zones. &nbsp;Air units may elect to enter Sea Zone 76 and use one movement point as normal, however if crossing between land territories they may elect to ignore the sea zones and cross directly between adjacent land territories.</strong></p>
+<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>The Chinese-Japanese straight is a special situation, in that, it extends for an entire Sea Zone (Sea Zone 76) rather than creating a border between two sea zones. &nbsp;Air units may elect to enter Sea Zone 76 and use one movement point as normal, however if crossing between land territories they may elect to ignore the sea zones and cross directly between adjacent land territories.</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong>Naval units from any power may enter Sea Zone 76 as normal, however, they must end their movement in Sea Zone 76 unless all 6 adjacent territories were friendly at the <u>beginning</u> of the power&rsquo;s turn. &nbsp;If Naval units began the turn in Sea Zone 76 they have no special restrictions and may exit in either direction as desired or remain.</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong></p>
@@ -7787,7 +7806,7 @@
 </div>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>Unlike the base game, there are no capital cities. &nbsp;Powers never lose their ability to collect income unless all of their cities have been captured. &nbsp;China is an exception, in that it never loses it&rsquo;s ability to collect income unless all of it&rsquo;s territories have been captured.</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong>Since there are no capital cities, the base game rules for capturing the unspent IPCs of the opposing power don&rsquo;t apply. &nbsp;Instead, the attacker receives the below bonuses for capturing opposing cities and industrial complexes. &nbsp;These bonuses apply only the first time a territory is captured and not if it is subsequently liberated or re-captured by either the same or another Power.</strong></p>
+<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong>Since there are no capital cities, the base game rules for capturing the unspent IPCs of the opposing power don’t apply.  Instead, the attacker receives the below bonuses for capturing opposing cities and industrial complexes.  These bonuses apply only the first time a particular city or industrial complex is captured and not if it is subsequently liberated or re-captured by either the same or another Power.  Upgrading an industrial complex does not reset its eligibility for bonus capture.  If an industrial complex is placed on an originally Chinese territory where an industrial complex was previously destroyed, it is eligible for bonus capture.</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong>3 IPCs &ndash; Capturing a minor industrial complex</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>10 IPCs &ndash; Capturing a major industrial complex</strong></p>
@@ -7854,6 +7873,7 @@
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>axisandallies.org/forums handle: Contango</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>Map Artwork: Created in GIMP</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong>&nbsp;</strong></p>
+<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>Version Beta-1.3  (1.1.2022)</strong></p>
 
 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;'>
     <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;border:none;padding:0cm;'><strong><span style='font-family:"Arial Black",sans-serif;color:red;'>&nbsp;</span></strong></p>
@@ -7870,7 +7890,9 @@
     <li><span style="color: rgb(226, 80, 65);"><span style="font-size: 15px;"><span style="font-family: Calibri, sans-serif;">Win condition will display even though it may not have been held for a full round, however users can elect to continue playing after the notification.</span></span></span></li>
     <li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">Defending bombers are intended to function like transports and be taken as casualties last, but the engine will not enforce this.</span></span></li>
 	<li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">If France is in its 1st level of escalation, it is permitted to move no more than 3 units during the non-combat move phase, but the engine will not enforce this.</span></span></li>
-	<li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">If France reaches its 3rd level of escalation, the Allies should be able to move into/through French territories on non-combat move only, but the engine will not enforce this.</span></span></li>	
+	<li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">If France reaches its 3rd level of escalation, the Allies should be able to move into/through French territories on non-combat move only, but the engine will not enforce this.</span></span></li>
+	<li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">The game engine will not enforce France's movement restrictions regarding naval units adjacent to Axis territories, and will also not disallow French units from moving into Allied territories.</span></span></li>		
+	<li><span style="color: rgb(226, 80, 65);"><span style="font-family: Calibri, sans-serif; font-size: 15px;">Chinese units should not be able to move on to eligible Allied territories unless the respective Allied nation is at war with Japan but the engine will not enforce this.</span></span></li>			
 </ul>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color: rgb(226, 80, 65);"> <strong>Workaround with Edit Mode:</strong></span></p>
 <ul style="list-style-type: undefined;margin-left:26px;">
