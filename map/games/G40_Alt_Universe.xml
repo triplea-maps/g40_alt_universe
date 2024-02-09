@@ -3487,7 +3487,7 @@
     </attachment>	
 	<attachment name="objectiveAttachment_Russians_4_North_Sea_Resources" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="G2:PX2:R1:R5" count="4"/>
+      <option name="alliedOwnershipTerritories" value="G2:PX2:R1:R4" count="4"/>
     </attachment>
 	<attachment name="objectiveAttachment_Russians_5_Communist_Solidarity" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
