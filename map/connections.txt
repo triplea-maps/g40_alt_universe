@@ -126,64 +126,64 @@
 <territory name="125 Sea Zone" water="true"/>
 <territory name="126 Sea Zone" water="true"/>
 <territory name="127 Sea Zone" water="true"/>
-<territory name="A1"/>
-<territory name="A2"/>
-<territory name="A3"/>
-<territory name="A4"/>
-<territory name="A5"/>
-<territory name="A6"/>
-<territory name="A7"/>
-<territory name="A8"/>
-<territory name="A9"/>
-<territory name="A10"/>
+<territory name="A1 - Topend"/>
+<territory name="A2 - Ace"/>
+<territory name="A3 - Bush"/>
+<territory name="A4 - Smoke"/>
+<territory name="A5 - Oz"/>
+<territory name="A6 - Billabong"/>
+<territory name="A7 - Veg"/>
+<territory name="A8 - Dunny"/>
+<territory name="A9 - Pozzy"/>
+<territory name="A10 - Downunder"/>
 <territory name="ACap"/>
-<territory name="C1"/>
-<territory name="C2"/>
-<territory name="C3"/>
-<territory name="C4"/>
-<territory name="C5"/>
-<territory name="C6"/>
-<territory name="C7"/>
-<territory name="C8"/>
-<territory name="C9"/>
-<territory name="C10"/>
-<territory name="C11"/>
-<territory name="C12"/>
-<territory name="C13"/>
-<territory name="C14"/>
-<territory name="C15"/>
-<territory name="C16"/>
-<territory name="C17"/>
-<territory name="C18"/>
-<territory name="C19"/>
-<territory name="C20"/>
-<territory name="C21"/>
-<territory name="C22"/>
+<territory name="C1 - Beimen"/>
+<territory name="C2 - Jinglu"/>
+<territory name="C3 - Chukou"/>
+<territory name="C4 - Laohuxi"/>
+<territory name="C5 - Aodamen"/>
+<territory name="C6 - Huabu"/>
+<territory name="C7 - Yuding"/>
+<territory name="C8 - Fangyunnan"/>
+<territory name="C9 - Shijiang"/>
+<territory name="C10 - Dapaizhong"/>
+<territory name="C11- Tielu"/>
+<territory name="C12 - Zoutouwulu"/>
+<territory name="C13 - Huidegan"/>
+<territory name="C14 - Baolei"/>
+<territory name="C15 - Guangchang"/>
+<territory name="C16 - Jinkou"/>
+<territory name="C17 - Pinkunqing"/>
+<territory name="C18 - Ninguang"/>
+<territory name="C19 - Jianchi"/>
+<territory name="C20 - Laoshan"/>
+<territory name="C21 - Yindumen"/>
+<territory name="C22 - Buxinghu"/>
 <territory name="CCap"/>
-<territory name="F1"/>
-<territory name="F2"/>
-<territory name="F3"/>
-<territory name="F4"/>
-<territory name="F5"/>
-<territory name="F6"/>
-<territory name="F7"/>
-<territory name="F8"/>
-<territory name="F9"/>
-<territory name="F10"/>
-<territory name="F11"/>
-<territory name="F12"/>
-<territory name="F13"/>
-<territory name="F14"/>
-<territory name="F15"/>
-<territory name="F16"/>
-<territory name="F17"/>
-<territory name="F18"/>
-<territory name="F19"/>
-<territory name="F20"/>
-<territory name="F21"/>
-<territory name="F22"/>
-<territory name="F23"/>
-<territory name="F24"/>
+<territory name="F1 - Canal"/>
+<territory name="F2 - Parcourue"/>
+<territory name="F3 - Metroparis"/>
+<territory name="F4 - Haienau"/>
+<territory name="F5 - Cosmopollon"/>
+<territory name="F6 - Macabrenne"/>
+<territory name="F7 - Ennui"/>
+<territory name="F8 - Shaykhes"/>
+<territory name="F9 - Tsutshepen"/>
+<territory name="F10 - Nouveausot"/>
+<territory name="F11 - Chateaumont"/>
+<territory name="F12 - Reseau"/>
+<territory name="F13 - Outremerville"/>
+<territory name="F14 - Gauchernay"/>
+<territory name="F15 - Aigleaix"/>
+<territory name="F16 - Saintnez"/>
+<territory name="F17 - Pluie"/>
+<territory name="F18 - Rond"/>
+<territory name="F19 - Bas"/>
+<territory name="F20 - Peninsule"/>
+<territory name="F21 - Bassinne"/>
+<territory name="F22 - Savon"/>
+<territory name="F23 - Ouf"/>
+<territory name="F24 - Pierre"/>
 <territory name="FCap"/>
 <territory name="G1"/>
 <territory name="G2"/>
@@ -199,11 +199,11 @@
 <territory name="G12"/>
 <territory name="G13"/>
 <territory name="G14"/>
-<territory name="G15"/>
+<territory name="G15 - Blitzburg"/>
 <territory name="G16"/>
 <territory name="G17"/>
 <territory name="G18"/>
-<territory name="G19"/>
+<territory name="G19 - Kriegsbruck"/>
 <territory name="G20"/>
 <territory name="G21"/>
 <territory name="GCap"/>
@@ -213,75 +213,75 @@
 <territory name="I4"/>
 <territory name="I5"/>
 <territory name="I6"/>
-<territory name="I7"/>
+<territory name="I7 - Nisi"/>
 <territory name="ICap"/>
-<territory name="IN1"/>
-<territory name="IN2"/>
-<territory name="IN3"/>
-<territory name="IN4"/>
-<territory name="IN5"/>
-<territory name="IN6"/>
-<territory name="IN7"/>
-<territory name="IN8"/>
-<territory name="IN9"/>
-<territory name="IN10"/>
-<territory name="IN11"/>
-<territory name="IN12"/>
-<territory name="IN13"/>
-<territory name="IN14"/>
-<territory name="IN15"/>
-<territory name="J1"/>
-<territory name="J2"/>
-<territory name="J3"/>
-<territory name="J4"/>
-<territory name="J5"/>
-<territory name="J6"/>
-<territory name="J7"/>
-<territory name="J8"/>
-<territory name="J9"/>
-<territory name="J10"/>
-<territory name="J11"/>
-<territory name="J12"/>
-<territory name="J13"/>
-<territory name="J14"/>
-<territory name="J15"/>
-<territory name="J16"/>
+<territory name="IN1 - Thuaidh"/>
+<territory name="IN2 - Ostrazity"/>
+<territory name="IN3 - Salib"/>
+<territory name="IN4 - Halangan"/>
+<territory name="IN5 - Intervira"/>
+<territory name="IN6 - Aberta"/>
+<territory name="IN7 - Tystholm"/>
+<territory name="IN8 - Fjernso"/>
+<territory name="IN9 - Fononia"/>
+<territory name="IN10 - Trasnaigh"/>
+<territory name="IN11 - Kantstenn"/>
+<territory name="IN12 - Stratyegin"/>
+<territory name="IN13 - Espectador"/>
+<territory name="IN14 - Vigia"/>
+<territory name="IN15 - Seccao"/>
+<territory name="J1 - Sakusen"/>
+<territory name="J2 - Tochaku"/>
+<territory name="J3 - Toreddokoya"/>
+<territory name="J4 - Danmakuba"/>
+<territory name="J5 - Tsuki"/>
+<territory name="J6 - Saizensen"/>
+<territory name="J7 - Senryo"/>
+<territory name="J8 - Hanto"/>
+<territory name="J9 - Joriku"/>
+<territory name="J10 - Kanshiin"/>
+<territory name="J11 - Shima"/>
+<territory name="J12 - Ki"/>
+<territory name="J13 - Shukkyo"/>
+<territory name="J14 - Sokotoshi"/>
+<territory name="J15 - Orosumura"/>
+<territory name="J16 - Ri"/>
 <territory name="JCap"/>
-<territory name="NL1"/>
-<territory name="NL2"/>
-<territory name="NL3"/>
-<territory name="NL4"/>
-<territory name="NL5"/>
-<territory name="NL6"/>
-<territory name="NL7"/>
-<territory name="NL8"/>
-<territory name="NL9"/>
-<territory name="NL10"/>
-<territory name="NL11"/>
-<territory name="NL12"/>
-<territory name="NL13"/>
-<territory name="PA1"/>
-<territory name="PA2"/>
-<territory name="PA3"/>
-<territory name="PA4"/>
-<territory name="PA5"/>
-<territory name="PA6"/>
-<territory name="PA7"/>
-<territory name="PA8"/>
-<territory name="PA9"/>
-<territory name="PA10"/>
-<territory name="PA11"/>
-<territory name="PA12"/>
-<territory name="PA13"/>
-<territory name="PA14"/>
-<territory name="PA15"/>
-<territory name="PX1"/>
-<territory name="PX2"/>
-<territory name="PX3"/>
-<territory name="PX4"/>
-<territory name="PX5"/>
-<territory name="PX6"/>
-<territory name="PX7"/>
+<territory name="NL1 - Flaggestok"/>
+<territory name="NL2 - Ferankera"/>
+<territory name="NL3 - Zachodnan"/>
+<territory name="NL4 - Polnocin"/>
+<territory name="NL5 - Srodeklaw"/>
+<territory name="NL6 - Wschod"/>
+<territory name="NL7 - Otwardz"/>
+<territory name="NL8 - Poludniowy"/>
+<territory name="NL9 - Domyslivy"/>
+<territory name="NL10 - Grensgebied"/>
+<territory name="NL11 - Hoofdstad"/>
+<territory name="NL12 - Ingang"/>
+<territory name="NL13 - Verleiding"/>
+<territory name="PA1 - Insel"/>
+<territory name="PA2 - Sprut"/>
+<territory name="PA3 - Kierch"/>
+<territory name="PA4 - Amortizatorra"/>
+<territory name="PA5 - Chora"/>
+<territory name="PA6 - Bugger"/>
+<territory name="PA7 - Sede"/>
+<territory name="PA8 - Afiadonn"/>
+<territory name="PA9 - Ligazonn"/>
+<territory name="PA10 - Biedrsga"/>
+<territory name="PA11 - Aizsargsn"/>
+<territory name="PA12 - Udobno"/>
+<territory name="PA13 - Zadruga"/>
+<territory name="PA14 - Syntrofos"/>
+<territory name="PA15 - Sympaikti"/>
+<territory name="PX1 - Demare"/>
+<territory name="PX2 - Rucknahmesel"/>
+<territory name="PX3 - Onkentessa"/>
+<territory name="PX4 - Asediatt"/>
+<territory name="PX5 - Anschluszig"/>
+<territory name="PX6 - Liittolainenmaa"/>
+<territory name="PX7 - Nenshtrim"/>
 <territory name="R1"/>
 <territory name="R2"/>
 <territory name="R3"/>
@@ -315,42 +315,42 @@
 <territory name="R31"/>
 <territory name="R32"/>
 <territory name="RCap"/>
-<territory name="UK1"/>
-<territory name="UK2"/>
-<territory name="UK3"/>
-<territory name="UK4"/>
-<territory name="UK5"/>
-<territory name="UK6"/>
-<territory name="UK7"/>
-<territory name="UK8"/>
-<territory name="UK9"/>
-<territory name="UK10"/>
-<territory name="UK11"/>
-<territory name="UK12"/>
-<territory name="UK13"/>
-<territory name="UK14"/>
-<territory name="UK15"/>
-<territory name="UK16"/>
-<territory name="UK17"/>
-<territory name="UK18"/>
-<territory name="UK19"/>
-<territory name="UK20"/>
-<territory name="UK21"/>
-<territory name="UK22"/>
-<territory name="UK23"/>
-<territory name="UK24"/>
-<territory name="UK25"/>
-<territory name="UK26"/>
-<territory name="UK27"/>
-<territory name="UK28"/>
-<territory name="UK29"/>
-<territory name="UK30"/>
-<territory name="UK31"/>
-<territory name="UK32"/>
+<territory name="UK1 - Elevensend"/>
+<territory name="UK2 - Scramblesworth"/>
+<territory name="UK3 - Decksbury"/>
+<territory name="UK4 - Pubford"/>
+<territory name="UK5 - Scapachester"/>
+<territory name="UK6 - Bluenose"/>
+<territory name="UK7 - Cala"/>
+<territory name="UK8 - Beavertail"/>
+<territory name="UK9 - Bogtrot"/>
+<territory name="UK10 - Bytown"/>
+<territory name="UK11 - Newf"/>
+<territory name="UK12 - Fasach"/>
+<territory name="UK13 - Bhaile"/>
+<territory name="UK14 - Cladach"/>
+<territory name="UK15 - Slack"/>
+<territory name="UK16 - Ditchmond"/>
+<territory name="UK17 - Scivey"/>
+<territory name="UK18 - Leftcoast"/>
+<territory name="UK19 - Valeurbec"/>
+<territory name="UK20 - Vue"/>
+<territory name="UK21 - Tsetretn"/>
+<territory name="UK22 - Forzikh"/>
+<territory name="UK23 - Tatadwal"/>
+<territory name="UK24 - Buniada"/>
+<territory name="UK25 - Aanchal"/>
+<territory name="UK26 - Chauraaha"/>
+<territory name="UK27 - Rajadhani"/>
+<territory name="UK28 - Dhanavaru"/>
+<territory name="UK29 - Chidhhar"/>
+<territory name="UK30 - Vlootbasis"/>
+<territory name="UK31 - Zikherkayt"/>
+<territory name="UK32 - Tir"/>
 <territory name="UKCap"/>
 <territory name="US1"/>
-<territory name="US2"/>
-<territory name="US3"/>
+<territory name="US2 - Juke"/>
+<territory name="US3 - Jive"/>
 <territory name="US4"/>
 <territory name="US5"/>
 <territory name="US6"/>
@@ -368,8 +368,8 @@
 <territory name="US18"/>
 <territory name="US19"/>
 <territory name="US20"/>
-<territory name="US21"/>
-<territory name="US22"/>
+<territory name="US21 - Blocarado"/>
+<territory name="US22 - Alohisle"/>
 <territory name="USCap"/>
 
 <!-- Territory Connections -->
@@ -380,22 +380,22 @@
 <connection t1="2 Sea Zone" t2="18 Sea Zone"/>
 <connection t1="2 Sea Zone" t2="19 Sea Zone"/>
 <connection t1="2 Sea Zone" t2="US1"/>
-<connection t1="2 Sea Zone" t2="US2"/>
-<connection t1="2 Sea Zone" t2="US3"/>
+<connection t1="2 Sea Zone" t2="US2 - Juke"/>
+<connection t1="2 Sea Zone" t2="US3 - Jive"/>
 <connection t1="3 Sea Zone" t2="4 Sea Zone"/>
 <connection t1="3 Sea Zone" t2="19 Sea Zone"/>
-<connection t1="3 Sea Zone" t2="PX1"/>
+<connection t1="3 Sea Zone" t2="PX1 - Demare"/>
 <connection t1="4 Sea Zone" t2="5 Sea Zone"/>
 <connection t1="4 Sea Zone" t2="20 Sea Zone"/>
 <connection t1="4 Sea Zone" t2="21 Sea Zone"/>
-<connection t1="4 Sea Zone" t2="PX1"/>
+<connection t1="4 Sea Zone" t2="PX1 - Demare"/>
 <connection t1="5 Sea Zone" t2="6 Sea Zone"/>
 <connection t1="5 Sea Zone" t2="21 Sea Zone"/>
-<connection t1="5 Sea Zone" t2="IN1"/>
+<connection t1="5 Sea Zone" t2="IN1 - Thuaidh"/>
 <connection t1="6 Sea Zone" t2="7 Sea Zone"/>
 <connection t1="6 Sea Zone" t2="22 Sea Zone"/>
-<connection t1="6 Sea Zone" t2="IN1"/>
-<connection t1="6 Sea Zone" t2="PA1"/>
+<connection t1="6 Sea Zone" t2="IN1 - Thuaidh"/>
+<connection t1="6 Sea Zone" t2="PA1 - Insel"/>
 <connection t1="7 Sea Zone" t2="8 Sea Zone"/>
 <connection t1="7 Sea Zone" t2="22 Sea Zone"/>
 <connection t1="7 Sea Zone" t2="23 Sea Zone"/>
@@ -408,7 +408,7 @@
 <connection t1="9 Sea Zone" t2="25 Sea Zone"/>
 <connection t1="9 Sea Zone" t2="G2"/>
 <connection t1="10 Sea Zone" t2="11 Sea Zone"/>
-<connection t1="10 Sea Zone" t2="PX2"/>
+<connection t1="10 Sea Zone" t2="PX2 - Rucknahmesel"/>
 <connection t1="11 Sea Zone" t2="12 Sea Zone"/>
 <connection t1="11 Sea Zone" t2="26 Sea Zone"/>
 <connection t1="11 Sea Zone" t2="27 Sea Zone"/>
@@ -419,11 +419,11 @@
 <connection t1="12 Sea Zone" t2="28 Sea Zone"/>
 <connection t1="13 Sea Zone" t2="14 Sea Zone"/>
 <connection t1="13 Sea Zone" t2="28 Sea Zone"/>
-<connection t1="13 Sea Zone" t2="A1"/>
-<connection t1="13 Sea Zone" t2="IN4"/>
+<connection t1="13 Sea Zone" t2="A1 - Topend"/>
+<connection t1="13 Sea Zone" t2="IN4 - Halangan"/>
 <connection t1="14 Sea Zone" t2="15 Sea Zone"/>
-<connection t1="14 Sea Zone" t2="IN4"/>
-<connection t1="14 Sea Zone" t2="IN5"/>
+<connection t1="14 Sea Zone" t2="IN4 - Halangan"/>
+<connection t1="14 Sea Zone" t2="IN5 - Intervira"/>
 <connection t1="14 Sea Zone" t2="US7"/>
 <connection t1="15 Sea Zone" t2="16 Sea Zone"/>
 <connection t1="15 Sea Zone" t2="US7"/>
@@ -447,26 +447,26 @@
 <connection t1="20 Sea Zone" t2="21 Sea Zone"/>
 <connection t1="20 Sea Zone" t2="31 Sea Zone"/>
 <connection t1="20 Sea Zone" t2="32 Sea Zone"/>
-<connection t1="20 Sea Zone" t2="PX1"/>
+<connection t1="20 Sea Zone" t2="PX1 - Demare"/>
 <connection t1="21 Sea Zone" t2="32 Sea Zone"/>
-<connection t1="21 Sea Zone" t2="IN1"/>
-<connection t1="21 Sea Zone" t2="UK1"/>
-<connection t1="21 Sea Zone" t2="UK3"/>
+<connection t1="21 Sea Zone" t2="IN1 - Thuaidh"/>
+<connection t1="21 Sea Zone" t2="UK1 - Elevensend"/>
+<connection t1="21 Sea Zone" t2="UK3 - Decksbury"/>
 <connection t1="22 Sea Zone" t2="23 Sea Zone"/>
-<connection t1="22 Sea Zone" t2="IN1"/>
-<connection t1="22 Sea Zone" t2="UK2"/>
-<connection t1="22 Sea Zone" t2="UK5"/>
+<connection t1="22 Sea Zone" t2="IN1 - Thuaidh"/>
+<connection t1="22 Sea Zone" t2="UK2 - Scramblesworth"/>
+<connection t1="22 Sea Zone" t2="UK5 - Scapachester"/>
 <connection t1="23 Sea Zone" t2="24 Sea Zone"/>
 <connection t1="23 Sea Zone" t2="40 Sea Zone"/>
-<connection t1="23 Sea Zone" t2="F3"/>
-<connection t1="23 Sea Zone" t2="F4"/>
-<connection t1="23 Sea Zone" t2="PA2"/>
-<connection t1="23 Sea Zone" t2="PA3"/>
-<connection t1="23 Sea Zone" t2="UK5"/>
+<connection t1="23 Sea Zone" t2="F3 - Metroparis"/>
+<connection t1="23 Sea Zone" t2="F4 - Haienau"/>
+<connection t1="23 Sea Zone" t2="PA2 - Sprut"/>
+<connection t1="23 Sea Zone" t2="PA3 - Kierch"/>
+<connection t1="23 Sea Zone" t2="UK5 - Scapachester"/>
 <connection t1="24 Sea Zone" t2="25 Sea Zone"/>
 <connection t1="24 Sea Zone" t2="G4"/>
 <connection t1="24 Sea Zone" t2="G5"/>
-<connection t1="24 Sea Zone" t2="PA3"/>
+<connection t1="24 Sea Zone" t2="PA3 - Kierch"/>
 <connection t1="25 Sea Zone" t2="26 Sea Zone"/>
 <connection t1="25 Sea Zone" t2="G2"/>
 <connection t1="25 Sea Zone" t2="G3"/>
@@ -476,7 +476,7 @@
 <connection t1="25 Sea Zone" t2="R4"/>
 <connection t1="26 Sea Zone" t2="27 Sea Zone"/>
 <connection t1="26 Sea Zone" t2="G2"/>
-<connection t1="26 Sea Zone" t2="PX2"/>
+<connection t1="26 Sea Zone" t2="PX2 - Rucknahmesel"/>
 <connection t1="26 Sea Zone" t2="R1"/>
 <connection t1="26 Sea Zone" t2="R3"/>
 <connection t1="26 Sea Zone" t2="R4"/>
@@ -489,8 +489,8 @@
 <connection t1="27 Sea Zone" t2="R7"/>
 <connection t1="28 Sea Zone" t2="33 Sea Zone"/>
 <connection t1="28 Sea Zone" t2="34 Sea Zone"/>
-<connection t1="28 Sea Zone" t2="A1"/>
-<connection t1="28 Sea Zone" t2="IN3"/>
+<connection t1="28 Sea Zone" t2="A1 - Topend"/>
+<connection t1="28 Sea Zone" t2="IN3 - Salib"/>
 <connection t1="29 Sea Zone" t2="30 Sea Zone"/>
 <connection t1="29 Sea Zone" t2="35 Sea Zone"/>
 <connection t1="29 Sea Zone" t2="36 Sea Zone"/>
@@ -503,23 +503,23 @@
 <connection t1="31 Sea Zone" t2="38 Sea Zone"/>
 <connection t1="32 Sea Zone" t2="38 Sea Zone"/>
 <connection t1="32 Sea Zone" t2="39 Sea Zone"/>
-<connection t1="32 Sea Zone" t2="UK3"/>
+<connection t1="32 Sea Zone" t2="UK3 - Decksbury"/>
 <connection t1="33 Sea Zone" t2="34 Sea Zone"/>
 <connection t1="33 Sea Zone" t2="41 Sea Zone"/>
 <connection t1="33 Sea Zone" t2="42 Sea Zone"/>
-<connection t1="33 Sea Zone" t2="IN3"/>
+<connection t1="33 Sea Zone" t2="IN3 - Salib"/>
 <connection t1="33 Sea Zone" t2="R7"/>
 <connection t1="33 Sea Zone" t2="R17"/>
 <connection t1="34 Sea Zone" t2="42 Sea Zone"/>
 <connection t1="34 Sea Zone" t2="43 Sea Zone"/>
-<connection t1="34 Sea Zone" t2="A2"/>
-<connection t1="34 Sea Zone" t2="A4"/>
-<connection t1="34 Sea Zone" t2="IN3"/>
+<connection t1="34 Sea Zone" t2="A2 - Ace"/>
+<connection t1="34 Sea Zone" t2="A4 - Smoke"/>
+<connection t1="34 Sea Zone" t2="IN3 - Salib"/>
 <connection t1="35 Sea Zone" t2="36 Sea Zone"/>
 <connection t1="35 Sea Zone" t2="44 Sea Zone"/>
 <connection t1="35 Sea Zone" t2="55 Sea Zone"/>
-<connection t1="35 Sea Zone" t2="UK6"/>
-<connection t1="35 Sea Zone" t2="UK10"/>
+<connection t1="35 Sea Zone" t2="UK6 - Bluenose"/>
+<connection t1="35 Sea Zone" t2="UK10 - Bytown"/>
 <connection t1="35 Sea Zone" t2="US6"/>
 <connection t1="36 Sea Zone" t2="37 Sea Zone"/>
 <connection t1="36 Sea Zone" t2="44 Sea Zone"/>
@@ -532,19 +532,19 @@
 <connection t1="38 Sea Zone" t2="47 Sea Zone"/>
 <connection t1="39 Sea Zone" t2="40 Sea Zone"/>
 <connection t1="39 Sea Zone" t2="47 Sea Zone"/>
-<connection t1="39 Sea Zone" t2="NL1"/>
-<connection t1="39 Sea Zone" t2="UK3"/>
-<connection t1="39 Sea Zone" t2="UK4"/>
-<connection t1="39 Sea Zone" t2="UK7"/>
-<connection t1="39 Sea Zone" t2="UK12"/>
-<connection t1="40 Sea Zone" t2="F1"/>
-<connection t1="40 Sea Zone" t2="F2"/>
-<connection t1="40 Sea Zone" t2="F3"/>
-<connection t1="40 Sea Zone" t2="NL1"/>
-<connection t1="40 Sea Zone" t2="NL2"/>
-<connection t1="40 Sea Zone" t2="PA5"/>
-<connection t1="40 Sea Zone" t2="UK4"/>
-<connection t1="40 Sea Zone" t2="UK5"/>
+<connection t1="39 Sea Zone" t2="NL1 - Flaggestok"/>
+<connection t1="39 Sea Zone" t2="UK3 - Decksbury"/>
+<connection t1="39 Sea Zone" t2="UK4 - Pubford"/>
+<connection t1="39 Sea Zone" t2="UK7 - Cala"/>
+<connection t1="39 Sea Zone" t2="UK12 - Fasach"/>
+<connection t1="40 Sea Zone" t2="F1 - Canal"/>
+<connection t1="40 Sea Zone" t2="F2 - Parcourue"/>
+<connection t1="40 Sea Zone" t2="F3 - Metroparis"/>
+<connection t1="40 Sea Zone" t2="NL1 - Flaggestok"/>
+<connection t1="40 Sea Zone" t2="NL2 - Ferankera"/>
+<connection t1="40 Sea Zone" t2="PA5 - Chora"/>
+<connection t1="40 Sea Zone" t2="UK4 - Pubford"/>
+<connection t1="40 Sea Zone" t2="UK5 - Scapachester"/>
 <connection t1="41 Sea Zone" t2="42 Sea Zone"/>
 <connection t1="41 Sea Zone" t2="48 Sea Zone"/>
 <connection t1="41 Sea Zone" t2="49 Sea Zone"/>
@@ -554,13 +554,13 @@
 <connection t1="42 Sea Zone" t2="49 Sea Zone"/>
 <connection t1="42 Sea Zone" t2="50 Sea Zone"/>
 <connection t1="42 Sea Zone" t2="51 Sea Zone"/>
-<connection t1="42 Sea Zone" t2="PA6"/>
+<connection t1="42 Sea Zone" t2="PA6 - Bugger"/>
 <connection t1="43 Sea Zone" t2="51 Sea Zone"/>
 <connection t1="43 Sea Zone" t2="53 Sea Zone"/>
-<connection t1="43 Sea Zone" t2="A4"/>
-<connection t1="43 Sea Zone" t2="A5"/>
-<connection t1="43 Sea Zone" t2="A6"/>
-<connection t1="43 Sea Zone" t2="A8"/>
+<connection t1="43 Sea Zone" t2="A4 - Smoke"/>
+<connection t1="43 Sea Zone" t2="A5 - Oz"/>
+<connection t1="43 Sea Zone" t2="A6 - Billabong"/>
+<connection t1="43 Sea Zone" t2="A8 - Dunny"/>
 <connection t1="44 Sea Zone" t2="45 Sea Zone"/>
 <connection t1="44 Sea Zone" t2="55 Sea Zone"/>
 <connection t1="44 Sea Zone" t2="56 Sea Zone"/>
@@ -571,9 +571,9 @@
 <connection t1="46 Sea Zone" t2="47 Sea Zone"/>
 <connection t1="46 Sea Zone" t2="58 Sea Zone"/>
 <connection t1="47 Sea Zone" t2="58 Sea Zone"/>
-<connection t1="47 Sea Zone" t2="IN10"/>
-<connection t1="47 Sea Zone" t2="UK12"/>
-<connection t1="47 Sea Zone" t2="UK13"/>
+<connection t1="47 Sea Zone" t2="IN10 - Trasnaigh"/>
+<connection t1="47 Sea Zone" t2="UK12 - Fasach"/>
+<connection t1="47 Sea Zone" t2="UK13 - Bhaile"/>
 <connection t1="48 Sea Zone" t2="49 Sea Zone"/>
 <connection t1="48 Sea Zone" t2="62 Sea Zone"/>
 <connection t1="48 Sea Zone" t2="63 Sea Zone"/>
@@ -587,26 +587,26 @@
 <connection t1="50 Sea Zone" t2="52 Sea Zone"/>
 <connection t1="50 Sea Zone" t2="64 Sea Zone"/>
 <connection t1="50 Sea Zone" t2="65 Sea Zone"/>
-<connection t1="50 Sea Zone" t2="A7"/>
+<connection t1="50 Sea Zone" t2="A7 - Veg"/>
 <connection t1="51 Sea Zone" t2="52 Sea Zone"/>
 <connection t1="51 Sea Zone" t2="53 Sea Zone"/>
 <connection t1="52 Sea Zone" t2="53 Sea Zone"/>
 <connection t1="52 Sea Zone" t2="65 Sea Zone"/>
 <connection t1="53 Sea Zone" t2="65 Sea Zone"/>
-<connection t1="53 Sea Zone" t2="A6"/>
-<connection t1="53 Sea Zone" t2="A8"/>
-<connection t1="53 Sea Zone" t2="A9"/>
-<connection t1="53 Sea Zone" t2="A10"/>
-<connection t1="53 Sea Zone" t2="C5"/>
+<connection t1="53 Sea Zone" t2="A6 - Billabong"/>
+<connection t1="53 Sea Zone" t2="A8 - Dunny"/>
+<connection t1="53 Sea Zone" t2="A9 - Pozzy"/>
+<connection t1="53 Sea Zone" t2="A10 - Downunder"/>
+<connection t1="53 Sea Zone" t2="C5 - Aodamen"/>
 <connection t1="54 Sea Zone" t2="66 Sea Zone"/>
 <connection t1="54 Sea Zone" t2="79 Sea Zone"/>
-<connection t1="54 Sea Zone" t2="UK10"/>
-<connection t1="54 Sea Zone" t2="UK18"/>
+<connection t1="54 Sea Zone" t2="UK10 - Bytown"/>
+<connection t1="54 Sea Zone" t2="UK18 - Leftcoast"/>
 <connection t1="54 Sea Zone" t2="55 Sea Zone"/>
 <connection t1="55 Sea Zone" t2="56 Sea Zone"/>
 <connection t1="55 Sea Zone" t2="66 Sea Zone"/>
 <connection t1="55 Sea Zone" t2="67 Sea Zone"/>
-<connection t1="55 Sea Zone" t2="UK10"/>
+<connection t1="55 Sea Zone" t2="UK10 - Bytown"/>
 <connection t1="56 Sea Zone" t2="57 Sea Zone"/>
 <connection t1="56 Sea Zone" t2="67 Sea Zone"/>
 <connection t1="56 Sea Zone" t2="68 Sea Zone"/>
@@ -616,42 +616,42 @@
 <connection t1="58 Sea Zone" t2="69 Sea Zone"/>
 <connection t1="58 Sea Zone" t2="70 Sea Zone"/>
 <connection t1="58 Sea Zone" t2="G20"/>
-<connection t1="58 Sea Zone" t2="IN10"/>
-<connection t1="58 Sea Zone" t2="PA7"/>
-<connection t1="58 Sea Zone" t2="UK11"/>
-<connection t1="58 Sea Zone" t2="UK14"/>
+<connection t1="58 Sea Zone" t2="IN10 - Trasnaigh"/>
+<connection t1="58 Sea Zone" t2="PA7 - Sede"/>
+<connection t1="58 Sea Zone" t2="UK11 - Newf"/>
+<connection t1="58 Sea Zone" t2="UK14 - Cladach"/>
 <connection t1="59 Sea Zone" t2="60 Sea Zone"/>
-<connection t1="59 Sea Zone" t2="G15"/>
+<connection t1="59 Sea Zone" t2="G15 - Blitzburg"/>
 <connection t1="59 Sea Zone" t2="G16"/>
-<connection t1="59 Sea Zone" t2="G19"/>
-<connection t1="59 Sea Zone" t2="PX6"/>
+<connection t1="59 Sea Zone" t2="G19 - Kriegsbruck"/>
+<connection t1="59 Sea Zone" t2="PX6 - Liittolainenmaa"/>
 <connection t1="60 Sea Zone" t2="61 Sea Zone"/>
-<connection t1="60 Sea Zone" t2="G19"/>
+<connection t1="60 Sea Zone" t2="G19 - Kriegsbruck"/>
 <connection t1="60 Sea Zone" t2="I1"/>
 <connection t1="60 Sea Zone" t2="I2"/>
 <connection t1="60 Sea Zone" t2="I3"/>
-<connection t1="60 Sea Zone" t2="PX6"/>
+<connection t1="60 Sea Zone" t2="PX6 - Liittolainenmaa"/>
 <connection t1="61 Sea Zone" t2="I3"/>
-<connection t1="61 Sea Zone" t2="PA10"/>
-<connection t1="61 Sea Zone" t2="PA11"/>
-<connection t1="61 Sea Zone" t2="PA12"/>
+<connection t1="61 Sea Zone" t2="PA10 - Biedrsga"/>
+<connection t1="61 Sea Zone" t2="PA11 - Aizsargsn"/>
+<connection t1="61 Sea Zone" t2="PA12 - Udobno"/>
 <connection t1="61 Sea Zone" t2="R23"/>
 <connection t1="62 Sea Zone" t2="63 Sea Zone"/>
-<connection t1="62 Sea Zone" t2="C1"/>
+<connection t1="62 Sea Zone" t2="C1 - Beimen"/>
 <connection t1="62 Sea Zone" t2="R21"/>
 <connection t1="62 Sea Zone" t2="R25"/>
 <connection t1="62 Sea Zone" t2="R26"/>
 <connection t1="62 Sea Zone" t2="R27"/>
 <connection t1="63 Sea Zone" t2="64 Sea Zone"/>
-<connection t1="63 Sea Zone" t2="C1"/>
-<connection t1="63 Sea Zone" t2="C2"/>
+<connection t1="63 Sea Zone" t2="C1 - Beimen"/>
+<connection t1="63 Sea Zone" t2="C2 - Jinglu"/>
 <connection t1="64 Sea Zone" t2="65 Sea Zone"/>
-<connection t1="64 Sea Zone" t2="C2"/>
-<connection t1="64 Sea Zone" t2="C3"/>
+<connection t1="64 Sea Zone" t2="C2 - Jinglu"/>
+<connection t1="64 Sea Zone" t2="C3 - Chukou"/>
 <connection t1="65 Sea Zone" t2="76 Sea Zone"/>
-<connection t1="65 Sea Zone" t2="C3"/>
-<connection t1="65 Sea Zone" t2="C4"/>
-<connection t1="65 Sea Zone" t2="C5"/>
+<connection t1="65 Sea Zone" t2="C3 - Chukou"/>
+<connection t1="65 Sea Zone" t2="C4 - Laohuxi"/>
+<connection t1="65 Sea Zone" t2="C5 - Aodamen"/>
 <connection t1="66 Sea Zone" t2="79 Sea Zone"/>
 <connection t1="66 Sea Zone" t2="80 Sea Zone"/>
 <connection t1="66 Sea Zone" t2="81 Sea Zone"/>
@@ -668,22 +668,22 @@
 <connection t1="69 Sea Zone" t2="84 Sea Zone"/>
 <connection t1="70 Sea Zone" t2="71 Sea Zone"/>
 <connection t1="70 Sea Zone" t2="73 Sea Zone"/>
-<connection t1="70 Sea Zone" t2="F6"/>
-<connection t1="70 Sea Zone" t2="UK14"/>
+<connection t1="70 Sea Zone" t2="F6 - Macabrenne"/>
+<connection t1="70 Sea Zone" t2="UK14 - Cladach"/>
 <connection t1="71 Sea Zone" t2="72 Sea Zone"/>
 <connection t1="71 Sea Zone" t2="73 Sea Zone"/>
 <connection t1="71 Sea Zone" t2="74 Sea Zone"/>
 <connection t1="71 Sea Zone" t2="75 Sea Zone"/>
-<connection t1="71 Sea Zone" t2="F6"/>
+<connection t1="71 Sea Zone" t2="F6 - Macabrenne"/>
 <connection t1="71 Sea Zone" t2="G21"/>
-<connection t1="71 Sea Zone" t2="IN11"/>
+<connection t1="71 Sea Zone" t2="IN11 - Kantstenn"/>
 <connection t1="72 Sea Zone" t2="60 Sea Zone"/>
 <connection t1="72 Sea Zone" t2="75 Sea Zone"/>
 <connection t1="72 Sea Zone" t2="G18"/>
-<connection t1="72 Sea Zone" t2="G19"/>
+<connection t1="72 Sea Zone" t2="G19 - Kriegsbruck"/>
 <connection t1="72 Sea Zone" t2="G21"/>
 <connection t1="72 Sea Zone" t2="I1"/>
-<connection t1="72 Sea Zone" t2="IN11"/>
+<connection t1="72 Sea Zone" t2="IN11 - Kantstenn"/>
 <connection t1="73 Sea Zone" t2="74 Sea Zone"/>
 <connection t1="73 Sea Zone" t2="84 Sea Zone"/>
 <connection t1="73 Sea Zone" t2="85 Sea Zone"/>
@@ -694,367 +694,367 @@
 <connection t1="75 Sea Zone" t2="I1"/>
 <connection t1="75 Sea Zone" t2="I5"/>
 <connection t1="76 Sea Zone" t2="90 Sea Zone"/>
-<connection t1="76 Sea Zone" t2="C4"/>
-<connection t1="76 Sea Zone" t2="C9"/>
-<connection t1="76 Sea Zone" t2="C10"/>
-<connection t1="76 Sea Zone" t2="C11"/>
-<connection t1="76 Sea Zone" t2="C16"/>
-<connection t1="76 Sea Zone" t2="J1"/>
-<connection t1="76 Sea Zone" t2="J8"/>
+<connection t1="76 Sea Zone" t2="C4 - Laohuxi"/>
+<connection t1="76 Sea Zone" t2="C9 - Shijiang"/>
+<connection t1="76 Sea Zone" t2="C10 - Dapaizhong"/>
+<connection t1="76 Sea Zone" t2="C11- Tielu"/>
+<connection t1="76 Sea Zone" t2="C16 - Jinkou"/>
+<connection t1="76 Sea Zone" t2="J1 - Sakusen"/>
+<connection t1="76 Sea Zone" t2="J8 - Hanto"/>
 <connection t1="77 Sea Zone" t2="78 Sea Zone"/>
 <connection t1="77 Sea Zone" t2="92 Sea Zone"/>
 <connection t1="77 Sea Zone" t2="93 Sea Zone"/>
-<connection t1="77 Sea Zone" t2="J3"/>
-<connection t1="77 Sea Zone" t2="J4"/>
-<connection t1="77 Sea Zone" t2="UK16"/>
+<connection t1="77 Sea Zone" t2="J3 - Toreddokoya"/>
+<connection t1="77 Sea Zone" t2="J4 - Danmakuba"/>
+<connection t1="77 Sea Zone" t2="UK16 - Ditchmond"/>
 <connection t1="78 Sea Zone" t2="79 Sea Zone"/>
 <connection t1="78 Sea Zone" t2="80 Sea Zone"/>
 <connection t1="78 Sea Zone" t2="93 Sea Zone"/>
-<connection t1="78 Sea Zone" t2="UK16"/>
-<connection t1="78 Sea Zone" t2="UK17"/>
-<connection t1="78 Sea Zone" t2="UK18"/>
+<connection t1="78 Sea Zone" t2="UK16 - Ditchmond"/>
+<connection t1="78 Sea Zone" t2="UK17 - Scivey"/>
+<connection t1="78 Sea Zone" t2="UK18 - Leftcoast"/>
 <connection t1="79 Sea Zone" t2="80 Sea Zone"/>
-<connection t1="79 Sea Zone" t2="UK10"/>
-<connection t1="79 Sea Zone" t2="UK17"/>
-<connection t1="79 Sea Zone" t2="UK18"/>
+<connection t1="79 Sea Zone" t2="UK10 - Bytown"/>
+<connection t1="79 Sea Zone" t2="UK17 - Scivey"/>
+<connection t1="79 Sea Zone" t2="UK18 - Leftcoast"/>
 <connection t1="80 Sea Zone" t2="81 Sea Zone"/>
 <connection t1="80 Sea Zone" t2="93 Sea Zone"/>
 <connection t1="80 Sea Zone" t2="94 Sea Zone"/>
-<connection t1="80 Sea Zone" t2="US22"/>
+<connection t1="80 Sea Zone" t2="US22 - Alohisle"/>
 <connection t1="81 Sea Zone" t2="82 Sea Zone"/>
-<connection t1="81 Sea Zone" t2="F10"/>
-<connection t1="81 Sea Zone" t2="F22"/>
+<connection t1="81 Sea Zone" t2="F10 - Nouveausot"/>
+<connection t1="81 Sea Zone" t2="F22 - Savon"/>
 <connection t1="81 Sea Zone" t2="94 Sea Zone"/>
 <connection t1="82 Sea Zone" t2="83 Sea Zone"/>
-<connection t1="82 Sea Zone" t2="F10"/>
-<connection t1="82 Sea Zone" t2="F11"/>
+<connection t1="82 Sea Zone" t2="F10 - Nouveausot"/>
+<connection t1="82 Sea Zone" t2="F11 - Chateaumont"/>
 <connection t1="83 Sea Zone" t2="84 Sea Zone"/>
 <connection t1="83 Sea Zone" t2="95 Sea Zone"/>
-<connection t1="83 Sea Zone" t2="UK19"/>
+<connection t1="83 Sea Zone" t2="UK19 - Valeurbec"/>
 <connection t1="84 Sea Zone" t2="85 Sea Zone"/>
 <connection t1="84 Sea Zone" t2="95 Sea Zone"/>
 <connection t1="84 Sea Zone" t2="97 Sea Zone"/>
-<connection t1="84 Sea Zone" t2="PA14"/>
-<connection t1="84 Sea Zone" t2="UK20"/>
+<connection t1="84 Sea Zone" t2="PA14 - Syntrofos"/>
+<connection t1="84 Sea Zone" t2="UK20 - Vue"/>
 <connection t1="85 Sea Zone" t2="86 Sea Zone"/>
 <connection t1="85 Sea Zone" t2="98 Sea Zone"/>
 <connection t1="85 Sea Zone" t2="99 Sea Zone"/>
-<connection t1="85 Sea Zone" t2="PA14"/>
+<connection t1="85 Sea Zone" t2="PA14 - Syntrofos"/>
 <connection t1="86 Sea Zone" t2="87 Sea Zone"/>
 <connection t1="86 Sea Zone" t2="99 Sea Zone"/>
 <connection t1="86 Sea Zone" t2="100 Sea Zone"/>
 <connection t1="86 Sea Zone" t2="I5"/>
-<connection t1="86 Sea Zone" t2="I7"/>
+<connection t1="86 Sea Zone" t2="I7 - Nisi"/>
 <connection t1="87 Sea Zone" t2="88 Sea Zone"/>
 <connection t1="87 Sea Zone" t2="100 Sea Zone"/>
 <connection t1="87 Sea Zone" t2="101 Sea Zone"/>
 <connection t1="87 Sea Zone" t2="I5"/>
 <connection t1="87 Sea Zone" t2="I6"/>
-<connection t1="87 Sea Zone" t2="UK21"/>
+<connection t1="87 Sea Zone" t2="UK21 - Tsetretn"/>
 <connection t1="88 Sea Zone" t2="89 Sea Zone"/>
 <connection t1="88 Sea Zone" t2="101 Sea Zone"/>
 <connection t1="88 Sea Zone" t2="102 Sea Zone"/>
-<connection t1="88 Sea Zone" t2="F8"/>
-<connection t1="88 Sea Zone" t2="F9"/>
+<connection t1="88 Sea Zone" t2="F8 - Shaykhes"/>
+<connection t1="88 Sea Zone" t2="F9 - Tsutshepen"/>
 <connection t1="88 Sea Zone" t2="I6"/>
-<connection t1="88 Sea Zone" t2="UK21"/>
-<connection t1="88 Sea Zone" t2="UK22"/>
-<connection t1="88 Sea Zone" t2="UK27"/>
-<connection t1="89 Sea Zone" t2="F8"/>
-<connection t1="89 Sea Zone" t2="F9"/>
-<connection t1="89 Sea Zone" t2="UK23"/>
-<connection t1="89 Sea Zone" t2="UK24"/>
-<connection t1="89 Sea Zone" t2="UK26"/>
-<connection t1="89 Sea Zone" t2="UK27"/>
-<connection t1="89 Sea Zone" t2="UK28"/>
+<connection t1="88 Sea Zone" t2="UK21 - Tsetretn"/>
+<connection t1="88 Sea Zone" t2="UK22 - Forzikh"/>
+<connection t1="88 Sea Zone" t2="UK27 - Rajadhani"/>
+<connection t1="89 Sea Zone" t2="F8 - Shaykhes"/>
+<connection t1="89 Sea Zone" t2="F9 - Tsutshepen"/>
+<connection t1="89 Sea Zone" t2="UK23 - Tatadwal"/>
+<connection t1="89 Sea Zone" t2="UK24 - Buniada"/>
+<connection t1="89 Sea Zone" t2="UK26 - Chauraaha"/>
+<connection t1="89 Sea Zone" t2="UK27 - Rajadhani"/>
+<connection t1="89 Sea Zone" t2="UK28 - Dhanavaru"/>
 <connection t1="90 Sea Zone" t2="91 Sea Zone"/>
 <connection t1="90 Sea Zone" t2="108 Sea Zone"/>
-<connection t1="90 Sea Zone" t2="C16"/>
-<connection t1="90 Sea Zone" t2="J6"/>
-<connection t1="90 Sea Zone" t2="J7"/>
-<connection t1="90 Sea Zone" t2="J8"/>
+<connection t1="90 Sea Zone" t2="C16 - Jinkou"/>
+<connection t1="90 Sea Zone" t2="J6 - Saizensen"/>
+<connection t1="90 Sea Zone" t2="J7 - Senryo"/>
+<connection t1="90 Sea Zone" t2="J8 - Hanto"/>
 <connection t1="91 Sea Zone" t2="92 Sea Zone"/>
 <connection t1="91 Sea Zone" t2="108 Sea Zone"/>
 <connection t1="91 Sea Zone" t2="109 Sea Zone"/>
-<connection t1="91 Sea Zone" t2="J8"/>
-<connection t1="91 Sea Zone" t2="J9"/>
-<connection t1="91 Sea Zone" t2="J14"/>
+<connection t1="91 Sea Zone" t2="J8 - Hanto"/>
+<connection t1="91 Sea Zone" t2="J9 - Joriku"/>
+<connection t1="91 Sea Zone" t2="J14 - Sokotoshi"/>
 <connection t1="92 Sea Zone" t2="93 Sea Zone"/>
-<connection t1="92 Sea Zone" t2="J2"/>
-<connection t1="92 Sea Zone" t2="J3"/>
-<connection t1="92 Sea Zone" t2="J9"/>
-<connection t1="92 Sea Zone" t2="J14"/>
-<connection t1="92 Sea Zone" t2="J15"/>
+<connection t1="92 Sea Zone" t2="J2 - Tochaku"/>
+<connection t1="92 Sea Zone" t2="J3 - Toreddokoya"/>
+<connection t1="92 Sea Zone" t2="J9 - Joriku"/>
+<connection t1="92 Sea Zone" t2="J14 - Sokotoshi"/>
+<connection t1="92 Sea Zone" t2="J15 - Orosumura"/>
 <connection t1="93 Sea Zone" t2="94 Sea Zone"/>
 <connection t1="93 Sea Zone" t2="110 Sea Zone"/>
 <connection t1="93 Sea Zone" t2="111 Sea Zone"/>
-<connection t1="93 Sea Zone" t2="J10"/>
-<connection t1="93 Sea Zone" t2="J15"/>
+<connection t1="93 Sea Zone" t2="J10 - Kanshiin"/>
+<connection t1="93 Sea Zone" t2="J15 - Orosumura"/>
 <connection t1="94 Sea Zone" t2="111 Sea Zone"/>
-<connection t1="94 Sea Zone" t2="F20"/>
-<connection t1="94 Sea Zone" t2="F21"/>
-<connection t1="94 Sea Zone" t2="F22"/>
+<connection t1="94 Sea Zone" t2="F20 - Peninsule"/>
+<connection t1="94 Sea Zone" t2="F21 - Bassinne"/>
+<connection t1="94 Sea Zone" t2="F22 - Savon"/>
 <connection t1="95 Sea Zone" t2="96 Sea Zone"/>
 <connection t1="95 Sea Zone" t2="97 Sea Zone"/>
-<connection t1="95 Sea Zone" t2="F11"/>
-<connection t1="95 Sea Zone" t2="UK19"/>
+<connection t1="95 Sea Zone" t2="F11 - Chateaumont"/>
+<connection t1="95 Sea Zone" t2="UK19 - Valeurbec"/>
 <connection t1="96 Sea Zone" t2="97 Sea Zone"/>
 <connection t1="96 Sea Zone" t2="114 Sea Zone"/>
-<connection t1="96 Sea Zone" t2="F11"/>
-<connection t1="96 Sea Zone" t2="F13"/>
-<connection t1="96 Sea Zone" t2="F16"/>
+<connection t1="96 Sea Zone" t2="F11 - Chateaumont"/>
+<connection t1="96 Sea Zone" t2="F13 - Outremerville"/>
+<connection t1="96 Sea Zone" t2="F16 - Saintnez"/>
 <connection t1="97 Sea Zone" t2="98 Sea Zone"/>
 <connection t1="97 Sea Zone" t2="114 Sea Zone"/>
-<connection t1="97 Sea Zone" t2="PA14"/>
+<connection t1="97 Sea Zone" t2="PA14 - Syntrofos"/>
 <connection t1="98 Sea Zone" t2="99 Sea Zone"/>
 <connection t1="98 Sea Zone" t2="114 Sea Zone"/>
 <connection t1="98 Sea Zone" t2="115 Sea Zone"/>
-<connection t1="98 Sea Zone" t2="NL10"/>
-<connection t1="98 Sea Zone" t2="PA14"/>
-<connection t1="98 Sea Zone" t2="UK30"/>
+<connection t1="98 Sea Zone" t2="NL10 - Grensgebied"/>
+<connection t1="98 Sea Zone" t2="PA14 - Syntrofos"/>
+<connection t1="98 Sea Zone" t2="UK30 - Vlootbasis"/>
 <connection t1="99 Sea Zone" t2="100 Sea Zone"/>
-<connection t1="99 Sea Zone" t2="NL10"/>
-<connection t1="99 Sea Zone" t2="NL11"/>
-<connection t1="99 Sea Zone" t2="UK30"/>
+<connection t1="99 Sea Zone" t2="NL10 - Grensgebied"/>
+<connection t1="99 Sea Zone" t2="NL11 - Hoofdstad"/>
+<connection t1="99 Sea Zone" t2="UK30 - Vlootbasis"/>
 <connection t1="100 Sea Zone" t2="101 Sea Zone"/>
 <connection t1="100 Sea Zone" t2="116 Sea Zone"/>
-<connection t1="100 Sea Zone" t2="NL11"/>
+<connection t1="100 Sea Zone" t2="NL11 - Hoofdstad"/>
 <connection t1="101 Sea Zone" t2="102 Sea Zone"/>
 <connection t1="101 Sea Zone" t2="116 Sea Zone"/>
 <connection t1="101 Sea Zone" t2="117 Sea Zone"/>
 <connection t1="101 Sea Zone" t2="118 Sea Zone"/>
-<connection t1="101 Sea Zone" t2="UK31"/>
+<connection t1="101 Sea Zone" t2="UK31 - Zikherkayt"/>
 <connection t1="102 Sea Zone" t2="103 Sea Zone"/>
 <connection t1="102 Sea Zone" t2="118 Sea Zone"/>
-<connection t1="102 Sea Zone" t2="UK27"/>
+<connection t1="102 Sea Zone" t2="UK27 - Rajadhani"/>
 <connection t1="103 Sea Zone" t2="104 Sea Zone"/>
 <connection t1="103 Sea Zone" t2="118 Sea Zone"/>
 <connection t1="103 Sea Zone" t2="119 Sea Zone"/>
 <connection t1="103 Sea Zone" t2="120 Sea Zone"/>
-<connection t1="103 Sea Zone" t2="UK27"/>
-<connection t1="103 Sea Zone" t2="UK28"/>
-<connection t1="103 Sea Zone" t2="UK29"/>
+<connection t1="103 Sea Zone" t2="UK27 - Rajadhani"/>
+<connection t1="103 Sea Zone" t2="UK28 - Dhanavaru"/>
+<connection t1="103 Sea Zone" t2="UK29 - Chidhhar"/>
 <connection t1="104 Sea Zone" t2="105 Sea Zone"/>
 <connection t1="104 Sea Zone" t2="120 Sea Zone"/>
-<connection t1="104 Sea Zone" t2="C21"/>
-<connection t1="104 Sea Zone" t2="UK26"/>
-<connection t1="104 Sea Zone" t2="UK29"/>
+<connection t1="104 Sea Zone" t2="C21 - Yindumen"/>
+<connection t1="104 Sea Zone" t2="UK26 - Chauraaha"/>
+<connection t1="104 Sea Zone" t2="UK29 - Chidhhar"/>
 <connection t1="105 Sea Zone" t2="106 Sea Zone"/>
 <connection t1="105 Sea Zone" t2="107 Sea Zone"/>
 <connection t1="105 Sea Zone" t2="120 Sea Zone"/>
-<connection t1="105 Sea Zone" t2="C21"/>
-<connection t1="105 Sea Zone" t2="C22"/>
-<connection t1="105 Sea Zone" t2="J5"/>
+<connection t1="105 Sea Zone" t2="C21 - Yindumen"/>
+<connection t1="105 Sea Zone" t2="C22 - Buxinghu"/>
+<connection t1="105 Sea Zone" t2="J5 - Tsuki"/>
 <connection t1="106 Sea Zone" t2="107 Sea Zone"/>
 <connection t1="106 Sea Zone" t2="108 Sea Zone"/>
-<connection t1="106 Sea Zone" t2="C22"/>
-<connection t1="106 Sea Zone" t2="J5"/>
-<connection t1="106 Sea Zone" t2="J6"/>
+<connection t1="106 Sea Zone" t2="C22 - Buxinghu"/>
+<connection t1="106 Sea Zone" t2="J5 - Tsuki"/>
+<connection t1="106 Sea Zone" t2="J6 - Saizensen"/>
 <connection t1="107 Sea Zone" t2="108 Sea Zone"/>
 <connection t1="107 Sea Zone" t2="120 Sea Zone"/>
 <connection t1="107 Sea Zone" t2="121 Sea Zone"/>
 <connection t1="107 Sea Zone" t2="122 Sea Zone"/>
-<connection t1="107 Sea Zone" t2="J11"/>
+<connection t1="107 Sea Zone" t2="J11 - Shima"/>
 <connection t1="108 Sea Zone" t2="109 Sea Zone"/>
 <connection t1="108 Sea Zone" t2="122 Sea Zone"/>
-<connection t1="108 Sea Zone" t2="J6"/>
-<connection t1="108 Sea Zone" t2="J12"/>
+<connection t1="108 Sea Zone" t2="J6 - Saizensen"/>
+<connection t1="108 Sea Zone" t2="J12 - Ki"/>
 <connection t1="109 Sea Zone" t2="110 Sea Zone"/>
 <connection t1="109 Sea Zone" t2="122 Sea Zone"/>
 <connection t1="109 Sea Zone" t2="123 Sea Zone"/>
 <connection t1="109 Sea Zone" t2="124 Sea Zone"/>
-<connection t1="109 Sea Zone" t2="J13"/>
+<connection t1="109 Sea Zone" t2="J13 - Shukkyo"/>
 <connection t1="110 Sea Zone" t2="111 Sea Zone"/>
 <connection t1="110 Sea Zone" t2="124 Sea Zone"/>
 <connection t1="110 Sea Zone" t2="125 Sea Zone"/>
-<connection t1="110 Sea Zone" t2="J14"/>
-<connection t1="110 Sea Zone" t2="J15"/>
+<connection t1="110 Sea Zone" t2="J14 - Sokotoshi"/>
+<connection t1="110 Sea Zone" t2="J15 - Orosumura"/>
 <connection t1="111 Sea Zone" t2="125 Sea Zone"/>
-<connection t1="111 Sea Zone" t2="F19"/>
-<connection t1="111 Sea Zone" t2="F20"/>
-<connection t1="111 Sea Zone" t2="F21"/>
+<connection t1="111 Sea Zone" t2="F19 - Bas"/>
+<connection t1="111 Sea Zone" t2="F20 - Peninsule"/>
+<connection t1="111 Sea Zone" t2="F21 - Bassinne"/>
 <connection t1="112 Sea Zone" t2="113 Sea Zone"/>
-<connection t1="112 Sea Zone" t2="F14"/>
-<connection t1="112 Sea Zone" t2="F15"/>
-<connection t1="112 Sea Zone" t2="F24"/>
+<connection t1="112 Sea Zone" t2="F14 - Gauchernay"/>
+<connection t1="112 Sea Zone" t2="F15 - Aigleaix"/>
+<connection t1="112 Sea Zone" t2="F24 - Pierre"/>
 <connection t1="112 Sea Zone" t2="126 Sea Zone"/>
 <connection t1="113 Sea Zone" t2="114 Sea Zone"/>
-<connection t1="113 Sea Zone" t2="F15"/>
-<connection t1="113 Sea Zone" t2="F16"/>
+<connection t1="113 Sea Zone" t2="F15 - Aigleaix"/>
+<connection t1="113 Sea Zone" t2="F16 - Saintnez"/>
 <connection t1="114 Sea Zone" t2="115 Sea Zone"/>
-<connection t1="114 Sea Zone" t2="F16"/>
-<connection t1="114 Sea Zone" t2="F17"/>
+<connection t1="114 Sea Zone" t2="F16 - Saintnez"/>
+<connection t1="114 Sea Zone" t2="F17 - Pluie"/>
 <connection t1="115 Sea Zone" t2="116 Sea Zone"/>
-<connection t1="115 Sea Zone" t2="UK30"/>
+<connection t1="115 Sea Zone" t2="UK30 - Vlootbasis"/>
 <connection t1="116 Sea Zone" t2="117 Sea Zone"/>
-<connection t1="116 Sea Zone" t2="NL12"/>
-<connection t1="116 Sea Zone" t2="NL13"/>
+<connection t1="116 Sea Zone" t2="NL12 - Ingang"/>
+<connection t1="116 Sea Zone" t2="NL13 - Verleiding"/>
 <connection t1="117 Sea Zone" t2="118 Sea Zone"/>
-<connection t1="117 Sea Zone" t2="PA15"/>
+<connection t1="117 Sea Zone" t2="PA15 - Sympaikti"/>
 <connection t1="118 Sea Zone" t2="119 Sea Zone"/>
 <connection t1="119 Sea Zone" t2="120 Sea Zone"/>
-<connection t1="119 Sea Zone" t2="UK32"/>
+<connection t1="119 Sea Zone" t2="UK32 - Tir"/>
 <connection t1="120 Sea Zone" t2="121 Sea Zone"/>
-<connection t1="120 Sea Zone" t2="J16"/>
+<connection t1="120 Sea Zone" t2="J16 - Ri"/>
 <connection t1="121 Sea Zone" t2="122 Sea Zone"/>
-<connection t1="121 Sea Zone" t2="F18"/>
+<connection t1="121 Sea Zone" t2="F18 - Rond"/>
 <connection t1="122 Sea Zone" t2="123 Sea Zone"/>
 <connection t1="123 Sea Zone" t2="124 Sea Zone"/>
 <connection t1="124 Sea Zone" t2="125 Sea Zone"/>
 <connection t1="125 Sea Zone" t2="126 Sea Zone"/>
-<connection t1="125 Sea Zone" t2="F20"/>
-<connection t1="126 Sea Zone" t2="F20"/>
-<connection t1="126 Sea Zone" t2="F21"/>
-<connection t1="126 Sea Zone" t2="F24"/>
-<connection t1="127 Sea Zone" t2="NL10"/>
-<connection t1="127 Sea Zone" t2="NL11"/>
-<connection t1="127 Sea Zone" t2="NL12"/>
-<connection t1="127 Sea Zone" t2="NL13"/>
-<connection t1="127 Sea Zone" t2="UK30"/>
-<connection t1="A1" t2="A2"/>
-<connection t1="A1" t2="A3"/>
-<connection t1="A1" t2="IN4"/>
-<connection t1="A2" t2="28 Sea Zone"/>
-<connection t1="A2" t2="A3"/>
-<connection t1="A2" t2="A4"/>
-<connection t1="A3" t2="A4"/>
-<connection t1="A3" t2="A6"/>
-<connection t1="A4" t2="A6"/>
-<connection t1="A6" t2="A8"/>
-<connection t1="A8" t2="A9"/>
-<connection t1="A9" t2="A10"/>
-<connection t1="A9" t2="F7"/>
-<connection t1="A9" t2="IN13"/>
-<connection t1="A10" t2="C5"/>
-<connection t1="A10" t2="IN13"/>
+<connection t1="125 Sea Zone" t2="F20 - Peninsule"/>
+<connection t1="126 Sea Zone" t2="F20 - Peninsule"/>
+<connection t1="126 Sea Zone" t2="F21 - Bassinne"/>
+<connection t1="126 Sea Zone" t2="F24 - Pierre"/>
+<connection t1="127 Sea Zone" t2="NL10 - Grensgebied"/>
+<connection t1="127 Sea Zone" t2="NL11 - Hoofdstad"/>
+<connection t1="127 Sea Zone" t2="NL12 - Ingang"/>
+<connection t1="127 Sea Zone" t2="NL13 - Verleiding"/>
+<connection t1="127 Sea Zone" t2="UK30 - Vlootbasis"/>
+<connection t1="A1 - Topend" t2="A2 - Ace"/>
+<connection t1="A1 - Topend" t2="A3 - Bush"/>
+<connection t1="A1 - Topend" t2="IN4 - Halangan"/>
+<connection t1="A2 - Ace" t2="28 Sea Zone"/>
+<connection t1="A2 - Ace" t2="A3 - Bush"/>
+<connection t1="A2 - Ace" t2="A4 - Smoke"/>
+<connection t1="A3 - Bush" t2="A4 - Smoke"/>
+<connection t1="A3 - Bush" t2="A6 - Billabong"/>
+<connection t1="A4 - Smoke" t2="A6 - Billabong"/>
+<connection t1="A6 - Billabong" t2="A8 - Dunny"/>
+<connection t1="A8 - Dunny" t2="A9 - Pozzy"/>
+<connection t1="A9 - Pozzy" t2="A10 - Downunder"/>
+<connection t1="A9 - Pozzy" t2="F7 - Ennui"/>
+<connection t1="A9 - Pozzy" t2="IN13 - Espectador"/>
+<connection t1="A10 - Downunder" t2="C5 - Aodamen"/>
+<connection t1="A10 - Downunder" t2="IN13 - Espectador"/>
 <connection t1="ACap" t2="112 Sea Zone"/>
 <connection t1="ACap" t2="126 Sea Zone"/>
-<connection t1="C1" t2="C2"/>
-<connection t1="C1" t2="C6"/>
-<connection t1="C1" t2="C7"/>
-<connection t1="C1" t2="R26"/>
-<connection t1="C2" t2="C3"/>
-<connection t1="C2" t2="C7"/>
-<connection t1="C2" t2="C8"/>
-<connection t1="C3" t2="76 Sea Zone"/>
-<connection t1="C3" t2="C8"/>
-<connection t1="C3" t2="C9"/>
-<connection t1="C3" t2="C10"/>
-<connection t1="C4" t2="C5"/>
-<connection t1="C4" t2="C11"/>
-<connection t1="C4" t2="C12"/>
-<connection t1="C5" t2="C12"/>
-<connection t1="C5" t2="IN13"/>
-<connection t1="C6" t2="C7"/>
-<connection t1="C6" t2="C13"/>
-<connection t1="C6" t2="C14"/>
-<connection t1="C7" t2="C8"/>
-<connection t1="C7" t2="C14"/>
-<connection t1="C8" t2="C9"/>
-<connection t1="C8" t2="C14"/>
-<connection t1="C8" t2="C15"/>
-<connection t1="C9" t2="C15"/>
-<connection t1="C9" t2="C16"/>
-<connection t1="C10" t2="65 Sea Zone"/>
-<connection t1="C10" t2="C9"/>
-<connection t1="C11" t2="65 Sea Zone"/>
-<connection t1="C11" t2="C12"/>
-<connection t1="C11" t2="J1"/>
-<connection t1="C12" t2="IN13"/>
-<connection t1="C12" t2="J1"/>
-<connection t1="C12" t2="J2"/>
-<connection t1="C13" t2="C14"/>
-<connection t1="C13" t2="C17"/>
-<connection t1="C13" t2="R31"/>
-<connection t1="C13" t2="R32"/>
-<connection t1="C14" t2="C15"/>
-<connection t1="C14" t2="C17"/>
-<connection t1="C14" t2="C18"/>
-<connection t1="C14" t2="C19"/>
-<connection t1="C15" t2="C16"/>
-<connection t1="C15" t2="C19"/>
-<connection t1="C15" t2="J7"/>
-<connection t1="C16" t2="J7"/>
-<connection t1="C17" t2="C18"/>
-<connection t1="C17" t2="C20"/>
-<connection t1="C18" t2="C19"/>
-<connection t1="C18" t2="C20"/>
-<connection t1="C18" t2="C22"/>
-<connection t1="C18" t2="J5"/>
-<connection t1="C19" t2="J5"/>
-<connection t1="C19" t2="J6"/>
-<connection t1="C19" t2="J7"/>
-<connection t1="C20" t2="C21"/>
-<connection t1="C20" t2="C22"/>
-<connection t1="C21" t2="C22"/>
-<connection t1="C21" t2="UK26"/>
-<connection t1="C22" t2="J5"/>
+<connection t1="C1 - Beimen" t2="C2 - Jinglu"/>
+<connection t1="C1 - Beimen" t2="C6 - Huabu"/>
+<connection t1="C1 - Beimen" t2="C7 - Yuding"/>
+<connection t1="C1 - Beimen" t2="R26"/>
+<connection t1="C2 - Jinglu" t2="C3 - Chukou"/>
+<connection t1="C2 - Jinglu" t2="C7 - Yuding"/>
+<connection t1="C2 - Jinglu" t2="C8 - Fangyunnan"/>
+<connection t1="C3 - Chukou" t2="76 Sea Zone"/>
+<connection t1="C3 - Chukou" t2="C8 - Fangyunnan"/>
+<connection t1="C3 - Chukou" t2="C9 - Shijiang"/>
+<connection t1="C3 - Chukou" t2="C10 - Dapaizhong"/>
+<connection t1="C4 - Laohuxi" t2="C5 - Aodamen"/>
+<connection t1="C4 - Laohuxi" t2="C11- Tielu"/>
+<connection t1="C4 - Laohuxi" t2="C12 - Zoutouwulu"/>
+<connection t1="C5 - Aodamen" t2="C12 - Zoutouwulu"/>
+<connection t1="C5 - Aodamen" t2="IN13 - Espectador"/>
+<connection t1="C6 - Huabu" t2="C7 - Yuding"/>
+<connection t1="C6 - Huabu" t2="C13 - Huidegan"/>
+<connection t1="C6 - Huabu" t2="C14 - Baolei"/>
+<connection t1="C7 - Yuding" t2="C8 - Fangyunnan"/>
+<connection t1="C7 - Yuding" t2="C14 - Baolei"/>
+<connection t1="C8 - Fangyunnan" t2="C9 - Shijiang"/>
+<connection t1="C8 - Fangyunnan" t2="C14 - Baolei"/>
+<connection t1="C8 - Fangyunnan" t2="C15 - Guangchang"/>
+<connection t1="C9 - Shijiang" t2="C15 - Guangchang"/>
+<connection t1="C9 - Shijiang" t2="C16 - Jinkou"/>
+<connection t1="C10 - Dapaizhong" t2="65 Sea Zone"/>
+<connection t1="C10 - Dapaizhong" t2="C9 - Shijiang"/>
+<connection t1="C11- Tielu" t2="65 Sea Zone"/>
+<connection t1="C11- Tielu" t2="C12 - Zoutouwulu"/>
+<connection t1="C11- Tielu" t2="J1 - Sakusen"/>
+<connection t1="C12 - Zoutouwulu" t2="IN13 - Espectador"/>
+<connection t1="C12 - Zoutouwulu" t2="J1 - Sakusen"/>
+<connection t1="C12 - Zoutouwulu" t2="J2 - Tochaku"/>
+<connection t1="C13 - Huidegan" t2="C14 - Baolei"/>
+<connection t1="C13 - Huidegan" t2="C17 - Pinkunqing"/>
+<connection t1="C13 - Huidegan" t2="R31"/>
+<connection t1="C13 - Huidegan" t2="R32"/>
+<connection t1="C14 - Baolei" t2="C15 - Guangchang"/>
+<connection t1="C14 - Baolei" t2="C17 - Pinkunqing"/>
+<connection t1="C14 - Baolei" t2="C18 - Ninguang"/>
+<connection t1="C14 - Baolei" t2="C19 - Jianchi"/>
+<connection t1="C15 - Guangchang" t2="C16 - Jinkou"/>
+<connection t1="C15 - Guangchang" t2="C19 - Jianchi"/>
+<connection t1="C15 - Guangchang" t2="J7 - Senryo"/>
+<connection t1="C16 - Jinkou" t2="J7 - Senryo"/>
+<connection t1="C17 - Pinkunqing" t2="C18 - Ninguang"/>
+<connection t1="C17 - Pinkunqing" t2="C20 - Laoshan"/>
+<connection t1="C18 - Ninguang" t2="C19 - Jianchi"/>
+<connection t1="C18 - Ninguang" t2="C20 - Laoshan"/>
+<connection t1="C18 - Ninguang" t2="C22 - Buxinghu"/>
+<connection t1="C18 - Ninguang" t2="J5 - Tsuki"/>
+<connection t1="C19 - Jianchi" t2="J5 - Tsuki"/>
+<connection t1="C19 - Jianchi" t2="J6 - Saizensen"/>
+<connection t1="C19 - Jianchi" t2="J7 - Senryo"/>
+<connection t1="C20 - Laoshan" t2="C21 - Yindumen"/>
+<connection t1="C20 - Laoshan" t2="C22 - Buxinghu"/>
+<connection t1="C21 - Yindumen" t2="C22 - Buxinghu"/>
+<connection t1="C21 - Yindumen" t2="UK26 - Chauraaha"/>
+<connection t1="C22 - Buxinghu" t2="J5 - Tsuki"/>
 <connection t1="CCap" t2="112 Sea Zone"/>
 <connection t1="CCap" t2="126 Sea Zone"/>
-<connection t1="F2" t2="F3"/>
-<connection t1="F2" t2="F5"/>
-<connection t1="F2" t2="G10"/>
-<connection t1="F2" t2="G11"/>
-<connection t1="F2" t2="NL2"/>
-<connection t1="F3" t2="F4"/>
-<connection t1="F3" t2="F5"/>
-<connection t1="F3" t2="IN2"/>
-<connection t1="F4" t2="IN2"/>
-<connection t1="F4" t2="PA3"/>
-<connection t1="F5" t2="G8"/>
-<connection t1="F5" t2="G11"/>
-<connection t1="F5" t2="IN2"/>
-<connection t1="F5" t2="PX3"/>
-<connection t1="F6" t2="G21"/>
-<connection t1="F6" t2="IN10"/>
-<connection t1="F6" t2="PA9"/>
-<connection t1="F6" t2="PX5"/>
-<connection t1="F6" t2="UK13"/>
-<connection t1="F6" t2="UK14"/>
-<connection t1="F7" t2="IN9"/>
-<connection t1="F7" t2="IN13"/>
-<connection t1="F7" t2="IN14"/>
-<connection t1="F7" t2="US21"/>
-<connection t1="F8" t2="F9"/>
-<connection t1="F8" t2="I4"/>
-<connection t1="F8" t2="PX7"/>
-<connection t1="F8" t2="UK22"/>
-<connection t1="F9" t2="PA13"/>
-<connection t1="F9" t2="PX7"/>
-<connection t1="F9" t2="UK23"/>
-<connection t1="F10" t2="F11"/>
-<connection t1="F10" t2="F12"/>
-<connection t1="F10" t2="F13"/>
-<connection t1="F10" t2="F22"/>
-<connection t1="F11" t2="83 Sea Zone"/>
-<connection t1="F11" t2="F13"/>
-<connection t1="F11" t2="UK19"/>
-<connection t1="F12" t2="F13"/>
-<connection t1="F12" t2="F14"/>
-<connection t1="F12" t2="F15"/>
-<connection t1="F12" t2="F22"/>
-<connection t1="F12" t2="F23"/>
-<connection t1="F13" t2="F15"/>
-<connection t1="F13" t2="F16"/>
-<connection t1="F14" t2="F15"/>
-<connection t1="F14" t2="F23"/>
-<connection t1="F14" t2="F24"/>
-<connection t1="F15" t2="F16"/>
-<connection t1="F20" t2="F21"/>
-<connection t1="F21" t2="F22"/>
-<connection t1="F21" t2="F23"/>
-<connection t1="F21" t2="F24"/>
-<connection t1="F22" t2="F23"/>
-<connection t1="F23" t2="F24"/>
+<connection t1="F2 - Parcourue" t2="F3 - Metroparis"/>
+<connection t1="F2 - Parcourue" t2="F5 - Cosmopollon"/>
+<connection t1="F2 - Parcourue" t2="G10"/>
+<connection t1="F2 - Parcourue" t2="G11"/>
+<connection t1="F2 - Parcourue" t2="NL2 - Ferankera"/>
+<connection t1="F3 - Metroparis" t2="F4 - Haienau"/>
+<connection t1="F3 - Metroparis" t2="F5 - Cosmopollon"/>
+<connection t1="F3 - Metroparis" t2="IN2 - Ostrazity"/>
+<connection t1="F4 - Haienau" t2="IN2 - Ostrazity"/>
+<connection t1="F4 - Haienau" t2="PA3 - Kierch"/>
+<connection t1="F5 - Cosmopollon" t2="G8"/>
+<connection t1="F5 - Cosmopollon" t2="G11"/>
+<connection t1="F5 - Cosmopollon" t2="IN2 - Ostrazity"/>
+<connection t1="F5 - Cosmopollon" t2="PX3 - Onkentessa"/>
+<connection t1="F6 - Macabrenne" t2="G21"/>
+<connection t1="F6 - Macabrenne" t2="IN10 - Trasnaigh"/>
+<connection t1="F6 - Macabrenne" t2="PA9 - Ligazonn"/>
+<connection t1="F6 - Macabrenne" t2="PX5 - Anschluszig"/>
+<connection t1="F6 - Macabrenne" t2="UK13 - Bhaile"/>
+<connection t1="F6 - Macabrenne" t2="UK14 - Cladach"/>
+<connection t1="F7 - Ennui" t2="IN9 - Fononia"/>
+<connection t1="F7 - Ennui" t2="IN13 - Espectador"/>
+<connection t1="F7 - Ennui" t2="IN14 - Vigia"/>
+<connection t1="F7 - Ennui" t2="US21 - Blocarado"/>
+<connection t1="F8 - Shaykhes" t2="F9 - Tsutshepen"/>
+<connection t1="F8 - Shaykhes" t2="I4"/>
+<connection t1="F8 - Shaykhes" t2="PX7 - Nenshtrim"/>
+<connection t1="F8 - Shaykhes" t2="UK22 - Forzikh"/>
+<connection t1="F9 - Tsutshepen" t2="PA13 - Zadruga"/>
+<connection t1="F9 - Tsutshepen" t2="PX7 - Nenshtrim"/>
+<connection t1="F9 - Tsutshepen" t2="UK23 - Tatadwal"/>
+<connection t1="F10 - Nouveausot" t2="F11 - Chateaumont"/>
+<connection t1="F10 - Nouveausot" t2="F12 - Reseau"/>
+<connection t1="F10 - Nouveausot" t2="F13 - Outremerville"/>
+<connection t1="F10 - Nouveausot" t2="F22 - Savon"/>
+<connection t1="F11 - Chateaumont" t2="83 Sea Zone"/>
+<connection t1="F11 - Chateaumont" t2="F13 - Outremerville"/>
+<connection t1="F11 - Chateaumont" t2="UK19 - Valeurbec"/>
+<connection t1="F12 - Reseau" t2="F13 - Outremerville"/>
+<connection t1="F12 - Reseau" t2="F14 - Gauchernay"/>
+<connection t1="F12 - Reseau" t2="F15 - Aigleaix"/>
+<connection t1="F12 - Reseau" t2="F22 - Savon"/>
+<connection t1="F12 - Reseau" t2="F23 - Ouf"/>
+<connection t1="F13 - Outremerville" t2="F15 - Aigleaix"/>
+<connection t1="F13 - Outremerville" t2="F16 - Saintnez"/>
+<connection t1="F14 - Gauchernay" t2="F15 - Aigleaix"/>
+<connection t1="F14 - Gauchernay" t2="F23 - Ouf"/>
+<connection t1="F14 - Gauchernay" t2="F24 - Pierre"/>
+<connection t1="F15 - Aigleaix" t2="F16 - Saintnez"/>
+<connection t1="F20 - Peninsule" t2="F21 - Bassinne"/>
+<connection t1="F21 - Bassinne" t2="F22 - Savon"/>
+<connection t1="F21 - Bassinne" t2="F23 - Ouf"/>
+<connection t1="F21 - Bassinne" t2="F24 - Pierre"/>
+<connection t1="F22 - Savon" t2="F23 - Ouf"/>
+<connection t1="F23 - Ouf" t2="F24 - Pierre"/>
 <connection t1="FCap" t2="112 Sea Zone"/>
 <connection t1="FCap" t2="126 Sea Zone"/>
-<connection t1="G2" t2="PX2"/>
+<connection t1="G2" t2="PX2 - Rucknahmesel"/>
 <connection t1="G4" t2="23 Sea Zone"/>
 <connection t1="G4" t2="G5"/>
 <connection t1="G4" t2="G7"/>
-<connection t1="G4" t2="IN2"/>
-<connection t1="G4" t2="PA3"/>
-<connection t1="G4" t2="PX3"/>
+<connection t1="G4" t2="IN2 - Ostrazity"/>
+<connection t1="G4" t2="PA3 - Kierch"/>
+<connection t1="G4" t2="PX3 - Onkentessa"/>
 <connection t1="G5" t2="G6"/>
 <connection t1="G5" t2="G7"/>
 <connection t1="G5" t2="R8"/>
@@ -1062,177 +1062,177 @@
 <connection t1="G6" t2="R8"/>
 <connection t1="G6" t2="R9"/>
 <connection t1="G7" t2="G8"/>
-<connection t1="G7" t2="PA4"/>
-<connection t1="G7" t2="PX3"/>
+<connection t1="G7" t2="PA4 - Amortizatorra"/>
+<connection t1="G7" t2="PX3 - Onkentessa"/>
 <connection t1="G7" t2="R8"/>
 <connection t1="G8" t2="G9"/>
 <connection t1="G8" t2="G11"/>
-<connection t1="G8" t2="PA4"/>
-<connection t1="G8" t2="PX3"/>
+<connection t1="G8" t2="PA4 - Amortizatorra"/>
+<connection t1="G8" t2="PX3 - Onkentessa"/>
 <connection t1="G9" t2="G11"/>
 <connection t1="G9" t2="G12"/>
-<connection t1="G9" t2="NL3"/>
-<connection t1="G9" t2="PA4"/>
+<connection t1="G9" t2="NL3 - Zachodnan"/>
+<connection t1="G9" t2="PA4 - Amortizatorra"/>
 <connection t1="G10" t2="G11"/>
 <connection t1="G10" t2="G13"/>
-<connection t1="G10" t2="NL2"/>
+<connection t1="G10" t2="NL2 - Ferankera"/>
 <connection t1="G11" t2="G12"/>
 <connection t1="G11" t2="G13"/>
 <connection t1="G11" t2="G14"/>
-<connection t1="G11" t2="G15"/>
-<connection t1="G12" t2="G15"/>
-<connection t1="G12" t2="IN7"/>
-<connection t1="G12" t2="NL3"/>
+<connection t1="G11" t2="G15 - Blitzburg"/>
+<connection t1="G12" t2="G15 - Blitzburg"/>
+<connection t1="G12" t2="IN7 - Tystholm"/>
+<connection t1="G12" t2="NL3 - Zachodnan"/>
 <connection t1="G13" t2="G14"/>
-<connection t1="G13" t2="NL2"/>
-<connection t1="G13" t2="PA5"/>
-<connection t1="G14" t2="G15"/>
+<connection t1="G13" t2="NL2 - Ferankera"/>
+<connection t1="G13" t2="PA5 - Chora"/>
+<connection t1="G14" t2="G15 - Blitzburg"/>
 <connection t1="G14" t2="G18"/>
-<connection t1="G14" t2="G19"/>
-<connection t1="G15" t2="G19"/>
-<connection t1="G15" t2="IN7"/>
-<connection t1="G16" t2="G15"/>
-<connection t1="G16" t2="IN7"/>
-<connection t1="G16" t2="IN8"/>
-<connection t1="G16" t2="PX6"/>
+<connection t1="G14" t2="G19 - Kriegsbruck"/>
+<connection t1="G15 - Blitzburg" t2="G19 - Kriegsbruck"/>
+<connection t1="G15 - Blitzburg" t2="IN7 - Tystholm"/>
+<connection t1="G16" t2="G15 - Blitzburg"/>
+<connection t1="G16" t2="IN7 - Tystholm"/>
+<connection t1="G16" t2="IN8 - Fjernso"/>
+<connection t1="G16" t2="PX6 - Liittolainenmaa"/>
 <connection t1="G17" t2="G18"/>
-<connection t1="G17" t2="IN11"/>
-<connection t1="G17" t2="PA9"/>
-<connection t1="G17" t2="PX5"/>
-<connection t1="G18" t2="G19"/>
-<connection t1="G18" t2="IN11"/>
-<connection t1="G21" t2="IN11"/>
-<connection t1="G21" t2="PX5"/>
+<connection t1="G17" t2="IN11 - Kantstenn"/>
+<connection t1="G17" t2="PA9 - Ligazonn"/>
+<connection t1="G17" t2="PX5 - Anschluszig"/>
+<connection t1="G18" t2="G19 - Kriegsbruck"/>
+<connection t1="G18" t2="IN11 - Kantstenn"/>
+<connection t1="G21" t2="IN11 - Kantstenn"/>
+<connection t1="G21" t2="PX5 - Anschluszig"/>
 <connection t1="GCap" t2="112 Sea Zone"/>
 <connection t1="GCap" t2="126 Sea Zone"/>
 <connection t1="I1" t2="I2"/>
 <connection t1="I1" t2="I5"/>
 <connection t1="I1" t2="I6"/>
-<connection t1="I1" t2="UK21"/>
+<connection t1="I1" t2="UK21 - Tsetretn"/>
 <connection t1="I2" t2="I3"/>
 <connection t1="I2" t2="I4"/>
-<connection t1="I2" t2="UK21"/>
-<connection t1="I2" t2="UK22"/>
+<connection t1="I2" t2="UK21 - Tsetretn"/>
+<connection t1="I2" t2="UK22 - Forzikh"/>
 <connection t1="I3" t2="I4"/>
-<connection t1="I3" t2="PA12"/>
-<connection t1="I4" t2="NL9"/>
-<connection t1="I4" t2="PA12"/>
-<connection t1="I4" t2="PX7"/>
-<connection t1="I4" t2="UK22"/>
+<connection t1="I3" t2="PA12 - Udobno"/>
+<connection t1="I4" t2="NL9 - Domyslivy"/>
+<connection t1="I4" t2="PA12 - Udobno"/>
+<connection t1="I4" t2="PX7 - Nenshtrim"/>
+<connection t1="I4" t2="UK22 - Forzikh"/>
 <connection t1="I5" t2="I6"/>
-<connection t1="I6" t2="UK21"/>
+<connection t1="I6" t2="UK21 - Tsetretn"/>
 <connection t1="ICap" t2="112 Sea Zone"/>
 <connection t1="ICap" t2="126 Sea Zone"/>
-<connection t1="IN1" t2="UK1"/>
-<connection t1="IN1" t2="UK2"/>
-<connection t1="IN1" t2="UK4"/>
-<connection t1="IN2" t2="PA3"/>
-<connection t1="IN2" t2="PX3"/>
-<connection t1="IN4" t2="IN5"/>
-<connection t1="IN5" t2="IN6"/>
-<connection t1="IN5" t2="US7"/>
-<connection t1="IN6" t2="US7"/>
-<connection t1="IN6" t2="US10"/>
-<connection t1="IN6" t2="US15"/>
-<connection t1="IN7" t2="NL3"/>
-<connection t1="IN7" t2="NL7"/>
-<connection t1="IN8" t2="PA10"/>
-<connection t1="IN8" t2="PA11"/>
-<connection t1="IN8" t2="PX6"/>
-<connection t1="IN8" t2="R23"/>
-<connection t1="IN9" t2="US15"/>
-<connection t1="IN9" t2="US16"/>
-<connection t1="IN9" t2="US19"/>
-<connection t1="IN9" t2="US21"/>
-<connection t1="IN10" t2="UK13"/>
-<connection t1="IN10" t2="UK14"/>
-<connection t1="IN11" t2="PX5"/>
-<connection t1="IN12" t2="NL9"/>
-<connection t1="IN12" t2="PA13"/>
-<connection t1="IN12" t2="R28"/>
-<connection t1="IN12" t2="R29"/>
-<connection t1="IN12" t2="R31"/>
-<connection t1="IN12" t2="R32"/>
-<connection t1="IN13" t2="IN14"/>
-<connection t1="IN13" t2="J2"/>
-<connection t1="IN13" t2="J3"/>
-<connection t1="IN13" t2="J4"/>
-<connection t1="IN14" t2="IN15"/>
-<connection t1="IN14" t2="J4"/>
-<connection t1="IN15" t2="J4"/>
-<connection t1="IN15" t2="UK15"/>
-<connection t1="IN15" t2="UK16"/>
-<connection t1="J1" t2="J2"/>
-<connection t1="J1" t2="J8"/>
-<connection t1="J1" t2="J9"/>
-<connection t1="J2" t2="J3"/>
-<connection t1="J2" t2="J9"/>
-<connection t1="J3" t2="J4"/>
-<connection t1="J4" t2="UK16"/>
-<connection t1="J5" t2="J6"/>
-<connection t1="J6" t2="J7"/>
-<connection t1="J8" t2="J9"/>
-<connection t1="J13" t2="91 Sea Zone"/>
-<connection t1="J13" t2="J14"/>
-<connection t1="J14" t2="J15"/>
+<connection t1="IN1 - Thuaidh" t2="UK1 - Elevensend"/>
+<connection t1="IN1 - Thuaidh" t2="UK2 - Scramblesworth"/>
+<connection t1="IN1 - Thuaidh" t2="UK4 - Pubford"/>
+<connection t1="IN2 - Ostrazity" t2="PA3 - Kierch"/>
+<connection t1="IN2 - Ostrazity" t2="PX3 - Onkentessa"/>
+<connection t1="IN4 - Halangan" t2="IN5 - Intervira"/>
+<connection t1="IN5 - Intervira" t2="IN6 - Aberta"/>
+<connection t1="IN5 - Intervira" t2="US7"/>
+<connection t1="IN6 - Aberta" t2="US7"/>
+<connection t1="IN6 - Aberta" t2="US10"/>
+<connection t1="IN6 - Aberta" t2="US15"/>
+<connection t1="IN7 - Tystholm" t2="NL3 - Zachodnan"/>
+<connection t1="IN7 - Tystholm" t2="NL7 - Otwardz"/>
+<connection t1="IN8 - Fjernso" t2="PA10 - Biedrsga"/>
+<connection t1="IN8 - Fjernso" t2="PA11 - Aizsargsn"/>
+<connection t1="IN8 - Fjernso" t2="PX6 - Liittolainenmaa"/>
+<connection t1="IN8 - Fjernso" t2="R23"/>
+<connection t1="IN9 - Fononia" t2="US15"/>
+<connection t1="IN9 - Fononia" t2="US16"/>
+<connection t1="IN9 - Fononia" t2="US19"/>
+<connection t1="IN9 - Fononia" t2="US21 - Blocarado"/>
+<connection t1="IN10 - Trasnaigh" t2="UK13 - Bhaile"/>
+<connection t1="IN10 - Trasnaigh" t2="UK14 - Cladach"/>
+<connection t1="IN11 - Kantstenn" t2="PX5 - Anschluszig"/>
+<connection t1="IN12 - Stratyegin" t2="NL9 - Domyslivy"/>
+<connection t1="IN12 - Stratyegin" t2="PA13 - Zadruga"/>
+<connection t1="IN12 - Stratyegin" t2="R28"/>
+<connection t1="IN12 - Stratyegin" t2="R29"/>
+<connection t1="IN12 - Stratyegin" t2="R31"/>
+<connection t1="IN12 - Stratyegin" t2="R32"/>
+<connection t1="IN13 - Espectador" t2="IN14 - Vigia"/>
+<connection t1="IN13 - Espectador" t2="J2 - Tochaku"/>
+<connection t1="IN13 - Espectador" t2="J3 - Toreddokoya"/>
+<connection t1="IN13 - Espectador" t2="J4 - Danmakuba"/>
+<connection t1="IN14 - Vigia" t2="IN15 - Seccao"/>
+<connection t1="IN14 - Vigia" t2="J4 - Danmakuba"/>
+<connection t1="IN15 - Seccao" t2="J4 - Danmakuba"/>
+<connection t1="IN15 - Seccao" t2="UK15 - Slack"/>
+<connection t1="IN15 - Seccao" t2="UK16 - Ditchmond"/>
+<connection t1="J1 - Sakusen" t2="J2 - Tochaku"/>
+<connection t1="J1 - Sakusen" t2="J8 - Hanto"/>
+<connection t1="J1 - Sakusen" t2="J9 - Joriku"/>
+<connection t1="J2 - Tochaku" t2="J3 - Toreddokoya"/>
+<connection t1="J2 - Tochaku" t2="J9 - Joriku"/>
+<connection t1="J3 - Toreddokoya" t2="J4 - Danmakuba"/>
+<connection t1="J4 - Danmakuba" t2="UK16 - Ditchmond"/>
+<connection t1="J5 - Tsuki" t2="J6 - Saizensen"/>
+<connection t1="J6 - Saizensen" t2="J7 - Senryo"/>
+<connection t1="J8 - Hanto" t2="J9 - Joriku"/>
+<connection t1="J13 - Shukkyo" t2="91 Sea Zone"/>
+<connection t1="J13 - Shukkyo" t2="J14 - Sokotoshi"/>
+<connection t1="J14 - Sokotoshi" t2="J15 - Orosumura"/>
 <connection t1="JCap" t2="112 Sea Zone"/>
 <connection t1="JCap" t2="126 Sea Zone"/>
-<connection t1="NL1" t2="PA5"/>
-<connection t1="NL1" t2="PX4"/>
-<connection t1="NL1" t2="UK12"/>
-<connection t1="NL2" t2="PA5"/>
-<connection t1="NL3" t2="NL4"/>
-<connection t1="NL3" t2="NL7"/>
-<connection t1="NL3" t2="PA4"/>
-<connection t1="NL4" t2="NL5"/>
-<connection t1="NL4" t2="NL7"/>
-<connection t1="NL4" t2="PA4"/>
-<connection t1="NL4" t2="R11"/>
-<connection t1="NL5" t2="NL6"/>
-<connection t1="NL5" t2="NL7"/>
-<connection t1="NL5" t2="NL8"/>
-<connection t1="NL5" t2="R11"/>
-<connection t1="NL6" t2="NL8"/>
-<connection t1="NL6" t2="R11"/>
-<connection t1="NL6" t2="R12"/>
-<connection t1="NL6" t2="R14"/>
-<connection t1="NL7" t2="NL8"/>
-<connection t1="NL8" t2="R14"/>
-<connection t1="NL8" t2="R18"/>
-<connection t1="NL9" t2="PA12"/>
-<connection t1="NL9" t2="PA13"/>
-<connection t1="NL9" t2="PX7"/>
-<connection t1="NL9" t2="R28"/>
-<connection t1="NL10" t2="NL11"/>
-<connection t1="NL10" t2="UK30"/>
-<connection t1="NL11" t2="116 Sea Zone"/>
-<connection t1="NL11" t2="NL13"/>
-<connection t1="NL12" t2="115 Sea Zone"/>
-<connection t1="NL12" t2="NL13"/>
-<connection t1="NL12" t2="UK30"/>
-<connection t1="PA4" t2="R8"/>
-<connection t1="PA4" t2="R11"/>
-<connection t1="PA5" t2="PX4"/>
-<connection t1="PA8" t2="PX4"/>
-<connection t1="PA8" t2="UK12"/>
-<connection t1="PA8" t2="UK13"/>
-<connection t1="PA9" t2="PA8"/>
-<connection t1="PA9" t2="PX5"/>
-<connection t1="PA9" t2="UK13"/>
-<connection t1="PA10" t2="PA11"/>
-<connection t1="PA10" t2="PX6"/>
-<connection t1="PA11" t2="R23"/>
-<connection t1="PA12" t2="R28"/>
-<connection t1="PA13" t2="PX7"/>
-<connection t1="PA13" t2="R32"/>
-<connection t1="PA13" t2="UK23"/>
-<connection t1="PA13" t2="UK24"/>
-<connection t1="PA13" t2="UK25"/>
-<connection t1="PX1" t2="19 Sea Zone"/>
-<connection t1="PX2" t2="9 Sea Zone"/>
-<connection t1="PX2" t2="R1"/>
-<connection t1="PX4" t2="UK12"/>
-<connection t1="PX6" t2="61 Sea Zone"/>
+<connection t1="NL1 - Flaggestok" t2="PA5 - Chora"/>
+<connection t1="NL1 - Flaggestok" t2="PX4 - Asediatt"/>
+<connection t1="NL1 - Flaggestok" t2="UK12 - Fasach"/>
+<connection t1="NL2 - Ferankera" t2="PA5 - Chora"/>
+<connection t1="NL3 - Zachodnan" t2="NL4 - Polnocin"/>
+<connection t1="NL3 - Zachodnan" t2="NL7 - Otwardz"/>
+<connection t1="NL3 - Zachodnan" t2="PA4 - Amortizatorra"/>
+<connection t1="NL4 - Polnocin" t2="NL5 - Srodeklaw"/>
+<connection t1="NL4 - Polnocin" t2="NL7 - Otwardz"/>
+<connection t1="NL4 - Polnocin" t2="PA4 - Amortizatorra"/>
+<connection t1="NL4 - Polnocin" t2="R11"/>
+<connection t1="NL5 - Srodeklaw" t2="NL6 - Wschod"/>
+<connection t1="NL5 - Srodeklaw" t2="NL7 - Otwardz"/>
+<connection t1="NL5 - Srodeklaw" t2="NL8 - Poludniowy"/>
+<connection t1="NL5 - Srodeklaw" t2="R11"/>
+<connection t1="NL6 - Wschod" t2="NL8 - Poludniowy"/>
+<connection t1="NL6 - Wschod" t2="R11"/>
+<connection t1="NL6 - Wschod" t2="R12"/>
+<connection t1="NL6 - Wschod" t2="R14"/>
+<connection t1="NL7 - Otwardz" t2="NL8 - Poludniowy"/>
+<connection t1="NL8 - Poludniowy" t2="R14"/>
+<connection t1="NL8 - Poludniowy" t2="R18"/>
+<connection t1="NL9 - Domyslivy" t2="PA12 - Udobno"/>
+<connection t1="NL9 - Domyslivy" t2="PA13 - Zadruga"/>
+<connection t1="NL9 - Domyslivy" t2="PX7 - Nenshtrim"/>
+<connection t1="NL9 - Domyslivy" t2="R28"/>
+<connection t1="NL10 - Grensgebied" t2="NL11 - Hoofdstad"/>
+<connection t1="NL10 - Grensgebied" t2="UK30 - Vlootbasis"/>
+<connection t1="NL11 - Hoofdstad" t2="116 Sea Zone"/>
+<connection t1="NL11 - Hoofdstad" t2="NL13 - Verleiding"/>
+<connection t1="NL12 - Ingang" t2="115 Sea Zone"/>
+<connection t1="NL12 - Ingang" t2="NL13 - Verleiding"/>
+<connection t1="NL12 - Ingang" t2="UK30 - Vlootbasis"/>
+<connection t1="PA4 - Amortizatorra" t2="R8"/>
+<connection t1="PA4 - Amortizatorra" t2="R11"/>
+<connection t1="PA5 - Chora" t2="PX4 - Asediatt"/>
+<connection t1="PA8 - Afiadonn" t2="PX4 - Asediatt"/>
+<connection t1="PA8 - Afiadonn" t2="UK12 - Fasach"/>
+<connection t1="PA8 - Afiadonn" t2="UK13 - Bhaile"/>
+<connection t1="PA9 - Ligazonn" t2="PA8 - Afiadonn"/>
+<connection t1="PA9 - Ligazonn" t2="PX5 - Anschluszig"/>
+<connection t1="PA9 - Ligazonn" t2="UK13 - Bhaile"/>
+<connection t1="PA10 - Biedrsga" t2="PA11 - Aizsargsn"/>
+<connection t1="PA10 - Biedrsga" t2="PX6 - Liittolainenmaa"/>
+<connection t1="PA11 - Aizsargsn" t2="R23"/>
+<connection t1="PA12 - Udobno" t2="R28"/>
+<connection t1="PA13 - Zadruga" t2="PX7 - Nenshtrim"/>
+<connection t1="PA13 - Zadruga" t2="R32"/>
+<connection t1="PA13 - Zadruga" t2="UK23 - Tatadwal"/>
+<connection t1="PA13 - Zadruga" t2="UK24 - Buniada"/>
+<connection t1="PA13 - Zadruga" t2="UK25 - Aanchal"/>
+<connection t1="PX1 - Demare" t2="19 Sea Zone"/>
+<connection t1="PX2 - Rucknahmesel" t2="9 Sea Zone"/>
+<connection t1="PX2 - Rucknahmesel" t2="R1"/>
+<connection t1="PX4 - Asediatt" t2="UK12 - Fasach"/>
+<connection t1="PX6 - Liittolainenmaa" t2="61 Sea Zone"/>
 <connection t1="R1" t2="10 Sea Zone"/>
 <connection t1="R3" t2="R4"/>
 <connection t1="R3" t2="R9"/>
@@ -1292,39 +1292,39 @@
 <connection t1="R29" t2="R31"/>
 <connection t1="R30" t2="R31"/>
 <connection t1="R31" t2="R32"/>
-<connection t1="R32" t2="UK25"/>
+<connection t1="R32" t2="UK25 - Aanchal"/>
 <connection t1="RCap" t2="112 Sea Zone"/>
 <connection t1="RCap" t2="126 Sea Zone"/>
-<connection t1="UK1" t2="UK3"/>
-<connection t1="UK1" t2="UK4"/>
-<connection t1="UK2" t2="UK4"/>
-<connection t1="UK2" t2="UK5"/>
-<connection t1="UK3" t2="UK4"/>
-<connection t1="UK4" t2="UK5"/>
-<connection t1="UK6" t2="UK9"/>
-<connection t1="UK6" t2="US6"/>
-<connection t1="UK6" t2="UK10"/>
-<connection t1="UK8" t2="UK9"/>
-<connection t1="UK8" t2="US17"/>
-<connection t1="UK8" t2="US18"/>
-<connection t1="UK8" t2="US20"/>
-<connection t1="UK9" t2="US6"/>
-<connection t1="UK9" t2="US18"/>
-<connection t1="UK10" t2="UK18"/>
-<connection t1="UK12" t2="UK13"/>
-<connection t1="UK15" t2="UK16"/>
-<connection t1="UK15" t2="UK17"/>
-<connection t1="UK16" t2="UK17"/>
-<connection t1="UK17" t2="UK18"/>
-<connection t1="UK21" t2="UK22"/>
-<connection t1="UK23" t2="UK24"/>
-<connection t1="UK24" t2="UK25"/>
-<connection t1="UK24" t2="UK26"/>
-<connection t1="UK25" t2="UK26"/>
-<connection t1="UK26" t2="UK28"/>
-<connection t1="UK26" t2="UK29"/>
-<connection t1="UK27" t2="UK28"/>
-<connection t1="UK28" t2="UK29"/>
+<connection t1="UK1 - Elevensend" t2="UK3 - Decksbury"/>
+<connection t1="UK1 - Elevensend" t2="UK4 - Pubford"/>
+<connection t1="UK2 - Scramblesworth" t2="UK4 - Pubford"/>
+<connection t1="UK2 - Scramblesworth" t2="UK5 - Scapachester"/>
+<connection t1="UK3 - Decksbury" t2="UK4 - Pubford"/>
+<connection t1="UK4 - Pubford" t2="UK5 - Scapachester"/>
+<connection t1="UK6 - Bluenose" t2="UK9 - Bogtrot"/>
+<connection t1="UK6 - Bluenose" t2="US6"/>
+<connection t1="UK6 - Bluenose" t2="UK10 - Bytown"/>
+<connection t1="UK8 - Beavertail" t2="UK9 - Bogtrot"/>
+<connection t1="UK8 - Beavertail" t2="US17"/>
+<connection t1="UK8 - Beavertail" t2="US18"/>
+<connection t1="UK8 - Beavertail" t2="US20"/>
+<connection t1="UK9 - Bogtrot" t2="US6"/>
+<connection t1="UK9 - Bogtrot" t2="US18"/>
+<connection t1="UK10 - Bytown" t2="UK18 - Leftcoast"/>
+<connection t1="UK12 - Fasach" t2="UK13 - Bhaile"/>
+<connection t1="UK15 - Slack" t2="UK16 - Ditchmond"/>
+<connection t1="UK15 - Slack" t2="UK17 - Scivey"/>
+<connection t1="UK16 - Ditchmond" t2="UK17 - Scivey"/>
+<connection t1="UK17 - Scivey" t2="UK18 - Leftcoast"/>
+<connection t1="UK21 - Tsetretn" t2="UK22 - Forzikh"/>
+<connection t1="UK23 - Tatadwal" t2="UK24 - Buniada"/>
+<connection t1="UK24 - Buniada" t2="UK25 - Aanchal"/>
+<connection t1="UK24 - Buniada" t2="UK26 - Chauraaha"/>
+<connection t1="UK25 - Aanchal" t2="UK26 - Chauraaha"/>
+<connection t1="UK26 - Chauraaha" t2="UK28 - Dhanavaru"/>
+<connection t1="UK26 - Chauraaha" t2="UK29 - Chidhhar"/>
+<connection t1="UK27 - Rajadhani" t2="UK28 - Dhanavaru"/>
+<connection t1="UK28 - Dhanavaru" t2="UK29 - Chidhhar"/>
 <connection t1="UKCap" t2="112 Sea Zone"/>
 <connection t1="UKCap" t2="126 Sea Zone"/>
 <connection t1="US1" t2="US4"/>
@@ -1363,7 +1363,7 @@
 <connection t1="US17" t2="US18"/>
 <connection t1="US17" t2="US20"/>
 <connection t1="US19" t2="US20"/>
-<connection t1="US19" t2="US21"/>
-<connection t1="US20" t2="US21"/>
+<connection t1="US19" t2="US21 - Blocarado"/>
+<connection t1="US20" t2="US21 - Blocarado"/>
 <connection t1="USCap" t2="112 Sea Zone"/>
 <connection t1="USCap" t2="126 Sea Zone"/>
