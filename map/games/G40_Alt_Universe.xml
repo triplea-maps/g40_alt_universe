@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-  <info name="G40 Alt Universe Work" version="2.0.11"/>
+  <info name="G40 Alt Universe" version="2.0.11"/>
 
   <loader javaClass="games.strategy.triplea.TripleA"/>
   <triplea minimumVersion="1.8"/>
