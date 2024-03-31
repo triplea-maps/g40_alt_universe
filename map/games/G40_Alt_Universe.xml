@@ -1,13 +1,14 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-  <info name="G40 Alt Universe" version="2.0.10"/>
+  <info name="G40 Alt Universe Work" version="2.0.11"/>
 
   <loader javaClass="games.strategy.triplea.TripleA"/>
   <triplea minimumVersion="1.8"/>
   <diceSides value="6"/>
   <map>
 
+	<!-- Update March 31, 2024 v2.0.11 - Revert US factory upgrade to turn 3 or when at war, add 1 UK inf to UK23 -->
 	<!-- Update Jan 27, 2024 v2.0.10 - Change France DOW, US factories strictly turn 3, unit changes, Russia new NO, fix UK national objective for Ind Neutrals. -->
 	<!-- Update Aug 1, 2022 v2.0.9 - Bombers back to normal, Overhaul of France, Fixed aircraft defining retreat paths, fixed Japan/Italy not working with Ind Neutrals -->
 	<!-- Update Jan 1, 2022 v2.0.8 - Russia DOW changed to turn 4, plundering changed to per city/complex, France able to move naval units next to own territories, Escalation 3 notes, note about US Wartime Production 5 IPC option, Updated errata, fixed Chinese political situation, fixed France factory plunder, Fixed Russian north sea NO, some unit updates for balance -->
@@ -6176,21 +6177,21 @@
     </attachment>
 
     <attachment name="triggerAttachment_Americans_War_Production_US5" attachTo="Americans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-      <option name="trigger" value="conditionAttachmentTurn3:conditionAttachment_Americans_Major_Factory_US5"/>
+      <option name="trigger" value="conditionAttachment_Americans_At_War_With_At_Least_One_Axis:conditionAttachment_Americans_Major_Factory_US5"/>
       <option name="removeUnits" value="US5:factory_minor"/>
       <option name="placement" value="US5:factory_major"/>
       <option name="uses" value="1"/>
       <option name="when" value="after:americansPolitics"/>
     </attachment>
     <attachment name="triggerAttachment_Americans_War_Production_US11" attachTo="Americans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-      <option name="trigger" value="conditionAttachmentTurn3:conditionAttachment_Americans_Major_Factory_US11"/>
+      <option name="trigger" value="conditionAttachment_Americans_At_War_With_At_Least_One_Axis:conditionAttachment_Americans_Major_Factory_US11"/>
       <option name="removeUnits" value="US11:factory_minor"/>
       <option name="placement" value="US11:factory_major"/>
       <option name="uses" value="1"/>
       <option name="when" value="after:americansPolitics"/>
     </attachment>
     <attachment name="triggerAttachment_Americans_War_Production_US13" attachTo="Americans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-      <option name="trigger" value="conditionAttachmentTurn3:conditionAttachment_Americans_Major_Factory_US13"/>
+      <option name="trigger" value="conditionAttachment_Americans_At_War_With_At_Least_One_Axis:conditionAttachment_Americans_Major_Factory_US13"/>
       <option name="removeUnits" value="US13:factory_minor"/>
       <option name="placement" value="US13:factory_major"/>
       <option name="uses" value="1"/>
@@ -7268,6 +7269,7 @@
       <unitPlacement unitType="armour" territory="UK21" quantity="1" owner="Italians"/>
       <unitPlacement unitType="infantry" territory="UK22" quantity="4" owner="British"/>
       <unitPlacement unitType="artillery" territory="UK22" quantity="1" owner="British"/>
+	  <unitPlacement unitType="infantry" territory="UK23" quantity="2" owner="British"/>
       <unitPlacement unitType="infantry" territory="UK24" quantity="1" owner="British"/>
       <unitPlacement unitType="artillery" territory="UK24" quantity="1" owner="British"/>
       <unitPlacement unitType="mech_infantry" territory="UK24" quantity="1" owner="British"/>
