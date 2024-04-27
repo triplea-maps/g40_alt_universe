@@ -1,13 +1,14 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-  <info name="G40 Alt Universe" version="2.0.11"/>
+  <info name="G40 Alt Universe Work" version="2.0.12"/>
 
   <loader javaClass="games.strategy.triplea.TripleA"/>
   <triplea minimumVersion="1.8"/>
   <diceSides value="6"/>
   <map>
 
+    <!-- Update April 27, 2024 v2.0.12 - US can use SZ66 before at war, UK23 2 infantry change to ANZAC, UK12 remove 1 UK inf add 2 ANZAC inf, R31 add 2 inf -->
 	<!-- Update March 31, 2024 v2.0.11 - Revert US factory upgrade to turn 3 or when at war, add 1 UK inf to UK23 -->
 	<!-- Update Jan 27, 2024 v2.0.10 - Change France DOW, US factories strictly turn 3, unit changes, Russia new NO, fix UK national objective for Ind Neutrals. -->
 	<!-- Update Aug 1, 2022 v2.0.9 - Bombers back to normal, Overhaul of France, Fixed aircraft defining retreat paths, fixed Japan/Italy not working with Ind Neutrals -->
@@ -7127,6 +7128,7 @@
       <unitPlacement unitType="artillery" territory="R29" quantity="1" owner="Russians"/>
       <unitPlacement unitType="mech_infantry" territory="R29" quantity="1" owner="Russians"/>
       <unitPlacement unitType="armour" territory="R29" quantity="1" owner="Russians"/>
+      <unitPlacement unitType="infantry" territory="R31" quantity="2" owner="Russians"/>	  
       <unitPlacement unitType="infantry" territory="R32" quantity="4" owner="Russians"/>
       <unitPlacement unitType="infantry" territory="J1" quantity="3" owner="Japanese"/>
       <unitPlacement unitType="artillery" territory="J1" quantity="1" owner="Japanese"/>
@@ -7244,7 +7246,7 @@
       <unitPlacement unitType="infantry" territory="UK10" quantity="1" owner="British"/>
       <unitPlacement unitType="artillery" territory="UK10" quantity="1" owner="British"/>
       <unitPlacement unitType="infantry" territory="UK11" quantity="1" owner="British"/>
-      <unitPlacement unitType="infantry" territory="UK12" quantity="3" owner="British"/>
+      <unitPlacement unitType="infantry" territory="UK12" quantity="2" owner="British"/>
       <unitPlacement unitType="artillery" territory="UK12" quantity="1" owner="British"/>	  
       <unitPlacement unitType="aaGun" territory="UK13" quantity="1" owner="British"/>
       <unitPlacement unitType="infantry" territory="UK13" quantity="2" owner="British"/>
@@ -7269,7 +7271,6 @@
       <unitPlacement unitType="armour" territory="UK21" quantity="1" owner="Italians"/>
       <unitPlacement unitType="infantry" territory="UK22" quantity="4" owner="British"/>
       <unitPlacement unitType="artillery" territory="UK22" quantity="1" owner="British"/>
-	  <unitPlacement unitType="infantry" territory="UK23" quantity="2" owner="British"/>
       <unitPlacement unitType="infantry" territory="UK24" quantity="1" owner="British"/>
       <unitPlacement unitType="artillery" territory="UK24" quantity="1" owner="British"/>
       <unitPlacement unitType="mech_infantry" territory="UK24" quantity="1" owner="British"/>
@@ -7321,6 +7322,8 @@
       <unitPlacement unitType="artillery" territory="A9" quantity="1" owner="ANZAC"/>
       <unitPlacement unitType="infantry" territory="A10" quantity="2" owner="ANZAC"/>
       <unitPlacement unitType="fighter" territory="A10" quantity="1" owner="ANZAC"/>
+      <unitPlacement unitType="infantry" territory="UK12" quantity="2" owner="ANZAC"/>	  
+	  <unitPlacement unitType="infantry" territory="UK23" quantity="2" owner="ANZAC"/>
       <unitPlacement unitType="infantry" territory="F2" quantity="2" owner="French"/>
       <unitPlacement unitType="artillery" territory="F2" quantity="1" owner="French"/>
       <unitPlacement unitType="aaGun" territory="F3" quantity="2" owner="French"/>
@@ -8056,7 +8059,7 @@
     <li><strong><span style="font-family: Calibri, sans-serif; font-size: 15px;">An Axis power has declared war on the US</span></strong></li>
     <li><strong><span style="font-family: Calibri, sans-serif; font-size: 15px;">The Axis have captured A4 or UK10</span></strong></li>
 </ol>
-<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong>While neutral, the US must end the movement of its naval units in a sea zone that is adjacent to a US territory or sea zones 54, 55, 78, 79.</strong></p>
+<p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong>While neutral, the US must end the movement of its naval units in a sea zone that is adjacent to a US territory or sea zones 54, 55, 66, 78, 79.</strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>&nbsp;</strong><strong><u>China - 12 (23 on Income Tracker)</u></strong></p>
 <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'><strong>China begins the game at war with no one. &nbsp;China begins the game in a ceasefire agreement with Japan that has allowed it to concentrate on internal turmoil.</strong></p>
